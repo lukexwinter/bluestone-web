@@ -169,10 +169,10 @@ header {
   background: rgba(255, 255, 255, 0.97);
   padding: 15px 6.31944% 0 6.31944%;
   position: fixed;
-  -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  -moz-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  -o-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   z-index: 1000;
 }
 /* line 212, ../sass/main.scss */
@@ -266,7 +266,7 @@ header nav ul li.in {
   -o-transition: all .15s ease-out;
   transition: all .15s ease-out;
   transition-delay: .1s;
-  -webkit-transition-delay: .1s;
+  -webkit-transition-delay: .2s;
   /* Safari */
 }
 

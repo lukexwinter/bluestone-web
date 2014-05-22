@@ -176,11 +176,11 @@ $avenirnextregular: 'AvenirNextRegular', Futura, "Trebuchet MS", Arial, sans-ser
 	transition: all .15s ease-in;
 }
 
-@mixin transition-cubic-bezier {
-	-webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-	-moz-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-	-o-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-	transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+@mixin transition-cubic-bezier($duration) {
+	-webkit-transition: all $duration cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-moz-transition: all $duration cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-o-transition: all $duration cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	transition: all $duration cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 @mixin two-color-gradient {
@@ -208,7 +208,7 @@ body { @include two-color-gradient; }
 
 /*Navigation*/
 #contain-head { overflow: hidden; position: absolute; }
-header { width: $col14; background: rgba(255,255,255,.97); padding: 15px $col1+$colmarg 0 $col1+$colmarg; position: fixed; @include transition-cubic-bezier; z-index: 1000;
+header { width: $col14; background: rgba(255,255,255,.97); padding: 15px $col1+$colmarg 0 $col1+$colmarg; position: fixed; @include transition-cubic-bezier(.4s); z-index: 1000;
 	nav { float: right; color: $lightgray; font-size: 23px; text-align: right; width: 100%;
 		#bluestone-logo { width: 139px; height: 27px; float: left; 
 			img { width: 100%; max-width: 100%; }
@@ -222,17 +222,17 @@ header { width: $col14; background: rgba(255,255,255,.97); padding: 15px $col1+$
 		}
 		ul { margin: 100px 0 0 0; 
 			li { font-size: 72px; margin-right: -150px; @include transition-ease-in; opacity: 0; margin-bottom: 2.5%; }
-			li.in { margin-right: 0; @include transition-cubic-bezier; opacity: 1; }
+			li.in { margin-right: 0; @include transition-cubic-bezier(.5s); opacity: 1; }
 		}
 	}
 }
-.open header { top: 0 !important; @include transition-cubic-bezier; }
+.open header { top: 0 !important; @include transition-cubic-bezier(.5s); }
 
 /*Home*/
 #content { 
 	@include transition-ease-out;
 	transition-delay: .1s;
-	-webkit-transition-delay: .1s; /* Safari */
+	-webkit-transition-delay: .2s; /* Safari */
 }
 #content.home { background: url('../img/bg-img-test.jpg') no-repeat; background-size: cover; }
 .open #content { 

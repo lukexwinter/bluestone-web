@@ -9,7 +9,6 @@ function sizeHeader() {
 	var headerHeight = windowHeight - 69;
 	$('#contain-head').css({height: windowHeight});
 	$('#contain-head header').css({top: headerHeight, height: windowHeight});
-	$('#content.home').css({height: headerHeight});
 }
 
 $(document).ready(function(){
@@ -23,7 +22,7 @@ $(window).resize(function(){
 //Menu Click Function
 $('.menu-button').click(function(e) {
 	e.preventDefault();
-	$('body').toggleClass('open');
+	$('header').toggleClass('open');
 	animateMenuItems();
 });
 
