@@ -56,6 +56,7 @@ textarea {
     padding: 0.2em 0;
 }
 
+a, a:focus, a:hover { outline: none; }
 
 /* ==========================================================================
    Author's custom styles
@@ -68,6 +69,7 @@ textarea {
 /*Colors*/
 $bsblue: #0075be;
 $lightgray: #b3b3b3;
+$almostblack: #191919;
 
 /*Columns*/
 $col1: 5.2083333%;/*100/1920*/
@@ -183,7 +185,7 @@ $avenirnextregular: 'AvenirNextRegular', Futura, "Trebuchet MS", Arial, sans-ser
 	transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-@mixin two-color-gradient {
+@mixin two-color-radial-gradient {
 	background: #004b7b; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #004b7b 0%, #000000 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#004b7b), color-stop(100%,#000000)); /* Chrome,Safari4+ */
@@ -200,33 +202,56 @@ $avenirnextregular: 'AvenirNextRegular', Futura, "Trebuchet MS", Arial, sans-ser
 	-o-transform: scale(.5) !important;
 	transform: scale(.5) !important;
 }
-	
 
-h1 { color: $bsblue; }
+@mixin translate($xValue, $yValue) {
+	-moz-transform: translate($xValue,$yValue); -o-transform: translate($xValue,$yValue); -webkit-transform: translate($xValue,$yValue); transform: translate($xValue,$yValue);
+}
 
-body { @include two-color-gradient; }
+
+@mixin transformOriginY($yOrigin) {
+	-moz-transform-origin-y: ($yOrigin); -o-transform-origin-y: ($yOrigin); -webkit-transform-origin-y: ($yOrigin); transform-origin-y: ($yOrigin);
+}
+
+@mixin transformOriginX($xOrigin) {
+	-moz-transform-origin-x: ($xOrigin); -o-transform-origin-x: ($xOrigin); -webkit-transform-origin-x: ($xOrigin); transform-origin-x: ($xOrigin);
+}
+
+
+h1 { font-weight: normal; }
+body { background: #454545; }
+.grid-marker { display: block; background: $bsblue; }
 
 /*Navigation*/
 #contain-head { overflow: hidden; position: absolute; }
-header { width: $col14; background: rgba(255,255,255,.97); padding: 15px $col1+$colmarg 0 $col1+$colmarg; position: fixed; @include transition-cubic-bezier; z-index: 1000;
+header { width: 95%; background: #fff; background: rgba(255,255,255,.97); padding: 20px 2.5% 0 2.5%; position: fixed; left: 0; bottom: 0; @include transition-cubic-bezier; z-index: 1000; display: none;
 	nav { float: right; color: $lightgray; font-size: 23px; text-align: right; width: 100%;
-		#bluestone-logo { width: 139px; height: 27px; float: left; 
+		#bluestone-logo { width: 116px; height: 20px; float: left; 
 			img { width: 100%; max-width: 100%; }
 		}
 		a.menu-button { padding-top: 8px; }
 		a { color: $lightgray; text-decoration: none; font-family: $avenirlight; }
-		& > a { display: block; float: right; width: 101px;
-			.bars { width: 23px; float: left; margin: 5px 10px 0 0;
-				span { width: 100%; height: 2px; display: block; background: $lightgray; margin: 0 0 5px 0; }
+		& > a { display: block; float: right;
+			.bars { width: 30px; 
+				span { width: 100%; height: 3px; display: block; background: $almostblack; margin: 0 0 5px 0; @include transition-ease-in }
 			}
 		}
+		& > a:hover {
+			.bars { 
+				span { background: $bsblue; @include transition-ease-in }
+			 }
+		}
 		ul { margin: 100px 0 0 0; 
-			li { font-size: 72px; margin-right: -150px; @include transition-ease-in; opacity: 0; margin-bottom: 2.5%; }
-			li.in { margin-right: 0; @include transition-cubic-bezier; opacity: 1; }
+			li { font-size: 72px; @include translate(150px,0); @include transition-ease-in; opacity: 0; margin-bottom: 2.5%;
+				a { @include transition-ease-out; } 
+				a:hover { color: $bsblue; }
+			}
+			li.in { @include translate(0,0); @include transition-cubic-bezier; opacity: 1; }
 		}
 	}
 }
-.open header { top: 0 !important; @include transition-cubic-bezier; }
+.open header { @include transition-cubic-bezier; }
+.open #contain-head > header > nav > a.menu-button > div > span:nth-child(1), .open #contain-head > header > nav > a.menu-button > div > span:nth-child(3) { opacity: 0; }
+.open .bars span { background: $bsblue; }
 
 /*Home*/
 #content { 
@@ -234,12 +259,26 @@ header { width: $col14; background: rgba(255,255,255,.97); padding: 15px $col1+$
 	transition-delay: .1s;
 	-webkit-transition-delay: .1s; /* Safari */
 }
-#content.home { background: url('../img/bg-img-test.jpg') no-repeat; background-size: cover; }
+#content.home { background: url('../img/bg-mountains.jpg') no-repeat; background-size: cover; @include transformOriginY(25%); }
 .open #content { 
-	@include scale-content; @include transition-ease-out; 
+	@include transformOriginY(25%); @include scale-content; @include transition-ease-out; 
 	transition-delay: .1s;
 	-webkit-transition-delay: .1s; /* Safari */
-	margin-top: -5%;
+}
+
+.hometype {
+	text-transform: uppercase; width: $col15; padding: 7.96875% 0 0 $col1+$colmarg; color: #fff; z-index: 100; position: relative;
+	h1 { 
+		font-family: $avenirlight; color: #fff; font-size: 5.625em; line-height: 1; letter-spacing: 4px; margin: 0;
+		span { display: block;  @include transition-ease-out; @include translate(-20px,0); }
+		span.inline { display: inline-block; }
+	}
+	.grid-marker { width: 5.5555556%; height: 12px; margin: 1.0833333% 0 2.2499999% 6.6666667%; }
+	p { }
+	a {
+		color: #fff; text-decoration: none; margin-left: -13px; font-size: 14px; letter-spacing: 1px; font-family: $avenirlight;
+		span {width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #fff; font-size: 0; line-height: 0; display: inline-block; margin: 0 0 0 5px; text-align: left; }
+	}
 }
 
 
@@ -257,8 +296,9 @@ header { width: $col14; background: rgba(255,255,255,.97); padding: 15px $col1+$
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
+@media only screen and (max-width: 767px) {
+	header { padding-top: 5px; }
+	header nav ul li { font-size: 30px; }
 }
 
 @media print,

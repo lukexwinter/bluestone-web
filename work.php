@@ -19,29 +19,16 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 		<?php include 'template/header.php' ?>
-		<div id="overlay" style="background: white; position: absolute; width: 100%; height: 100%; z-index: 99;"></div>
-        <section id="content" class="home">
-			<div class="hometype">
-        		<h1><span>Once</span> <span>you</span> <span class="inline">find</span> <span class="inline">it,</span> <span>you'll</span> <span class="inline">know</span> <span class="inline">it.</span></h1>
-				<span class="grid-marker"></span>
-				<a href="">Discover Bluestone<span></a>
-			</div>
+        <div id="content">
+        	
         </div>
 
+		
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-		
-		<script>
-		$(window).load(function(){
-			
-			var words = $('.hometype');
-			$('#overlay').fadeOut(2000);
-		})    
-		
-		</script>
 		
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

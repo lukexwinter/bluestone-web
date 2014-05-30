@@ -64,6 +64,11 @@ textarea {
   padding: 0.2em 0;
 }
 
+/* line 59, ../sass/main.scss */
+a, a:focus, a:hover {
+  outline: none;
+}
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -131,51 +136,46 @@ textarea {
 /*****SASS MIXINS*****/
 /*********************/
 /*Transitions*/
-/* line 205, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 h1 {
-  color: #0075be;
+  font-weight: normal;
 }
 
-/* line 207, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 body {
-  background: #004b7b;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #004b7b 0%, black 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #004b7b), color-stop(100%, black));
-  /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, #004b7b 0%, black 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, #004b7b 0%, black 100%);
-  /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #004b7b 0%, black 100%);
-  /* IE10+ */
-  background: radial-gradient(ellipse at center, #004b7b 0%, #000000 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#004b7b', endColorstr='#000000',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
+  background: #454545;
+}
+
+/* line 222, ../sass/main.scss */
+.grid-marker {
+  display: block;
+  background: #0075be;
 }
 
 /*Navigation*/
-/* line 210, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 #contain-head {
   overflow: hidden;
   position: absolute;
 }
 
-/* line 211, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 header {
-  width: 87.36111%;
+  width: 95%;
+  background: #fff;
   background: rgba(255, 255, 255, 0.97);
-  padding: 15px 6.31944% 0 6.31944%;
+  padding: 20px 2.5% 0 2.5%;
   position: fixed;
+  left: 0;
+  bottom: 0;
   -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -moz-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -o-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   z-index: 1000;
+  display: none;
 }
-/* line 212, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 header nav {
   float: right;
   color: #b3b3b3;
@@ -183,55 +183,67 @@ header nav {
   text-align: right;
   width: 100%;
 }
-/* line 213, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 header nav #bluestone-logo {
-  width: 139px;
-  height: 27px;
+  width: 116px;
+  height: 20px;
   float: left;
 }
-/* line 214, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 header nav #bluestone-logo img {
   width: 100%;
   max-width: 100%;
 }
-/* line 216, ../sass/main.scss */
+/* line 231, ../sass/main.scss */
 header nav a.menu-button {
   padding-top: 8px;
 }
-/* line 217, ../sass/main.scss */
+/* line 232, ../sass/main.scss */
 header nav a {
   color: #b3b3b3;
   text-decoration: none;
   font-family: "AvenirLight", Futura, "Trebuchet MS", Arial, sans-serif;
 }
-/* line 218, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 header nav > a {
   display: block;
   float: right;
-  width: 101px;
 }
-/* line 219, ../sass/main.scss */
+/* line 234, ../sass/main.scss */
 header nav > a .bars {
-  width: 23px;
-  float: left;
-  margin: 5px 10px 0 0;
+  width: 30px;
 }
-/* line 220, ../sass/main.scss */
+/* line 235, ../sass/main.scss */
 header nav > a .bars span {
   width: 100%;
-  height: 2px;
+  height: 3px;
   display: block;
-  background: #b3b3b3;
+  background: #191919;
   margin: 0 0 5px 0;
+  -webkit-transition: all .15s ease-in;
+  -moz-transition: all .15s ease-in;
+  -o-transition: all .15s ease-in;
+  transition: all .15s ease-in;
 }
-/* line 223, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
+header nav > a:hover .bars span {
+  background: #0075be;
+  -webkit-transition: all .15s ease-in;
+  -moz-transition: all .15s ease-in;
+  -o-transition: all .15s ease-in;
+  transition: all .15s ease-in;
+}
+/* line 243, ../sass/main.scss */
 header nav ul {
   margin: 100px 0 0 0;
 }
-/* line 224, ../sass/main.scss */
+/* line 244, ../sass/main.scss */
 header nav ul li {
   font-size: 72px;
-  margin-right: -150px;
+  -moz-transform: translate(150px, 0);
+  -o-transform: translate(150px, 0);
+  -webkit-transform: translate(150px, 0);
+  transform: translate(150px, 0);
   -webkit-transition: all .15s ease-in;
   -moz-transition: all .15s ease-in;
   -o-transition: all .15s ease-in;
@@ -239,9 +251,23 @@ header nav ul li {
   opacity: 0;
   margin-bottom: 2.5%;
 }
-/* line 225, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
+header nav ul li a {
+  -webkit-transition: all .15s ease-out;
+  -moz-transition: all .15s ease-out;
+  -o-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+/* line 246, ../sass/main.scss */
+header nav ul li a:hover {
+  color: #0075be;
+}
+/* line 248, ../sass/main.scss */
 header nav ul li.in {
-  margin-right: 0;
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -moz-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -o-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -249,17 +275,26 @@ header nav ul li.in {
   opacity: 1;
 }
 
-/* line 229, ../sass/main.scss */
+/* line 252, ../sass/main.scss */
 .open header {
-  top: 0 !important;
   -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -moz-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -o-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
+/* line 253, ../sass/main.scss */
+.open #contain-head > header > nav > a.menu-button > div > span:nth-child(1), .open #contain-head > header > nav > a.menu-button > div > span:nth-child(3) {
+  opacity: 0;
+}
+
+/* line 254, ../sass/main.scss */
+.open .bars span {
+  background: #0075be;
+}
+
 /*Home*/
-/* line 232, ../sass/main.scss */
+/* line 257, ../sass/main.scss */
 #content {
   -webkit-transition: all .15s ease-out;
   -moz-transition: all .15s ease-out;
@@ -270,14 +305,22 @@ header nav ul li.in {
   /* Safari */
 }
 
-/* line 237, ../sass/main.scss */
+/* line 262, ../sass/main.scss */
 #content.home {
-  background: url("../img/bg-img-test.jpg") no-repeat;
+  background: url("../img/bg-mountains.jpg") no-repeat;
   background-size: cover;
+  -moz-transform-origin-y: 25%;
+  -o-transform-origin-y: 25%;
+  -webkit-transform-origin-y: 25%;
+  transform-origin-y: 25%;
 }
 
-/* line 238, ../sass/main.scss */
+/* line 263, ../sass/main.scss */
 .open #content {
+  -moz-transform-origin-y: 25%;
+  -o-transform-origin-y: 25%;
+  -webkit-transform-origin-y: 25%;
+  transform-origin-y: 25%;
   -webkit-transform: scale(0.5) !important;
   -moz-transform: scale(0.5) !important;
   -o-transform: scale(0.5) !important;
@@ -289,16 +332,89 @@ header nav ul li.in {
   transition-delay: .1s;
   -webkit-transition-delay: .1s;
   /* Safari */
-  margin-top: -5%;
+}
+
+/* line 269, ../sass/main.scss */
+.hometype {
+  text-transform: uppercase;
+  width: 93.68056;
+  padding: 7.96875% 0 0 6.31944%;
+  color: #fff;
+  z-index: 100;
+  position: relative;
+}
+/* line 271, ../sass/main.scss */
+.hometype h1 {
+  font-family: "AvenirLight", Futura, "Trebuchet MS", Arial, sans-serif;
+  color: #fff;
+  font-size: 5.625em;
+  line-height: 1;
+  letter-spacing: 4px;
+  margin: 0;
+}
+/* line 273, ../sass/main.scss */
+.hometype h1 span {
+  display: block;
+  -webkit-transition: all .15s ease-out;
+  -moz-transition: all .15s ease-out;
+  -o-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+  -moz-transform: translate(-20px, 0);
+  -o-transform: translate(-20px, 0);
+  -webkit-transform: translate(-20px, 0);
+  transform: translate(-20px, 0);
+}
+/* line 274, ../sass/main.scss */
+.hometype h1 span.inline {
+  display: inline-block;
+}
+/* line 276, ../sass/main.scss */
+.hometype .grid-marker {
+  width: 5.5555556%;
+  height: 12px;
+  margin: 1.0833333% 0 2.2499999% 6.6666667%;
+}
+/* line 278, ../sass/main.scss */
+.hometype a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: -13px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: "AvenirLight", Futura, "Trebuchet MS", Arial, sans-serif;
+}
+/* line 280, ../sass/main.scss */
+.hometype a span {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #fff;
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  margin: 0 0 0 5px;
+  text-align: left;
 }
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+@media only screen and (max-width: 767px) {
+  /* line 300, ../sass/main.scss */
+  header {
+    padding-top: 5px;
+  }
+
+  /* line 301, ../sass/main.scss */
+  header nav ul li {
+    font-size: 30px;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 275, ../sass/main.scss */
+/* line 315, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -306,7 +422,7 @@ header nav ul li.in {
   *text-indent: -9999px;
 }
 
-/* line 282, ../sass/main.scss */
+/* line 322, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -314,13 +430,13 @@ header nav ul li.in {
   height: 150%;
 }
 
-/* line 289, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 294, ../sass/main.scss */
+/* line 334, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -332,7 +448,7 @@ header nav ul li.in {
   width: 1px;
 }
 
-/* line 306, ../sass/main.scss */
+/* line 346, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -343,24 +459,24 @@ header nav ul li.in {
   width: auto;
 }
 
-/* line 315, ../sass/main.scss */
+/* line 355, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 320, ../sass/main.scss */
+/* line 360, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 325, ../sass/main.scss */
+/* line 365, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 329, ../sass/main.scss */
+/* line 369, ../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -369,7 +485,7 @@ header nav ul li.in {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 338, ../sass/main.scss */
+  /* line 378, ../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -377,48 +493,48 @@ header nav ul li.in {
     text-shadow: none !important;
   }
 
-  /* line 346, ../sass/main.scss */
+  /* line 386, ../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 350, ../sass/main.scss */
+  /* line 390, ../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 354, ../sass/main.scss */
+  /* line 394, ../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 360, ../sass/main.scss */
+  /* line 400, ../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 365, ../sass/main.scss */
+  /* line 405, ../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 370, ../sass/main.scss */
+  /* line 410, ../sass/main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 375, ../sass/main.scss */
+  /* line 415, ../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 379, ../sass/main.scss */
+  /* line 419, ../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -427,7 +543,7 @@ header nav ul li.in {
     margin: 0.5cm;
 }
 
-  /* line 389, ../sass/main.scss */
+  /* line 429, ../sass/main.scss */
   p,
   h2,
   h3 {
@@ -435,7 +551,7 @@ header nav ul li.in {
     widows: 3;
   }
 
-  /* line 395, ../sass/main.scss */
+  /* line 435, ../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;
