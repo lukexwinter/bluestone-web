@@ -307,8 +307,6 @@ header nav ul li.in {
 
 /* line 262, ../sass/main.scss */
 #content.home {
-  background: url("../img/bg-mountains.jpg") no-repeat;
-  background-size: cover;
   -moz-transform-origin-y: 25%;
   -o-transform-origin-y: 25%;
   -webkit-transform-origin-y: 25%;

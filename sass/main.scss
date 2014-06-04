@@ -259,7 +259,7 @@ header { width: 95%; background: #fff; background: rgba(255,255,255,.97); paddin
 	transition-delay: .1s;
 	-webkit-transition-delay: .1s; /* Safari */
 }
-#content.home { background: url('../img/bg-mountains.jpg') no-repeat; background-size: cover; @include transformOriginY(25%); }
+#content.home { @include transformOriginY(25%); }
 .open #content { 
 	@include transformOriginY(25%); @include scale-content; @include transition-ease-out; 
 	transition-delay: .1s;

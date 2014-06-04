@@ -5,11 +5,9 @@
 /*Make Sure The Nav Always stays to the bottom*/
 bsHeader = $('#contain-head header');
 menuText = $('#contain-head > header > nav > a.menu-button > span');
+windowWidth = $(window).width();
 
 function sizeHeader() {
-	
-	var windowWidth = $(window).width();
-	
 	//Use Window Inner Height for iPads
 	if (navigator.userAgent.match(/iPad;.*CPU.*OS 7_\d/i) && !window.navigator.standalone) {
 	   var windowHeight = window.innerHeight;
@@ -49,11 +47,10 @@ function showHeader(){
 
 $(window).load(function(){
 	sizeHeader();
-	
 	setTimeout(function(){showHeader()}, 1000);
-	
 	headerHeight = sizeHeader();
-	windowHeight = sizeHeader();	
+	windowHeight = sizeHeader();
+	
 });
 
 $(window).resize(function(){

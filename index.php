@@ -26,7 +26,10 @@
 				<span class="grid-marker"></span>
 				<a href="">Discover Bluestone<span></a>
 			</div>
-        </div>
+			
+			<video style="position: fixed; bottom: 0; right: 0; min-height: 100%; min-width: 100%; max-width: 1000%; max-height: 4000%; width: auto; height: auto; overflow: hidden; display: block;" autoplay="1" loop="loop" muted="muted" poster="/video/main.jpg"><source src="/video/Bluestone.webm" type="video/webm"><source src="/video/Bluestone.mp4" type="video/mp4"></video>
+        	
+		</div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
@@ -35,12 +38,9 @@
         <script src="js/main.js"></script>
 		
 		<script>
-		$(window).load(function(){
-			
-			var words = $('.hometype');
-			$('#overlay').fadeOut(2000);
-		})    
-		
+			$(window).load(function(){
+				$('#overlay').fadeOut(2000);
+			});       
 		</script>
 		
 
