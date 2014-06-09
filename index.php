@@ -20,6 +20,7 @@
         <![endif]-->
 		<?php include 'template/header.php' ?>
 		<div id="overlay" style="background: white; position: absolute; width: 100%; height: 100%; z-index: 99;"></div>
+		<div id="blue-overlay" style="background: url(img/color-overlay.png) no-repeat center; background-size: cover; position: absolute; width: 100%; height: 100%; z-index: 99;"></div>
         <section id="content" class="home">
 			<div class="hometype">
         		<h1><span>Once</span> <span>you</span> <span class="inline">find</span> <span class="inline">it,</span> <span>you'll</span> <span class="inline">know</span> <span class="inline">it.</span></h1>
@@ -27,7 +28,7 @@
 				<a href="">Discover Bluestone<span></a>
 			</div>
 			
-			<video style="position: fixed; bottom: 0; right: 0; min-height: 100%; min-width: 100%; max-width: 1000%; max-height: 4000%; width: auto; height: auto; overflow: hidden; display: block;" autoplay="1" loop="loop" muted="muted" poster="/video/main.jpg"><source src="/video/Bluestone.webm" type="video/webm"><source src="/video/Bluestone.mp4" type="video/mp4"></video>
+			<video style="position: fixed; bottom: 0; right: 0; min-height: 100%; min-width: 100%; max-width: 1000%; max-height: 4000%; width: auto; height: auto; overflow: hidden; display: block;" autoplay="1" loop="loop" muted="muted" poster="/video/main.jpg"><source src="/video/arcadefire.webm" type="video/webm"><source src="/video/arcadefire.mp4" type="video/mp4"></video>
         	
 		</div>
 

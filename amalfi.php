@@ -19,8 +19,35 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 		<?php include 'template/header.php' ?>
-        <div id="content">
-        	
+        <div id="content" class="work-detail amalfi">
+        	<div class="project-head"><img src="img/amalfi-logo.png" /></div>
+			<div class="project-body">
+				<h2>Amalfi Stonebriar</h2> 
+				<h3>Brand Identity, Print, Advertising, Signage, 3D, Web Design, Strategy</h3>
+			
+				<div class="summary">
+					<h4>Bluestone brings a taste of Amalfi Italy to Frisco, Texas</h4>
+					<p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus. Vestibulum vitae malesuada tellus.</p>
+					<p class="right">Sed non pharetra magna. Nunc accumsan sit amet augue quis placerat. Nam gravida ante ut felis facilisis, id lacinia tortor consequat.</p>
+				</div>
+			
+				<div class="work-block">
+					<span class="caption">Pocket Folder &amp; brochure<span class="grid-marker"></span></span>
+					<img src="img/amalfi-1.jpg" alt="" />
+					<img src="img/amalfi-2.jpg" alt="" />
+				</div>
+			
+				<div class="work-block">
+					<span class="caption">Pocket Folder &amp; brochure<span class="grid-marker"></span></span>
+					<img class="callout" src="img/amalfi-3.jpg" alt="" />
+					<p class="callout">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus. Vestibulum vitae malesuada tellus. Sed non pharetra magna. Nunc accumsan sit amet augue quis placerat. Nam gravida ante ut felis facilisis, id lacinia tortor consequat.</p>
+				</div>
+			
+				<div class="work-block">
+					<span class="caption">Responsive Website<span class="grid-marker"></span></span>
+					<img src="img/amalfi-4.jpg" alt="" />
+				</div>
+			</div>
         </div>
 
 		

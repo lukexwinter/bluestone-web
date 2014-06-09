@@ -77,7 +77,7 @@ $('.menu-button').click(function(e) {
 
 //Animate Menu Items
 function animateMenuItems() {
-	var headerPosition = $('header').offset();
+	var headerPosition = $('header').position();
 	var headerPositionTop = headerPosition.top;
 	var navItems = $('header nav ul li');
 	
