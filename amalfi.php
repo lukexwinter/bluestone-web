@@ -22,22 +22,24 @@
         <div id="content" class="work-detail amalfi">
         	<div class="project-head"><img src="img/amalfi-logo.png" /></div>
 			<div class="project-body">
-				<h2>Amalfi Stonebriar</h2> 
-				<h3>Brand Identity, Print, Advertising, Signage, 3D, Web Design, Strategy</h3>
+				<div class="title clearfix">
+					<h2>Amalfi Stonebriar</h2> 
+					<h3>Brand Identity, Print, Advertising, Signage, 3D, Web Design, Strategy</h3>
+				</div>
 			
-				<div class="summary">
+				<div class="summary clearfix">
 					<h4>Bluestone brings a taste of Amalfi Italy to Frisco, Texas</h4>
 					<p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus. Vestibulum vitae malesuada tellus.</p>
 					<p class="right">Sed non pharetra magna. Nunc accumsan sit amet augue quis placerat. Nam gravida ante ut felis facilisis, id lacinia tortor consequat.</p>
 				</div>
 			
 				<div class="work-block">
-					<span class="caption">Pocket Folder &amp; brochure<span class="grid-marker"></span></span>
+					<div class="caption-wrapper"><div class="caption">Pocket Folder &amp; brochure<span class="grid-marker"></span></div></div>
 					<img src="img/amalfi-1.jpg" alt="" />
 					<img src="img/amalfi-2.jpg" alt="" />
 				</div>
 			
-				<div class="work-block">
+				<div class="work-block clearfix">
 					<span class="caption">Pocket Folder &amp; brochure<span class="grid-marker"></span></span>
 					<img class="callout" src="img/amalfi-3.jpg" alt="" />
 					<p class="callout">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus. Vestibulum vitae malesuada tellus. Sed non pharetra magna. Nunc accumsan sit amet augue quis placerat. Nam gravida ante ut felis facilisis, id lacinia tortor consequat.</p>
@@ -56,6 +58,23 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+		
+		<script>
+			function sizeCaptions() {
+				$('.caption').each(function(){
+				       var parentHeight = $(this).parent().height();   
+				       $(this).css({width: parentHeight});
+				});   
+			}
+			
+			$(window).load(function(){
+				sizeCaptions();
+			})
+			
+			$(window).resize(function(){
+				sizeCaptions();
+			})
+		</script>
 		
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

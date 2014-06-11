@@ -69,6 +69,7 @@ a, a:focus, a:hover { outline: none; }
 /*Colors*/
 $bsblue: #0075be;
 $lightgray: #b3b3b3;
+$mediumgray: #747474;
 $almostblack: #191919;
 
 /*Columns*/
@@ -216,9 +217,24 @@ $avenirnextregular: 'AvenirNextRegular', Futura, "Trebuchet MS", Arial, sans-ser
 	-moz-transform-origin-x: ($xOrigin); -o-transform-origin-x: ($xOrigin); -webkit-transform-origin-x: ($xOrigin); transform-origin-x: ($xOrigin);
 }
 
+@mixin rot-neg-90 {
+  /* rotate -90 deg, not sure if a negative number is supported so I used 270 */
+  -moz-transform: rotate(270deg);
+  -moz-transform-origin: 0 100%;
+  -webkit-transform: rotate(270deg);
+  -webkit-transform-origin: 0 100%;
+  -o-transform: rotate(270deg);
+  -o-transform-origin: 0 100%;
+  transform: rotate(270deg);
+  transform-origin: 0 100%;
+
+  /* IE<9 */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
 
 h1 { font-weight: normal; }
-body { background: #454545; }
+body { background: #454545; font-family: $avenirlight; color: $mediumgray; }
 .grid-marker { display: block; background: $bsblue; }
 
 /*Navigation*/
@@ -304,13 +320,37 @@ header { width: 95%; background: #fff; background: rgba(255,255,255,.97); paddin
 /*Project*/
 .work-detail { 
 	background: #fff;
-	h2, h3 { color: #252525; font-weight: normal; }
-	h2 { text-transform: uppercase; font-size: 4.5em; font-family: $avenirlight; }
-	h3 { font-family: $avenirmedium; }
+	.summary {
+		width: $col12; margin: 7% auto 0 auto; color: $mediumgray; font-family: $avenirlight;
+		h4 {
+			font-size: 2.25em; font-weight: normal; margin: 0 0 4% 0;
+		}
+		p {
+			font-size: 1.3125em; width: 49.256505%; float: left; margin: 0;
+			&.left { margin: 0 1.48699% 0 0; }
+		}
+	}
+	.work-block { 
+		width: $col12; margin: 0 auto; position: relative;
+		.caption-wrapper { width: 100%; height: 100%; position: absolute; }
+		.caption { font-size: .875em; @include rot-neg-90; position: absolute; bottom: 0; text-align: right; margin-bottom: -7%; left: -$colmarg; 
+			.grid-marker { width: 5%; height: 3px; position: absolute; height: 3px; width: 20px; display: inline-block; top: 20px; right: 15px; }
+		}
+		img, p { width: 100%; max-width: 100%; height: 100%; max-height: 100%; margin: 7% 0 0 0; }
+		//work blocks with text
+		img.callout { width: 66.171004%; /*col8/col12*/ float: left; margin-right: 1.48699%; }
+		p.callout { width: 32.342007%/*col4/col12*/; float: left; }
+	}
+ }
+.project-head { width: 100%; background: url('../img/header-amalfi.jpg') no-repeat; background-size: cover; padding: 40% 0 0 0; position: relative; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; }
+.project-head img { height: 25%; position: absolute; bottom: 60px; left: 8.0729167%; max-width: 100%; max-height: 100%; }
+.project-body { z-index: 100; position: relative; background: #fff; overflow: hidden;
+	.title { width: $col14; margin: 80px auto 0 auto; position: relative; 
+		h2, h3 { color: #252525; font-weight: normal; margin: 0; padding: 0; line-height: 1; }
+		h2 { text-transform: uppercase; font-size: 4.5em; font-family: $avenirlight; float: left; }
+		h3 { font-family: $avenirmedium; float: right; font-size: .875em; position: absolute; bottom: 15px; right: 0; }
+	}
 }
-.project-head { width: 100%; background: url('../img/header-amalfi.jpg') no-repeat; background-size: cover; min-height: 895px; position: relative; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; }
-.project-head img { width: 145px; height: 173px; position: fixed; top: 646px; left: 8.0729167%; max-width: 100%; max-height: 100%; }
-.project-body { z-index: 100; position: relative; background: #fff; }
 
 
 
@@ -324,20 +364,137 @@ header { width: 95%; background: #fff; background: rgba(255,255,255,.97); paddin
    Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1279px) {
+	/*Project*/
+	.work-detail { 
+		.summary {
+			width: $col12; margin: 7% auto 0 auto; color: $mediumgray; font-family: $avenirlight;
+			h4 {
+				font-size: 1.5em; font-weight: normal; margin: 0 0 4% 0;
+			}
+			p {
+				font-size: 1em; 
+				&.left {  }
+			}
+		}
+		.work-block { 
+			width: $col12; margin: 0 auto; position: relative;
+			.caption-wrapper { width: 100%; height: 100%; position: absolute; }
+			.caption { font-size: .875em; @include rot-neg-90; position: absolute; bottom: 0; text-align: right; margin-bottom: -7%; left: -$colmarg; 
+				.grid-marker { width: 5%; height: 3px; position: absolute; height: 3px; width: 20px; display: inline-block; top: 20px; right: 15px; }
+			}
+			img, p {  }
+			//work blocks with text
+			img.callout {  }
+			p.callout {  }
+		}
+	 }
+	.project-body { 
+		.title { 
+			h2, h3 { }
+			h2 { font-size: 3.5em; float: none; }
+			h3 { float: none; font-size: .75em; position: relative; margin: 2% 0 0 0; }
+		}
+	}
+}
+
+@media only screen and (max-width: 1023px) {
 	/*Work*/
-	.project { 
+	.work .project { 
 		h2 { font-size: 2em; }
 		h3 { font-size: 0.75em; }
 		.grid-marker { height: 7px; }
 	}
+	
+	/*Project*/
+	.work-detail { 
+		.summary {
+			width: $col14; margin: 7% auto 0 auto; color: $mediumgray; font-family: $avenirlight;
+			h4 {
+				font-size: 1.5em; font-weight: normal; margin: 0 0 4% 0;
+			}
+			p {
+				font-size: 1em; 
+				&.left {  }
+			}
+		}
+		.work-block { 
+			width: $col14; margin: 0 auto; position: relative;
+			.caption-wrapper {  }
+			.caption { font-size: .75em; 
+				.grid-marker { top: 16px; }
+			}
+			img, p {  }
+			//work blocks with text
+			img.callout {  }
+			p.callout {  }
+		}
+	 }
+	.project-body { 
+		.title { 
+			h2, h3 { }
+			h2 { font-size: 3.5em; float: none; }
+			h3 { float: none; font-size: .75em; position: relative; margin: 2% 0 0 0; }
+		}
+	}
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 768px) {
 	header { padding-top: 5px; }
 	header nav ul li { font-size: 30px; }
 	
 	/*Work*/
-	.project { width: 100%;
+	.work .project { width: 100%;
+	}
+	
+	/*Project*/
+	.project-head img { height: 33%; position: absolute; bottom: 30px; left: 8.0729167%; max-width: 100%; max-height: 100%; }
+	.work-block { 
+		.caption { font-size: .75em; left: -2.11111%;
+			.grid-marker { top: 16px; display: none; }
+		}
+	}
+}
+
+@media only screen and (max-width: 568px) {
+	
+	header { padding-top: 5px; }
+	header nav ul li { font-size: 30px; }
+	
+	/*Work*/
+	.work .project { width: 100%;
+	}
+	
+	/*Project*/
+	.work-detail { 
+		.summary {
+			width: $col14; margin: 7% auto 0 auto; color: $mediumgray; font-family: $avenirlight;
+			h4 {
+				font-size: 1.25em; font-weight: normal; margin: 0 0 4% 0;
+			}
+			p {
+				font-size: .8725em; float: none; width: 100%;
+				&.left {  }
+			}
+		}
+		.work-block { 
+			width: $col14; margin: 0 auto; position: relative;
+			.caption-wrapper {  }
+			.caption { font-size: .75em; 
+				.grid-marker { top: 16px; display: none; }
+			}
+			img, p {  }
+			//work blocks with text
+			img.callout { float: none; width: 66.77777777%;  margin-right: auto; display: inherit; }
+			p.callout { font-size: .8725em; float: none; width: 66.77777777%;  margin-right: auto; }
+		}
+	 }
+	.project-body { 
+		.title { 
+			h2, h3 { }
+			h2 { font-size: 2em; float: none; }
+			h3 { float: none; font-size: .6725em; position: relative; margin: 5% 0 0 0; }
+		}
 	}
 }
 
