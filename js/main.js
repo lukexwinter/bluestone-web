@@ -16,13 +16,11 @@ function sizeHeader() {
 	}
 	
 	if ( windowWidth > 767 ) {
-		var headerHeight = windowHeight - 69;
+		var headerHeight = windowHeight - 55;
 	} else {
-		var headerHeight = windowHeight - 44;
+		var headerHeight = windowHeight - 55;
 	}
 	
-	$('#contain-head').css({height: windowHeight});
-	bsHeader.css({top: windowHeight, height: windowHeight});
 	$('#content.home').css({height: windowHeight});
 	
 	
@@ -40,38 +38,31 @@ function showHeader(){
 	headerHeight = sizeHeader();
 	
 	bsHeader.show(function() {
-    	bsHeader.css({top: headerHeight});
+    	//bsHeader.css({top: headerHeight});
   	});
 	
 }
 
 $(window).load(function(){
-	sizeHeader();
+	//sizeHeader();
 	setTimeout(function(){showHeader()}, 1000);
 	headerHeight = sizeHeader();
 	windowHeight = sizeHeader();
-	
 });
 
 $(window).resize(function(){
-	sizeHeader();
+	//sizeHeader();
 	setTimeout(function(){showHeader()}, 1000);
 	headerHeight = sizeHeader();
 	windhowHeight = sizeHeader();
 });
 
 //Menu Click Function
-$('.menu-button').click(function(e) {
+$('a.menu-button, .bars').click(function(e) {
 	e.preventDefault();
-	
+	console.log('blah');
 	$('body').toggleClass('open');
 	animateMenuItems();
-	
-	if ( $('body').hasClass('open') ) {
-		menuText.text('CLOSE');
-	} else {
-		menuText.text('MENU');
-	}
 });
 
 
@@ -106,3 +97,21 @@ function animateMenuItems() {
 		})
 	}
 };
+
+//Pass-through Hack
+function passThrough(e) {
+    $("a").each(function() {
+       // check if clicked point (taken from event) is inside element
+       var mouseX = e.pageX;
+       var mouseY = e.pageY;
+       var offset = $(this).offset();
+       var width = $(this).width();
+       var height = $(this).height();
+
+       if (mouseX > offset.left && mouseX < offset.left+width 
+           && mouseY > offset.top && mouseY < offset.top+height)
+         $(this).click(); // force click event
+    });
+}
+
+$("#contain-head").click(passThrough);
