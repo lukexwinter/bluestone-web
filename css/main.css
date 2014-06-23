@@ -164,6 +164,7 @@ body {
   display: block;
   z-index: 1000;
   pointer-events: none;
+  top: 0;
 }
 
 /* line 242, ../sass/main.scss */
@@ -175,7 +176,7 @@ header {
   padding: 20px 0 0 0;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -70px;
   -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -moz-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -o-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -204,8 +205,7 @@ header nav #bluestone-logo img {
 }
 /* line 247, ../sass/main.scss */
 header nav a.menu-button {
-  padding-top: 8px;
-  margin: 0 2.5% 0 0;
+  margin: 8px 2.5% 0 0;
 }
 /* line 248, ../sass/main.scss */
 header nav a {
@@ -244,7 +244,7 @@ header nav > a:hover .bars span {
 }
 /* line 259, ../sass/main.scss */
 header nav ul {
-  padding: 100px 2.5% 0 0;
+  padding: 3.5% 2.5% 0 0;
   margin-top: 50px;
   height: 100%;
   background: rgba(255, 255, 255, 0.97);
@@ -521,7 +521,7 @@ header nav ul li.in {
 /* line 325, ../sass/main.scss */
 .work-detail .summary {
   width: 74.72222%;
-  margin: 7% auto 0 auto;
+  margin: 4% auto 0 auto;
   color: #747474;
   font-family: "AvenirLight", Futura, "Trebuchet MS", Arial, sans-serif;
 }
@@ -611,8 +611,9 @@ header nav ul li.in {
   width: 100%;
   background: url("../img/header-amalfi.jpg") no-repeat;
   background-size: cover;
-  padding: 40% 0 0 0;
-  position: relative;
+  padding: 35% 0 0 0;
+  position: fixed;
+  top: 0;
   min-width: 100%;
   width: auto;
   height: auto;
@@ -620,8 +621,12 @@ header nav ul li.in {
   display: block;
   z-index: 1;
 }
+/* line 349, ../sass/main.scss */
+.project-head.relative {
+  position: relative;
+}
 
-/* line 348, ../sass/main.scss */
+/* line 351, ../sass/main.scss */
 .project-head img {
   height: 25%;
   position: absolute;
@@ -631,20 +636,21 @@ header nav ul li.in {
   max-height: 100%;
 }
 
-/* line 349, ../sass/main.scss */
+/* line 352, ../sass/main.scss */
 .project-body {
   z-index: 100;
   position: relative;
   background: #fff;
   overflow: hidden;
+  margin: 35% 0 0 0;
 }
-/* line 350, ../sass/main.scss */
+/* line 353, ../sass/main.scss */
 .project-body .title {
   width: 87.36111%;
-  margin: 80px auto 0 auto;
+  margin: 7% auto 0 auto;
   position: relative;
 }
-/* line 351, ../sass/main.scss */
+/* line 354, ../sass/main.scss */
 .project-body .title h2, .project-body .title h3 {
   color: #252525;
   font-weight: normal;
@@ -652,14 +658,15 @@ header nav ul li.in {
   padding: 0;
   line-height: 1;
 }
-/* line 352, ../sass/main.scss */
+/* line 355, ../sass/main.scss */
 .project-body .title h2 {
   text-transform: uppercase;
   font-size: 4.5em;
   font-family: "AvenirLight", Futura, "Trebuchet MS", Arial, sans-serif;
   float: left;
+  width: 60%;
 }
-/* line 353, ../sass/main.scss */
+/* line 356, ../sass/main.scss */
 .project-body .title h3 {
   font-family: "AvenirMedium", Futura, "Trebuchet MS", Arial, sans-serif;
   float: right;
@@ -672,38 +679,37 @@ header nav ul li.in {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 1280px) {
   /*Project*/
-  /* line 372, ../sass/main.scss */
+  /* line 375, ../sass/main.scss */
   .work-detail .summary {
     width: 74.72222%;
-    margin: 7% auto 0 auto;
     color: #747474;
     font-family: "AvenirLight", Futura, "Trebuchet MS", Arial, sans-serif;
   }
-  /* line 374, ../sass/main.scss */
+  /* line 377, ../sass/main.scss */
   .work-detail .summary h4 {
     font-size: 1.5em;
     font-weight: normal;
     margin: 0 0 4% 0;
   }
-  /* line 377, ../sass/main.scss */
+  /* line 380, ../sass/main.scss */
   .work-detail .summary p {
     font-size: 1em;
   }
-  /* line 382, ../sass/main.scss */
+  /* line 385, ../sass/main.scss */
   .work-detail .work-block {
     width: 74.72222%;
     margin: 0 auto;
     position: relative;
   }
-  /* line 384, ../sass/main.scss */
+  /* line 387, ../sass/main.scss */
   .work-detail .work-block .caption-wrapper {
     width: 100%;
     height: 100%;
     position: absolute;
   }
-  /* line 385, ../sass/main.scss */
+  /* line 388, ../sass/main.scss */
   .work-detail .work-block .caption {
     font-size: .875em;
     /* rotate -90 deg, not sure if a negative number is supported so I used 270 */
@@ -723,7 +729,7 @@ header nav ul li.in {
     margin-bottom: -7%;
     left: -1.11111%;
   }
-  /* line 386, ../sass/main.scss */
+  /* line 389, ../sass/main.scss */
   .work-detail .work-block .caption .grid-marker {
     width: 5%;
     height: 3px;
@@ -735,99 +741,94 @@ header nav ul li.in {
     right: 15px;
   }
 
-  /* line 397, ../sass/main.scss */
+  /* line 400, ../sass/main.scss */
   .project-body .title h2 {
     font-size: 3.5em;
     float: none;
+    width: 60%;
   }
-  /* line 398, ../sass/main.scss */
+  /* line 401, ../sass/main.scss */
   .project-body .title h3 {
-    float: none;
     font-size: .75em;
-    position: relative;
-    margin: 2% 0 0 0;
+    bottom: 10px;
   }
 }
 @media only screen and (max-width: 1023px) {
   /*Work*/
-  /* line 406, ../sass/main.scss */
+  /* line 409, ../sass/main.scss */
   .work .project h2 {
     font-size: 2em;
   }
-  /* line 407, ../sass/main.scss */
+  /* line 410, ../sass/main.scss */
   .work .project h3 {
     font-size: 0.75em;
   }
-  /* line 408, ../sass/main.scss */
+  /* line 411, ../sass/main.scss */
   .work .project .grid-marker {
     height: 7px;
   }
 
   /*Project*/
-  /* line 413, ../sass/main.scss */
+  /* line 416, ../sass/main.scss */
   .work-detail .summary {
     width: 87.36111%;
-    margin: 7% auto 0 auto;
     color: #747474;
     font-family: "AvenirLight", Futura, "Trebuchet MS", Arial, sans-serif;
   }
-  /* line 415, ../sass/main.scss */
+  /* line 418, ../sass/main.scss */
   .work-detail .summary h4 {
     font-size: 1.5em;
     font-weight: normal;
     margin: 0 0 4% 0;
   }
-  /* line 418, ../sass/main.scss */
+  /* line 421, ../sass/main.scss */
   .work-detail .summary p {
     font-size: 1em;
   }
-  /* line 423, ../sass/main.scss */
+  /* line 426, ../sass/main.scss */
   .work-detail .work-block {
     width: 87.36111%;
     margin: 0 auto;
     position: relative;
   }
-  /* line 426, ../sass/main.scss */
+  /* line 429, ../sass/main.scss */
   .work-detail .work-block .caption {
     font-size: .75em;
   }
-  /* line 427, ../sass/main.scss */
+  /* line 430, ../sass/main.scss */
   .work-detail .work-block .caption .grid-marker {
     top: 16px;
   }
 
-  /* line 438, ../sass/main.scss */
+  /* line 441, ../sass/main.scss */
   .project-body .title h2 {
     font-size: 3.5em;
     float: none;
+    width: 100%;
   }
-  /* line 439, ../sass/main.scss */
+  /* line 442, ../sass/main.scss */
   .project-body .title h3 {
     float: none;
     font-size: .75em;
     position: relative;
     margin: 2% 0 0 0;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 445, ../sass/main.scss */
-  header {
-    padding-top: 5px;
-  }
-
-  /* line 446, ../sass/main.scss */
+  /* line 449, ../sass/main.scss */
   header nav ul li {
     font-size: 30px;
   }
 
   /*Work*/
-  /* line 449, ../sass/main.scss */
+  /* line 452, ../sass/main.scss */
   .work .project {
     width: 96.75%;
   }
 
   /*Project*/
-  /* line 453, ../sass/main.scss */
+  /* line 456, ../sass/main.scss */
   .project-head img {
     height: 33%;
     position: absolute;
@@ -837,77 +838,66 @@ header nav ul li.in {
     max-height: 100%;
   }
 
-  /* line 455, ../sass/main.scss */
+  /* line 458, ../sass/main.scss */
   .work-block .caption {
     font-size: .75em;
     left: -2.11111%;
   }
-  /* line 456, ../sass/main.scss */
+  /* line 459, ../sass/main.scss */
   .work-block .caption .grid-marker {
     top: 16px;
     display: none;
   }
 }
 @media only screen and (max-width: 568px) {
-  /* line 463, ../sass/main.scss */
-  header {
-    padding-top: 5px;
-  }
-
-  /* line 464, ../sass/main.scss */
+  /* line 467, ../sass/main.scss */
   header nav ul li {
     font-size: 30px;
   }
 
   /*Work*/
-  /* line 467, ../sass/main.scss */
-  .work .project {
-    width: 100%;
-  }
-
   /*Project*/
-  /* line 472, ../sass/main.scss */
+  /* line 475, ../sass/main.scss */
   .work-detail .summary {
     width: 87.36111%;
-    margin: 7% auto 0 auto;
     color: #747474;
     font-family: "AvenirLight", Futura, "Trebuchet MS", Arial, sans-serif;
   }
-  /* line 474, ../sass/main.scss */
+  /* line 477, ../sass/main.scss */
   .work-detail .summary h4 {
     font-size: 1.25em;
     font-weight: normal;
     margin: 0 0 4% 0;
   }
-  /* line 477, ../sass/main.scss */
+  /* line 480, ../sass/main.scss */
   .work-detail .summary p {
     font-size: .8725em;
     float: none;
     width: 100%;
   }
-  /* line 482, ../sass/main.scss */
+  /* line 485, ../sass/main.scss */
   .work-detail .work-block {
     width: 87.36111%;
     margin: 0 auto;
     position: relative;
   }
-  /* line 485, ../sass/main.scss */
+  /* line 488, ../sass/main.scss */
   .work-detail .work-block .caption {
-    font-size: .75em;
+    font-size: .6275em;
   }
-  /* line 486, ../sass/main.scss */
+  /* line 489, ../sass/main.scss */
   .work-detail .work-block .caption .grid-marker {
     top: 16px;
     display: none;
   }
-  /* line 490, ../sass/main.scss */
+  /* line 493, ../sass/main.scss */
   .work-detail .work-block img.callout {
     float: none;
     width: 66.77777777%;
     margin-right: auto;
     display: inherit;
   }
-  /* line 491, ../sass/main.scss */
+  /* line 494, ../sass/main.scss */
   .work-detail .work-block p.callout {
     font-size: .8725em;
     float: none;
@@ -915,12 +905,12 @@ header nav ul li.in {
     margin-right: auto;
   }
 
-  /* line 497, ../sass/main.scss */
+  /* line 500, ../sass/main.scss */
   .project-body .title h2 {
     font-size: 2em;
     float: none;
   }
-  /* line 498, ../sass/main.scss */
+  /* line 501, ../sass/main.scss */
   .project-body .title h3 {
     float: none;
     font-size: .6725em;
@@ -931,7 +921,7 @@ header nav ul li.in {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 514, ../sass/main.scss */
+/* line 517, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -939,7 +929,7 @@ header nav ul li.in {
   *text-indent: -9999px;
 }
 
-/* line 521, ../sass/main.scss */
+/* line 524, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -947,13 +937,13 @@ header nav ul li.in {
   height: 150%;
 }
 
-/* line 528, ../sass/main.scss */
+/* line 531, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 533, ../sass/main.scss */
+/* line 536, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -965,7 +955,7 @@ header nav ul li.in {
   width: 1px;
 }
 
-/* line 545, ../sass/main.scss */
+/* line 548, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -976,24 +966,24 @@ header nav ul li.in {
   width: auto;
 }
 
-/* line 554, ../sass/main.scss */
+/* line 557, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 559, ../sass/main.scss */
+/* line 562, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 564, ../sass/main.scss */
+/* line 567, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 568, ../sass/main.scss */
+/* line 571, ../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1002,7 +992,7 @@ header nav ul li.in {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 577, ../sass/main.scss */
+  /* line 580, ../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1010,48 +1000,48 @@ header nav ul li.in {
     text-shadow: none !important;
   }
 
-  /* line 585, ../sass/main.scss */
+  /* line 588, ../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 589, ../sass/main.scss */
+  /* line 592, ../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 593, ../sass/main.scss */
+  /* line 596, ../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 599, ../sass/main.scss */
+  /* line 602, ../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 604, ../sass/main.scss */
+  /* line 607, ../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 609, ../sass/main.scss */
+  /* line 612, ../sass/main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 614, ../sass/main.scss */
+  /* line 617, ../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 618, ../sass/main.scss */
+  /* line 621, ../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -1060,7 +1050,7 @@ header nav ul li.in {
     margin: 0.5cm;
 }
 
-  /* line 628, ../sass/main.scss */
+  /* line 631, ../sass/main.scss */
   p,
   h2,
   h3 {
@@ -1068,7 +1058,7 @@ header nav ul li.in {
     widows: 3;
   }
 
-  /* line 634, ../sass/main.scss */
+  /* line 637, ../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;
