@@ -6,7 +6,7 @@
 				<a href="">Discover Bluestone<span></a>
 			</div>
 			
-			<video style="position: fixed; bottom: 0; right: 0; min-height: 100%; min-width: 100%; max-width: 1000%; max-height: 4000%; width: auto; height: auto; overflow: hidden; display: block;" autoplay="1" loop="loop" muted="muted" poster="/video/main.jpg"><source src="/video/bluestoneweb.webm" type="video/webm"><source src="/video/bluestoneweb.mp4" type="video/mp4"></video>
+			<video style="position: fixed; bottom: 0; right: 0; min-height: 100%; min-width: 100%; max-width: 1000%; max-height: 4000%; width: auto; height: auto; overflow: hidden; display: block;" autoplay="1" loop="loop" muted="muted" poster="<?php echo MAINURL."/video/"; ?>/video/main.jpg"><source src="<?php echo MAINURL."/video/"; ?>bluestone.webm" type="video/webm"><source src="<?php echo MAINURL."/video/"; ?>bluestone.mp4" type="video/mp4"></video>
         	
 		</div>
 
