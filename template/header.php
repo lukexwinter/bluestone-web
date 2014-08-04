@@ -1,4 +1,4 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']."includes/constants.php"); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT']."/includes/constants.php"); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -22,7 +22,7 @@
 		<div id="contain-head" class="clearfix">
 			<header>
 				<nav class="clearfix">
-					<a id="bluestone-logo" href="/"><img src="img/bluestone-logo-eaves.png" alt="bluestone" title="bluestone" /></a>
+					<a id="bluestone-logo" href="/"><img src="img/stone-logo.png" alt="bluestone" title="bluestone" /></a>
 					<a class="menu-button" class="clearfix" href="#">
 						<div class="bars"><span></span><span></span><span></span></div>
 					</a>
@@ -35,7 +35,7 @@
 				</nav>
 			</header>
 		</div>
-		<div id="page-loader" style="position: fixed; width: 100%; height: 100%; top: 0; z-index: 99; pointer-events: none;">
-			<div class="blink" style="background: url('img/blink.gif') repeat; width: 10%; height: 15px; z-index: 100; position: fixed; top: 50%; left: 45%;"></div>
-			<div id="overlay" style="background: white; position: absolute; width: 100%; height: 100%; z-index: 99;"></div>
+		<div id="page-loader">
+			<div class="blink"></div>
+			<div id="overlay"></div>
         </div>

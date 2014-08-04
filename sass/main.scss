@@ -113,6 +113,16 @@ $colpad: 0.52083333%;/*10/1920*/
 }
 
 @font-face {
+    font-family: 'AvenirNextUltraLight';
+    src: url('avenirnextltpro-ultlt.eot');
+    src: url('avenirnextltpro-ultlt.eot') format('embedded-opentype'),
+         url('avenirnextltpro-ultlt.woff') format('woff'),
+         url('avenirnextltpro-ultlt.ttf') format('truetype'),
+         url('avenirnextltpro-ultlt.svg#AvenirNextLTProUltraLight') format('svg');
+}
+
+
+@font-face {
     font-family: 'AvenirLight';
     src: url('avenirltstd-light.eot');
     src: url('avenirltstd-light.eot') format('embedded-opentype'),
@@ -154,6 +164,7 @@ $avenirlight: 'AvenirLight', Futura, "Trebuchet MS", Arial, sans-serif;
 $avenirmedium: 'AvenirMedium', Futura, "Trebuchet MS", Arial, sans-serif;
 $avenirnextbold: 'AvenirNextBold', Futura, "Trebuchet MS", Arial, sans-serif;
 $avenirnextregular: 'AvenirNextRegular', Futura, "Trebuchet MS", Arial, sans-serif;
+$avenirnextultralight: 'AvenirNextUltraLight', Futura, "Trebuchet MS", Arial, sans-serif;;
 
 
 
@@ -198,10 +209,10 @@ $avenirnextregular: 'AvenirNextRegular', Futura, "Trebuchet MS", Arial, sans-ser
 }
 
 @mixin scale-content {
-	-webkit-transform: scale(.5) !important;
-	-moz-transform: scale(.5) !important;
-	-o-transform: scale(.5) !important;
-	transform: scale(.5) !important;
+	-webkit-transform: scale(.75) !important;
+	-moz-transform: scale(.75) !important;
+	-o-transform: scale(.75) !important;
+	transform: scale(.75) !important;
 }
 
 @mixin translate($xValue, $yValue) {
@@ -239,9 +250,9 @@ body { background: #454545; font-family: $avenirlight; color: $mediumgray; }
 
 /*Navigation*/
 #contain-head { overflow: hidden; position: fixed; width: 100%; height: 100%; display: block;  z-index: 1000; pointer-events: none; top: 0; }
-header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,255,.97); padding: 20px 0 0 0; position: absolute; left: 0; bottom: -70px; @include transition-cubic-bezier; pointer-events: all;
+header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,255,.97); padding: 15px 0 0 0; position: absolute; left: 0; bottom: -70px; border-top: 1px solid #eee; @include transition-cubic-bezier; pointer-events: all;
 	nav { float: right; color: $lightgray; font-size: 23px; text-align: right; width: 100%;
-		#bluestone-logo { width: 116px; height: 20px; float: left; margin: 0 0 0 2.5%; 
+		#bluestone-logo { width: 108px; height: 34px; float: left; margin: 0 0 0 2.5%; 
 			img { width: 100%; max-width: 100%; }
 		}
 		a.menu-button { margin: 8px 2.5% 0 0; }
@@ -269,18 +280,24 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 .open #contain-head > header > nav > a.menu-button > div > span:nth-child(1), .open #contain-head > header > nav > a.menu-button > div > span:nth-child(3) { opacity: 0; }
 .open .bars span { background: $bsblue; }
 
+/*Page Load*/
+.blink { background: url('../img/blink.gif') repeat; width: 10%; height: 15px; z-index: 100; position: fixed; top: 50%; left: 45%; display: block; }
+#overlay { background: white; position: absolute; width: 100%; height: 100%; z-index: 99; }
+#page-loader { position: fixed; width: 100%; height: 100%; top: 0; z-index: 99; pointer-events: none; }
+
 /*Home*/
 #content { 
 	@include transition-ease-out;
 	transition-delay: .1s;
 	-webkit-transition-delay: .1s; /* Safari */
-	@include transformOriginY(25%);
+	@include transformOriginY(5%);
 	position: relative;
 	z-index: 1;
 }
 #content.home {  }
+#content.home video { position: fixed; bottom: 0; right: 0; min-height: 100%; min-width: 100%; max-width: 1000%; max-height: 4000%; width: auto; height: auto; overflow: hidden; display: block; }
 .open #content { 
-	//@include transformOriginY(25%); @include scale-content; @include transition-ease-out; 
+	//@include transformOriginY(5%); @include scale-content; @include transition-ease-out; 
 	transition-delay: .1s;
 	-webkit-transition-delay: .1s; /* Safari */
 }
@@ -288,16 +305,19 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 .hometype {
 	text-transform: uppercase; width: $col15; padding: 7.96875% 0 0 $col1+$colmarg; color: #fff; z-index: 100; position: relative;
 	h1 { 
-		font-family: $avenirlight; color: #fff; font-size: 5.625em; line-height: 1; letter-spacing: 4px; margin: 0;
+		font-family: $avenirlight; color: #fff; font-size: 5.625em; line-height: 1; margin: 0;
 		span { display: block;  @include transition-ease-out; @include translate(-20px,0); }
 		span.inline { display: inline-block; }
+		.once { margin-left: -.45%; }
 	}
 	.grid-marker { width: 5.5555556%; height: 12px; margin: 1.0833333% 0 2.2499999% 6.6666667%; }
 	p { }
 	a {
-		color: #fff; text-decoration: none; margin-left: -13px; font-size: 14px; letter-spacing: 1px; font-family: $avenirlight;
-		span {width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #fff; font-size: 0; line-height: 0; display: inline-block; margin: 0 0 0 5px; text-align: left;  }
+		color: #fff; text-decoration: none; margin-left: -13px; font-size: 14px; letter-spacing: 1px; font-family: $avenirlight; @include transition-ease-out;
+		span {width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #fff; font-size: 0; line-height: 0; display: inline-block; margin: 0 0 0 5px; text-align: left; @include transition-ease-out; }
 	}
+	a:hover{ color: $bsblue; @include transition-ease-out;  }
+	a:hover span { border-left: 5px solid $bsblue; @include transition-ease-out; opacity: 0; margin: 0 0 0 10px; }
 }
 
 /*Work*/
@@ -308,7 +328,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	h2, h3, .grid-marker { z-index: 10; position: relative; }
 	h2, h3 { font-weight: normal; margin: 0; padding: 0; text-decoration: none; }
 	h2 { font-family: $avenirlight; font-size: 3.75em; line-height: 1; margin: 6.25% 0 0 0; text-transform: uppercase; }
-	h3 { font-family: $avenirmedium; font-size: 0.875em; width: 50%; }
+	h3 { font-family: $avenirmedium; font-size: 0.6875em; width: 50%; letter-spacing: .5px; }
 	.grid-marker { width: $col2; margin: 1.5% 0 3% $col1+$colpad; height: 12px; }
 	.overlay{ background: rgba(0,0,0,.6); display: block; position: absolute; height: 100%; width: 100%; top: 0; left: 0; z-index: 1; }
 }
@@ -323,7 +343,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 .work-detail { 
 	background: #fff;
 	.summary {
-		width: $col12; margin: 4% auto 0 auto; color: $mediumgray; font-family: $avenirlight;
+		width: $col12; margin: 4% auto 0 auto; color: $mediumgray; font-family: $avenirnextultralight;
 		h4 {
 			font-size: 2.25em; font-weight: normal; margin: 0 0 4% 0;
 		}
@@ -332,24 +352,33 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 			&.left { margin: 0 1.48699% 0 0; }
 		}
 	}
-	.work-block { 
-		width: $col12; margin: 0 auto; position: relative;
-		.caption-wrapper { width: 100%; height: 100%; position: absolute; }
-		.caption { font-size: .875em; @include rot-neg-90; position: absolute; bottom: 0; text-align: right; margin-bottom: -7%; left: -$colmarg; 
-			.grid-marker { width: 5%; height: 3px; position: absolute; height: 3px; width: 20px; display: inline-block; top: 20px; right: 15px; }
-		}
-		img, p { width: 100%; max-width: 100%; height: 100%; max-height: 100%; margin: 7% 0 0 0; }
-		//work blocks with text
-		img.callout { width: 66.171004%; /*col8/col12*/ float: left; margin-right: 1.48699%; }
-		p.callout { width: 32.342007%/*col4/col12*/; float: left; }
+	.work { margin-top: 7%; position: relative;
+		.caption {  z-index: 500;  display: block; font-size: 1.3125em; font-family: $avenirnextultralight;
+			.grid-marker { display: block; color: $bsblue; height: 4px; width: 20px; position: absolute; left: 30px; top: 30px; }
+		 }
+	}
+	.work.full { width: 100%; 
+		.caption { position: absolute; left: $col2+$colmarg; color: #fff; top: 6.1538462%; }
+	}
+	.work.type { margin: 10% 0 0 $col2+$colmarg; width: $col3; float: left; }
+	.work.half { 
+		width: $col8; margin-right: $col2+$colmarg; float: right; 
+	}
+	.work.three-quarters {
+		width: $col12; margin-right: auto; margin-left: auto;
+	}
+	.work.half, .work.three-quarters {
+		img { width: 100%; max-width: 100%; height: auto; }
+		img:not(:first-child) { margin-top: 5.0925926% /*55/1080*/; };
 	}
  }
 .project-head { 
-	width: 100%; background: url('../img/header-amalfi.jpg') no-repeat; background-size: cover; padding: 35% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
+	width: 100%; background: url('../img/header-amalfi.jpg') no-repeat; background-size: cover; padding: 40% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
 }
+.project-head.relative { position: relative; }
 .project-head img { height: 25%; position: absolute; bottom: 60px; left: 8.0729167%; max-width: 100%; max-height: 100%; }
-.project-body { z-index: 100; position: relative; background: #fff; overflow: hidden; margin: 35% 0 0 0;
-	.title { width: $col14; margin: 7% auto 0 auto; position: relative; 
+.project-body { z-index: 100; position: relative; background: #fff; overflow: hidden; margin: 40% 0 0 0;
+	.title { width: $col14; margin: 3.5% auto 0 auto; position: relative; 
 		h2, h3 { color: #252525; font-weight: normal; margin: 0; padding: 0; line-height: 1; }
 		h2 { text-transform: uppercase; font-size: 4.5em; font-family: $avenirlight; float: left; width: 60%; }
 		h3 { font-family: $avenirmedium; float: right; font-size: .875em; position: absolute; bottom: 15px; right: 0; }
@@ -367,8 +396,22 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+@media only screen and (min-width: 2100px) {
+	.web-video { background-size: cover !important; }
+}
+
 
 @media only screen and (max-width: 1280px) {
+	/*Home*/
+	.hometype {
+		h1 { font-size: 4.5em; }
+		.grid-marker { width: 7.5%; }
+	}
+	
+	/*Work*/
+	.work .project h2 { font-size: 2.25em; }
+	
+	
 	/*Project*/
 	.work-detail { 
 		.summary {
@@ -380,18 +423,11 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 				font-size: 1em; 
 				&.left {  }
 			}
+			
 		}
-		.work-block { 
-			width: $col12; margin: 0 auto; position: relative;
-			.caption-wrapper { width: 100%; height: 100%; position: absolute; }
-			.caption { font-size: .875em; @include rot-neg-90; position: absolute; bottom: 0; text-align: right; margin-bottom: -7%; left: -$colmarg; 
-				.grid-marker { width: 5%; height: 3px; position: absolute; height: 3px; width: 20px; display: inline-block; top: 20px; right: 15px; }
-			}
-			img, p {  }
-			//work blocks with text
-			img.callout {  }
-			p.callout {  }
-		}
+		.work .caption { font-size: 1em;  }
+		.work.three-quarters .caption { left: -6.31944%*1.3; position: relative; }
+		.work.type { font-size: .9em; line-height: 1.5; margin-top: 7%; }
 	 }
 	.project-body { 
 		.title { 
@@ -402,16 +438,25 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	}
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
+	/*Home*/
+	.hometype { 
+		padding-top: 3.5%; 
+		h1 { font-size: 4.5em; }
+		a { font-size: 11px; }
+	}
+	
+	
 	/*Work*/
 	.work .project { 
 		h2 { font-size: 2em; }
 		h3 { font-size: 0.75em; }
-		.grid-marker { height: 7px; }
 	}
 	
 	/*Project*/
 	.work-detail { 
+		.project-head { position: relative; }
+		.project-body { margin: 0; }
 		.summary {
 			width: $col14; color: $mediumgray; font-family: $avenirlight;
 			h4 {
@@ -422,17 +467,10 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 				&.left {  }
 			}
 		}
-		.work-block { 
-			width: $col14; margin: 0 auto; position: relative;
-			.caption-wrapper {  }
-			.caption { font-size: .75em; 
-				.grid-marker { top: 16px; }
-			}
-			img, p {  }
-			//work blocks with text
-			img.callout {  }
-			p.callout {  }
-		}
+		.work { margin-top: 10%; }
+		.work.type { width: $col4; margin-top: 10%; }
+		.work.full .caption { left: $col1+$colmarg; }
+		.work.half { width: $col7; }
 	 }
 	.project-body { 
 		.title { 
@@ -443,7 +481,23 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	}
 }
 
+@media only screen and (max-device-width: 1024px) { 
+	#content.home video { display: none; }
+	#content.home { background: url('../img/video-poster.jpg') no-repeat 0 0; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; }
+}
+
 @media only screen and (max-width: 768px) {
+	/*Page Load*/
+	.blink { width: 20%; left: 40%; }
+	
+	/*Home*/
+	.hometype { padding: 0; text-align: center; width: 80%; margin: 0 auto; position: relative; top: 40%; transform: translateY(-60%);
+		h1 { font-size: 3em; text-align: center; line-height: 1;
+			span, span.inline { display: inline; letter-spacing: 0; }
+		}
+		.grid-marker { display: inline-block; height: 6px; margin: 0 0 1% 0; }
+		a { display: block; }
+	}
 	
 	header nav ul li { font-size: 30px; }
 	
@@ -453,14 +507,29 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	
 	/*Project*/
 	.project-head img { height: 33%; position: absolute; bottom: 30px; left: 8.0729167%; max-width: 100%; max-height: 100%; }
-	.work-block { 
-		.caption { font-size: .75em; left: -2.11111%;
-			.grid-marker { top: 16px; display: none; }
-		}
-	}
+	.work-detail { 
+		.work { margin-top: 20%; }
+		.work.type { width: $col12; margin-top: 10%; margin: 10% auto 0; float: none; font-size: .75em; line-height: 1.75; }
+		.work.half, .work.three-quarters { width: $col14; float: none; margin: 10% auto 0; }
+		.work .caption { width: $col14; }
+		.work.three-quarters .caption { left: 0; }
+	 }
+	
 }
 
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 640px) {
+	/*Navigation*/
+	//#contain-head header { height: 20px; padding: 10px 0 20px 0; }
+	header nav #bluestone-logo { height: 25px; width: 79px; }
+	
+	/*Home*/
+	.hometype {
+		h1 { font-size: 2em; text-align: center; line-height: 1;
+			span, span.inline { display: inline; letter-spacing: 0; }
+		}
+		.grid-marker { display: inline-block; height: 6px; margin: 0 0 1% 0; }
+		a { display: block; }
+	}
 	
 	
 	header nav ul li { font-size: 30px; }
@@ -480,17 +549,6 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 				font-size: .8725em; float: none; width: 100%;
 				&.left {  }
 			}
-		}
-		.work-block { 
-			width: $col14; margin: 0 auto; position: relative;
-			.caption-wrapper {  }
-			.caption { font-size: .6275em; 
-				.grid-marker { top: 16px; display: none; }
-			}
-			img, p {  }
-			//work blocks with text
-			img.callout { float: none; width: 66.77777777%;  margin-right: auto; display: inherit; }
-			p.callout { font-size: .8725em; float: none; width: 66.77777777%;  margin-right: auto; }
 		}
 	 }
 	.project-body { 
@@ -636,4 +694,726 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
     h3 {
         page-break-after: avoid;
     }
+}
+
+
+/* ==========================================================================
+   Royal Slider
+   ========================================================================== */
+
+/* v1.0.5 */
+/* Core RS CSS file. 95% of time you shouldn't change anything here. */
+
+
+.royalSlider {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	direction: ltr;
+}
+.web.royalSlider { padding: 0 0 18% 0; }
+.web.royalSlider .rsOverflow { padding: 0 0 18% 0; }
+.web.royalSlider .rsOverflow .rsContainer { padding: 0 0 18% 0; }
+
+.royalSlider > * {
+	float: left;
+}
+
+.rsWebkit3d .rsSlide {
+	-webkit-transform: translateZ(0);
+}
+
+
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl,
+.rsWebkit3d .rsABlock,
+.rsWebkit3d .rsLink {
+	-webkit-backface-visibility: hidden;
+}
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+    -webkit-transform: none;
+}
+.rsOverflow {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.rsVisibleNearbyWrap {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.rsVisibleNearbyWrap .rsOverflow {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+.rsContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.rsArrow,
+.rsThumbsArrow {
+	cursor: pointer;
+}
+
+.rsThumb {
+	float: left;
+	position: relative;
+}
+
+
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
+	opacity: 1;
+	-webkit-transition:opacity 0.3s linear;
+	-moz-transition:opacity 0.3s linear;
+	-o-transition:opacity 0.3s linear;
+	transition:opacity 0.3s linear;
+}
+.rsHidden {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+	-moz-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+	-o-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+	transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+}
+
+
+.rsGCaption {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+/* Fullscreen options, very important ^^ */
+.royalSlider.rsFullscreen {
+	position: fixed !important;
+	height: auto !important;
+	width: auto !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	z-index: 2147483647 !important;
+	top: 0 !important;
+	left: 0 !important;
+	bottom: 0 !important;
+	right: 0 !important;
+}
+
+.royalSlider .rsSlide.rsFakePreloader {
+	opacity: 1 !important;
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition:  0s;
+	transition:  0s;
+	display: none;
+}
+
+.rsSlide {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	overflow: hidden;
+	
+	height: 100%;
+	width: 100%;
+}
+
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
+	height: auto;
+}
+
+.rsContent {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.rsPreloader {
+	position:absolute;
+	z-index: 0;	
+}
+
+.rsNav {
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.rsNavItem {
+	-webkit-tap-highlight-color:rgba(0,0,0,0.25);
+}
+
+.rsThumbs {
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	z-index: 22;
+}
+.rsTabs {
+	float: left;
+	background: none !important;
+}
+.rsTabs,
+.rsThumbs {
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+
+.rsVideoContainer {
+	/*left: 0;
+	top: 0;
+	position: absolute;*/
+	/*width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	float: left;*/
+	width: auto;
+	height: auto;
+	line-height: 0;
+	position: relative;
+}
+.rsVideoFrameHolder {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #141414;
+	opacity: 0;
+	-webkit-transition: .3s;
+}
+.rsVideoFrameHolder.rsVideoActive {
+	opacity: 1;
+}
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
+	position: absolute;
+	z-index: 50;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+/* ios controls over video bug, shifting video */
+.rsVideoContainer.rsIOSVideo iframe,
+.rsVideoContainer.rsIOSVideo video,
+.rsVideoContainer.rsIOSVideo embed {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 44px;
+}
+
+.rsABlock {
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: 15;
+	
+}
+
+img.rsImg {
+	max-width: none;
+}
+
+.web img.rsImg {
+	margin-top: 0 !important;
+}
+
+.grab-cursor {
+	cursor:url(grab.png) 8 8, move; 
+}
+
+.grabbing-cursor{ 
+	cursor:url(grabbing.png) 8 8, move;
+}
+
+.rsNoDrag {
+	cursor: auto;
+}
+
+.rsLink {
+	left:0;
+	top:0;
+	position:absolute;
+	width:100%;
+	height:100%;
+	display:block;	
+	z-index: 20;
+	background: url(blank.gif);
+}
+
+/******************************
+*
+*  RoyalSlider White Controls Skin
+*
+*    1. Arrows 
+*    2. Bullets
+*    3. Thumbnails
+*    4. Tabs
+*    5. Fullscreen button
+*    6. Play/close video button
+*    7. Preloader
+*    8. Caption
+*    
+*  Sprite: 'rs-minimal-white.png'
+*  Feel free to edit anything
+*  If you don't some part - just delete it
+* 
+******************************/
+
+
+/* Background */
+.rsMinW,
+.rsMinW .rsOverflow,
+.rsMinW .rsSlide,
+.rsMinW .rsVideoFrameHolder,
+.rsMinW .rsThumbs {
+	background: #000;
+	color: #FFF;
+}
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rsMinW .rsArrow {
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+}
+
+.rsMinW .rsArrowLeft { right: 37px; bottom: 7px; }
+.rsMinW .rsArrowRight { right: 7px; bottom: 7px; }
+
+.rsMinW .rsArrowIcn {		
+	width: 24px;
+	height: 24px;
+	margin-top: 3px;
+	margin-left: 3px;
+	position: absolute;
+	cursor: pointer;	
+	background: url('rs-minimal-white.png') transparent;
+	
+	border-radius: 2px;
+}
+.rsMinW .rsArrowIcn:hover {
+
+}
+
+
+.rsMinW.rsHor .rsArrowLeft .rsArrowIcn { background-position: -68px -36px; }
+.rsMinW.rsHor .rsArrowRight .rsArrowIcn { background-position: -68px -68px; }
+
+.rsMinW.rsVer .rsArrowLeft .rsArrowIcn { background-position: -100px -36px; }
+.rsMinW.rsVer .rsArrowRight .rsArrowIcn { background-position: -100px -68px; }
+
+.rsMinW .rsArrowDisabled .rsArrowIcn { opacity: .3 !important; filter: alpha(opacity=30);  *display: none; }
+
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.rsMinW .rsBullets {
+	position: absolute;
+	bottom: 15px;
+	right: 0;
+	z-index: 35;
+	padding-top: 4px;
+	height: auto;
+
+	text-align: center;
+	line-height: 6px;
+	overflow: hidden;
+}
+.rsMinW .rsBullet {
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	*display:inline; 
+	*zoom:1;
+	padding: 6px 5px 6px 4px;
+}
+.rsMinW .rsBullet span {
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #CCC;
+}
+.rsMinW .rsBullet.rsNavSelected span {
+	background: #FFF;
+}
+
+
+
+
+
+/***************
+*
+*  3. Thumbnails
+*
+****************/
+
+.rsMinW .rsThumbsHor {
+	width: 100%;
+	height: 72px;
+}
+.rsMinW .rsThumbsVer {
+	width: 96px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.rsMinW.rsWithThumbsHor .rsThumbsContainer {
+	position: relative;
+	height: 100%;
+}
+.rsMinW.rsWithThumbsVer .rsThumbsContainer {
+	position: relative;
+	width: 100%;
+}
+.rsMinW .rsThumb {
+	float: left;
+	overflow: hidden;
+	width: 96px;
+	height: 72px;
+}
+.rsMinW .rsThumb img {
+	width: 100%;
+	height: 100%;
+}
+.rsMinW .rsThumb.rsNavSelected {
+	background: #333;
+}
+.rsMinW .rsThumb.rsNavSelected img {
+	filter: alpha(opacity=40);
+	opacity: 0.7;
+}
+.rsMinW .rsThumb.rsNavSelected span.thumbIco {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border: 2px solid #FFF;
+	border: 2px solid rgba(255,255,255,0.9);
+	-webkit-backface-visibility: hidden;
+} 
+.rsMinW .rsTmb {
+	display: block;
+}
+
+
+
+
+/* Thumbnails arrow icons */
+.rsMinW .rsThumbsArrow {
+	height: 100%;
+	width: 20px;
+	position: absolute;
+	display: block;
+	cursor: pointer;	
+	z-index: 21;	
+}
+.rsMinW.rsWithThumbsVer .rsThumbsArrow {
+	width: 100%;
+	height: 20px;
+}
+.rsMinW.rsWithThumbsVer .rsThumbsArrowLeft { top: 0; left: 0; }
+.rsMinW.rsWithThumbsVer .rsThumbsArrowRight { bottom: 0;  left: 0; }
+
+.rsMinW.rsWithThumbsHor .rsThumbsArrowLeft { left: 0; top: 0; }
+.rsMinW.rsWithThumbsHor .rsThumbsArrowRight { right: 0; top:0; }
+
+.rsMinW .rsThumbsArrowIcn {		
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	left: 50%;
+	margin-top:-8px;	
+	margin-left: -8px;
+	position: absolute;	
+	cursor: pointer;	
+	background: url('rs-minimal-white.png');
+}
+
+.rsMinW.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }
+.rsMinW.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -128px -48px; }
+
+.rsMinW.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -144px -32px; }
+.rsMinW.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -144px -48px; }
+
+.rsMinW .rsThumbsArrowDisabled { display: none !important; }
+
+/* Thumbnails resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 800px) {
+	.rsMinW .rsThumb {
+		width: 59px;
+		height: 44px;
+	}
+	.rsMinW .rsThumbsHor {
+		height: 44px;
+	}
+	.rsMinW .rsThumbsVer {
+		width: 59px;
+	}
+}
+
+
+
+
+/***************
+*
+*  4. Tabs
+*
+****************/
+
+.rsMinW .rsTabs {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align:center;
+	overflow: hidden; padding-top: 12px; position: relative;
+}
+.rsMinW .rsTab {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	height: auto;
+	width: auto;
+	color: #333;
+	padding: 5px 13px 6px;
+	min-width: 72px;
+	border: 1px solid #D9D9DD;
+	border-right: 1px solid #f5f5f5;
+	text-decoration: none;
+
+	background-color: #000;
+	background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4); 
+	background-image:    -moz-linear-gradient(top, #fefefe, #f4f4f4);
+	background-image:         linear-gradient(to bottom, #fefefe, #f4f4f4);
+
+	*display:inline; 
+	*zoom:1;
+}
+.rsMinW .rsTab:first-child {
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.rsMinW .rsTab:last-child { 
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+	border-right:  1px solid #cfcfcf;
+}
+.rsMinW .rsTab:active { 
+	border: 1px solid #D9D9DD;   
+	background-color: #f4f4f4;
+	box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+.rsMinW .rsTab.rsNavSelected { 
+	color: #000;
+	border: 1px solid #999;
+	text-shadow: 1px 1px #838383;
+	box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
+	background: #ACACAC;
+	background-image: -webkit-linear-gradient(top, #ACACAC, #BBB);
+	background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
+	background-image: linear-gradient(to bottom, #ACACAC, #BBB);
+}
+
+
+
+
+
+/***************
+*
+*  5. Fullscreen button
+*
+****************/
+
+.rsMinW .rsFullscreenBtn {
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	z-index: 22;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	
+}
+.rsMinW .rsFullscreenIcn {
+	display: block;
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+
+	background: url('rs-minimal-white.png') 0 0 transparent;
+}
+.rsMinW .rsFullscreenIcn:hover {
+	opacity: 0.8;
+}
+.rsMinW.rsFullscreen .rsFullscreenIcn {
+	background-position: -32px 0;
+}
+
+
+
+
+
+/***************
+*
+*  6. Play/close video button
+*
+****************/
+
+.rsMinW .rsPlayBtn {
+	-webkit-tap-highlight-color:rgba(0,0,0,0.3);
+	width:64px;
+	height:64px;
+	margin-left:-32px;
+	margin-top:-32px;
+	cursor: pointer;
+}
+.rsMinW .rsPlayBtnIcon {
+	width:64px;
+	display:block;
+	height:64px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	transition: .3s;
+
+	background:url(rs-minimal-white.png) no-repeat 0 -32px;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+}
+.rsMinW .rsPlayBtn:hover .rsPlayBtnIcon {
+	background-color: rgba(0,0,0,0.9);
+}
+.rsMinW .rsBtnCenterer {
+	position:absolute;
+	left:50%;
+	top:50%;
+	width: 20px;
+	height: 20px;
+}
+.rsMinW .rsCloseVideoBtn {
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	z-index: 500;
+	position: absolute;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	
+}
+.rsMinW .rsCloseVideoBtn.rsiOSBtn {
+	top: -38px;
+	right: -6px;
+}
+
+.rsMinW .rsCloseVideoIcn {
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+	background: url('rs-minimal-white.png') -64px 0;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+}
+.rsMinW .rsCloseVideoIcn:hover {
+	background-color: rgba(0,0,0,0.9);
+}
+
+
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.rsMinW .rsPreloader {
+	width:20px;
+	height:20px;
+	background-image:url(../preloaders/preloader-white.gif);
+
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;	
+}
+
+
+
+
+/***************
+*
+*  8. Global caption
+*
+****************/
+.rsMinW .rsGCaption {
+	position: absolute;
+	float: none;
+	bottom: 6px;
+	left: 6px;
+	text-align: left;
+
+	background: #000;
+    background: rgba(0,0,0, 0.75);
+
+	color: #FFF;
+	padding: 2px 8px;
+	width: auto;
+	font-size: 12px;
+	border-radius: 2px;
 }

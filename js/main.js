@@ -70,9 +70,12 @@ function animateMenuItems() {
 	var headerPositionTop = headerPosition.top;
 	var navItems = $('header nav ul li');
 	
+	/*
+	//Make Project Header Relative on Menu Open
 	if ($('.project-head').length > 0) {
 		$('.project-head').toggleClass('relative');
-	} 
+	}
+	*/ 
 	
 	if ( headerPositionTop > 100 ) {
 		
@@ -90,9 +93,12 @@ function animateMenuItems() {
 		
 	} else if ( headerPositionTop < 100 ) {
 		
-		/*if ($('.project-head').length > 0) {
+		/*
+		//Re-Fix Position When Menu Closes
+		if ($('.project-head').length > 0) {
 			$('.project-head').css({position: 'fixed'});
-		}*/
+		}
+		*/
 		
 		//Transform the Menu to The Top of the Window
 		bsHeader.css({"-moz-transform":"translate(0,0)", "-o-transform":"translate(0,0)", "-webkit-transform":"translate(0,0)", "transform":"translate(0,0)"});

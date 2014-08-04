@@ -1,4 +1,5 @@
-		<?php include 'template/header.php' ?>
+		<?php include $_SERVER['DOCUMENT_ROOT']."/template/header.php" ?>
+		<link rel="stylesheet" href="css/rs-minimal-white.css">
         <div id="content" class="work-detail amalfi">
         	<div class="project-head"><img src="img/amalfi-logo.png" /></div>
 			<div class="project-body">
@@ -12,22 +13,109 @@
 					<p class="right">Sed non pharetra magna. Nunc accumsan sit amet augue quis placerat. Nam gravida ante ut felis facilisis, id lacinia tortor consequat.</p>
 				</div>
 			
-				<div class="work-block">
-					<div class="caption-wrapper"><div class="caption">Pocket Folder &amp; brochure<span class="grid-marker"></span></div></div>
-					<img src="img/amalfi-1.jpg" alt="" />
-					<img src="img/amalfi-2.jpg" alt="" />
+				<div class="work full">
+					<span class="caption">Brand Exploration<span class="grid-marker"></span></span>
+					<div class="full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-brand-slide-1.jpg"></a>
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-brand-slide-1.jpg"></a>
+					</div>
 				</div>
-			
-				<div class="work-block clearfix">
-					<span class="caption">Pocket Folder &amp; brochure<span class="grid-marker"></span></span>
-					<img class="callout" src="img/amalfi-3.jpg" alt="" />
-					<p class="callout">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus. Vestibulum vitae malesuada tellus. Sed non pharetra magna. Nunc accumsan sit amet augue quis placerat. Nam gravida ante ut felis facilisis, id lacinia tortor consequat.</p>
+				
+				<div class="clearfix">
+					<p class="work type">
+						The logo mark is inspired by various aspects pertaining to landmarks in both the surrounding vicinity in Frisco, particularly Stonebriar Commons, and Amalfi, Italy. The geometric shapes pay homage to the Byzantine-style architecture that can be found in Saint Andrew’s Cathedral which overlooks Piazza Duomo (the heart of Amalfi) and its Chiostro del Paradiso. The flowing upward movement of its shapes is meant to bear relation to the fountain located in the center of Stonebriar Commons. Its color is influenced by the calming feel of the fountain’s water and the gentle hum it radiates. The color was also chosen as a complement to the building exterior so that it draws the eye yet feels like it belongs. One a more subconscious note, there is an ‘A’ for “Amalfi” hidden in the logo.
+					</p>
+					<div class="work half">
+						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-brand-half-1.jpg" alt="" width="708" height="447" />
+						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-brand-half-2.jpg" alt="" />
+					</div>
 				</div>
-			
-				<div class="work-block">
-					<span class="caption">Responsive Website<span class="grid-marker"></span></span>
-					<img src="img/amalfi-4.jpg" alt="" />
+					
+				<div class="work three-quarters">
+					<span class="caption">Print &amp; Packaging<span class="grid-marker"></span></span>
+					<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-brand-three-quarters-1.jpg" alt="" />
 				</div>
+				
+				<div class="clearfix">
+					<p class="work type">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat ante. Donec nec massa magna. Praesent ullamcorper quam et ligula elementum, a tristique mauris rutrum. Vestibulum eu ipsum eget ante congue tincidunt a quis turpis. Duis convallis orci nibh. Cras pharetra massa at tellus elementum, a tempus leo volutpat. Morbi mi velit, tincidunt a convallis in, vehicula vel turpis. Sed vulputate magna sed diam facilisis molestie.
+					</p>
+					<div class="work half">
+						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-print-half-1.jpg" alt="" />
+					</div>
+				</div>	
+				
+				<div class="work full">
+					<div class="full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-print-slide-1.jpg"></a>
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-print-slide-1.jpg"></a>
+					</div>
+				</div>
+				
+				<div class="work full">
+					<span class="caption">Website<span class="grid-marker"></span></span>
+					<div class="web full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-web-slide-1.jpg"></a>
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-web-slide-1.jpg"></a>
+					</div>
+				</div>
+				
+				<div class="clearfix">
+					<p class="work type">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat ante. Donec nec massa magna. Praesent ullamcorper quam et ligula elementum, a tristique mauris rutrum. Vestibulum eu ipsum eget ante congue tincidunt a quis turpis. Duis convallis orci nibh. Cras pharetra massa at tellus elementum, a tempus leo volutpat. Morbi mi velit, tincidunt a convallis in, vehicula vel turpis. Sed vulputate magna sed diam facilisis molestie.
+					</p>
+					<div class="work half">
+						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-web-half-1.jpg" alt="" />
+						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-web-half-2.jpg" alt="" />
+					</div>
+				</div>
+				
+				<div class="work full">
+					<div class="web-video tower" style="background: url('img/tower-web-video-bg.jpg') no-repeat; height: auto; width: 100%; max-height: 820px; background-size: contain; padding: 5% 0 0 0;">
+						<div class="laptop-holder" style="background: url('img/web-video-laptop.png') no-repeat; width: 50%; background-size: contain; padding: 45% 12.5% 0 12.5%; position: relative; margin: 0 auto;">
+							<video style="position: absolute; top: -5.15%; left: 13.473684%; width: 73.403509%; height: 100%;" id="scroll-video" loop="loop" muted="muted" poster="<?php echo MAINURL.""; ?>/img/poster.png"><source src="<?php echo MAINURL."/video/"; ?>thetower-screencast.webm" type="video/webm"><source src="<?php echo MAINURL."/video/"; ?>thetower-screencast.mp4" type="video/mp4"></video>
+						</div>
+					</div>
+				</div>
+				
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				
+				
 			</div>
         </div>
 
@@ -38,22 +126,41 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 		
-		<script>
-			function sizeCaptions() {
-				$('.caption').each(function(){
-				       var parentHeight = $(this).parent().height();   
-				       $(this).css({width: parentHeight});
-				});   
-			}
+		
 			
-			$(window).load(function(){
-				sizeCaptions();
-			})
-			
-			$(window).resize(function(){
-				sizeCaptions();
-			})
-		</script>
+			<script>
+				/*Royal Slider*/
+				jQuery(document).ready(function($) {
+				  $('.full-width-slider').royalSlider({
+				    arrowsNav: false,
+				    loop: false,
+				    imageScaleMode: 'fill',
+				    arrowsNavAutoHide: false,
+				    autoScaleSlider: true, 
+				    controlNavigation: 'bullets',
+				    thumbsFitInViewport: false,
+				    navigateByClick: true,
+				    startSlideId: 0,
+				    autoPlay: false,
+				    transitionType:'move',
+				    globalCaption: false
+				  });
+				});
+				
+				/*Lazy Load*/	
+				$("img.lazy").lazyload({
+				    effect : "fadeIn"
+				});
+				
+				// Trigger the 
+				$(window).scroll(function() {
+					if ( $('#scroll-video').visible( true ) == true ) {
+						$('#scroll-video').get(0).play()
+					} else {
+						$('#scroll-video').get(0).pause();
+					}
+				});
+			</script>
 		
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
