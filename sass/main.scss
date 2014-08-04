@@ -426,7 +426,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 			
 		}
 		.work .caption { font-size: 1em;  }
-		.work.three-quarters .caption { left: -6.31944%*1.3; position: relative; }
+		.work.three-quarters .caption { position: relative; }
 		.work.type { font-size: .9em; line-height: 1.5; margin-top: 7%; }
 	 }
 	.project-body { 
@@ -471,6 +471,9 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 		.work.type { width: $col4; margin-top: 10%; }
 		.work.full .caption { left: $col1+$colmarg; }
 		.work.half { width: $col7; }
+		.work.three-quarters {
+			.caption { left: -8.21527%; }
+		}
 	 }
 	.project-body { 
 		.title { 
