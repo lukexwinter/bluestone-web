@@ -757,7 +757,7 @@ header nav ul li.in {
 /*About*/
 /* line 396, ../sass/main.scss */
 .about h1 {
-  color: orange;
+  color: gray;
   text-style: italic;
   background: none;
 }
