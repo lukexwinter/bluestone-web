@@ -9,6 +9,7 @@
 				</div>
 			
 				<div class="summary clearfix">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus.</h4>
 					<p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus. Vestibulum vitae malesuada tellus.</p>
 					<p class="right">Sed non pharetra magna. Nunc accumsan sit amet augue quis placerat. Nam gravida ante ut felis facilisis, id lacinia tortor consequat.</p>
 				</div>
@@ -77,9 +78,10 @@
 				</div>
 				
 				<div class="work full">
-					<div class="web-video tower" style="background: url('img/tower-web-video-bg.jpg') no-repeat; height: auto; width: 100%; max-height: 820px; background-size: contain; padding: 5% 0 0 0;">
-						<div class="laptop-holder" style="background: url('img/web-video-laptop.png') no-repeat; width: 50%; background-size: contain; padding: 45% 12.5% 0 12.5%; position: relative; margin: 0 auto;">
-							<video style="position: absolute; top: -5.15%; left: 13.473684%; width: 73.403509%; height: 100%;" id="scroll-video" loop="loop" muted="muted" poster="<?php echo MAINURL.""; ?>/img/poster.png"><source src="<?php echo MAINURL."/video/"; ?>thetower-screencast.webm" type="video/webm"><source src="<?php echo MAINURL."/video/"; ?>thetower-screencast.mp4" type="video/mp4"></video>
+					<div class="web-video tower">
+						<div class="laptop-holder">
+							<img src="<?php echo MAINURL.""; ?>/img/tower-web-video-poster.jpg">
+							<video id="scroll-video" loop="loop" muted="muted" poster="<?php echo MAINURL.""; ?>/img/tower-web-video-poster.jpg"><source src="<?php echo MAINURL."/video/"; ?>thetower-screencast.webm" type="video/webm"><source src="<?php echo MAINURL."/video/"; ?>thetower-screencast.mp4" type="video/mp4"></video>
 						</div>
 					</div>
 				</div>
