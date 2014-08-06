@@ -343,7 +343,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 .work-detail { 
 	background: #fff;
 	.summary {
-		width: $col12; margin: 4% auto 0 auto; color: $mediumgray; font-family: $avenirnextultralight;
+		width: $col12; margin: 8% auto 0 auto; color: $mediumgray; font-family: $avenirnextultralight;
 		h4 {
 			font-size: 2.25em; font-weight: normal; margin: 0 0 4% 0;
 		}
@@ -371,6 +371,14 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 		img { width: 100%; max-width: 100%; height: auto; }
 		img:not(:first-child) { margin-top: 5.0925926% /*55/1080*/; };
 	}
+	.web-video {
+		height: auto; width: 100%; max-height: 820px; background-size: contain; padding: 5% 0 0 0; background-repeat: no-repeat;
+		.laptop-holder { 
+			background: url('../img/web-video-laptop.png') no-repeat; width: 50%; background-size: contain; padding: 45% 12.5% 0 12.5%; position: relative; margin: 0 auto; z-index: 1;
+			video, img { position: absolute; top: -5.15%; left: 13.473684%; width: 73.403509%; height: 100%; }
+			img { display: none; top: 6.65%; height: auto; }
+		}
+	}
  }
 .project-head { 
 	width: 100%; background: url('../img/header-amalfi.jpg') no-repeat; background-size: cover; padding: 40% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
@@ -385,6 +393,8 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	}
 }
 
+/*Project Tower*/
+.web-video.tower { background-image: url('../img/tower-web-video-bg.jpg'); }
 
 /*Contact*/
 .contact {
@@ -493,6 +503,16 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 @media only screen and (max-device-width: 1024px) { 
 	#content.home video { display: none; }
 	#content.home { background: url('../img/video-poster.jpg') no-repeat 0 0; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; }
+	
+	/*Project*/
+	.work-detail {
+		.web-video {
+			.laptop-holder { 
+				video { display: none; }
+				img { display: block; z-index: 5000; }
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 768px) {
