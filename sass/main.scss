@@ -373,8 +373,9 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	}
  }
 .project-head { 
-	width: 100%; background: url('../img/header-amalfi.jpg') no-repeat; background-size: cover; padding: 40% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
+	width: 100%; background-size: cover; padding: 40% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
 }
+
 .project-head.relative { position: relative; }
 .project-head img { height: 25%; position: absolute; bottom: 60px; left: 8.0729167%; max-width: 100%; max-height: 100%; }
 .project-body { z-index: 100; position: relative; background: #fff; overflow: hidden; margin: 40% 0 0 0;
@@ -384,6 +385,13 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 		h3 { font-family: $avenirmedium; float: right; font-size: .875em; position: absolute; bottom: 15px; right: 0; }
 	}
 }
+
+/*Amalfi*/
+.amalfi .project-head { background: url('../img/header-amalfi.jpg') no-repeat;  }
+
+/*Tower*/
+.tower .project-head { background: url('../img/header-tower.jpg') no-repeat;  }
+.tower .project-head img { height:10%; }
 
 
 /*Contact*/
