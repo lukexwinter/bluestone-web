@@ -338,6 +338,9 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 #amalfi { background-image: url('../img/work-amalfi.jpg'); }
 #downtek { background-image: url('../img/work-downtek.jpg'); }
 #cosign { background-image: url('../img/work-cosign.jpg'); }
+#tower { background-image: url('../img/work-tower.jpg'); }
+#fmcc { background-image: url('../img/work-fmcc.jpg'); }
+#grapevine { background-image: url('../img/work-grapevine.jpg'); }
 
 /*Project*/
 .work-detail { 
@@ -381,7 +384,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	}
  }
 .project-head { 
-	width: 100%; background-size: cover; padding: 40% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
+	width: 100%; background-repeat:none; background-size: cover; padding: 40% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
 }
 
 .project-head.relative { position: relative; }
@@ -396,11 +399,25 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 
 
 /*Amalfi*/
-.amalfi .project-head { background: url('../img/header-amalfi.jpg') no-repeat;  }
+.amalfi .project-head { background-image: url('../img/header-amalfi.jpg');  }
 
 /*Tower*/
-.tower .project-head { background: url('../img/header-tower.jpg') no-repeat;  }
+.tower .project-head { background-image: url('../img/header-tower.jpg');  }
 .tower .project-head img { height:10%; }
+
+/*Cosign*/
+.cosign .project-head { background-image: url('../img/header-cosign.jpg');  }
+
+/*FMCC*/
+.fmcc .project-head { background-image: url('../img/header-fmcc.jpg');  }
+
+/*Road ID*/
+.roadid .project-head { background-image: url('../img/header-roadid.jpg');  }
+
+/*Road ID*/
+.grapevine .project-head { background-image: url('../img/header-grapevine.jpg');  }
+
+
 
 /*Project Tower*/
 .web-video.tower { background-image: url('../img/tower-web-video-bg.jpg'); }
