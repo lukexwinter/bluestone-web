@@ -2,7 +2,6 @@
 		<link rel="stylesheet" href="css/rs-minimal-white.css">
         <div id="content" class="about">
 			<h1>Let me tell you a little bit about me.</h1>
-			
 					<!--<div class="work half">
 						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-web-half-1.jpg" alt="" />
 						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-web-half-2.jpg" alt="" />
