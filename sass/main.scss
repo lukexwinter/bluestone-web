@@ -338,6 +338,9 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 #amalfi { background-image: url('../img/work-amalfi.jpg'); }
 #downtek { background-image: url('../img/work-downtek.jpg'); }
 #cosign { background-image: url('../img/work-cosign.jpg'); }
+#tower { background-image: url('../img/work-tower.jpg'); }
+#fmcc { background-image: url('../img/work-fmcc.jpg'); }
+#grapevine { background-image: url('../img/work-grapevine.jpg'); }
 
 /*Project*/
 .work-detail { 
@@ -381,8 +384,9 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	}
  }
 .project-head { 
-	width: 100%; background: url('../img/header-amalfi.jpg') no-repeat; background-size: cover; padding: 40% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
+	width: 100%; background-repeat:none; background-size: cover; padding: 40% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
 }
+
 .project-head.relative { position: relative; }
 .project-head img { height: 25%; position: absolute; bottom: 60px; left: 8.0729167%; max-width: 100%; max-height: 100%; }
 .project-body { z-index: 100; position: relative; background: #fff; overflow: hidden; margin: 40% 0 0 0;
@@ -392,6 +396,28 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 		h3 { font-family: $avenirmedium; float: right; font-size: .875em; position: absolute; bottom: 15px; right: 0; }
 	}
 }
+
+
+/*Amalfi*/
+.amalfi .project-head { background-image: url('../img/header-amalfi.jpg');  }
+
+/*Tower*/
+.tower .project-head { background-image: url('../img/header-tower.jpg');  }
+.tower .project-head img { height:10%; }
+
+/*Cosign*/
+.cosign .project-head { background-image: url('../img/header-cosign.jpg');  }
+
+/*FMCC*/
+.fmcc .project-head { background-image: url('../img/header-fmcc.jpg');  }
+
+/*Road ID*/
+.roadid .project-head { background-image: url('../img/header-roadid.jpg');  }
+
+/*Road ID*/
+.grapevine .project-head { background-image: url('../img/header-grapevine.jpg');  }
+
+
 
 /*Project Tower*/
 .web-video.tower { background-image: url('../img/tower-web-video-bg.jpg'); }
