@@ -12,7 +12,7 @@
 				<h3>Brand Identity, Print, Advertising, Signage, 3D, Web Design, Strategy</h3>
 				<span class="overlay"></span>
 			</a>
-        	<a href="" id="downtek" class="project">
+        	<a href="/downtek.php" id="downtek" class="project">
 				<h2>Downtek</h2>
 				<span class="grid-marker"></span>
 				<h3>Branding, Print, Web Design, Advertising, Packaging, Strategy</h3>
