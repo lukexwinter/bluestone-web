@@ -255,6 +255,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 		#bluestone-logo { width: 108px; height: 34px; float: left; margin: 0 0 0 2.5%; 
 			img { width: 100%; max-width: 100%; }
 		}
+		.address { width: 87.760417%; float: left; text-align: center; margin: 0 auto; display: inline-block; font-size: 0.5625em; letter-spacing: 5px; font-family: $avenirmedium; }
 		a.menu-button { margin: 8px 2.5% 0 0; }
 		a { color: $lightgray; text-decoration: none; font-family: $avenirlight; }
 		& > a { display: block; float: right;
@@ -424,7 +425,11 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 
 /*Contact*/
 .contact {
-	h1 { color: red; font-weight: normal; }
+	.hometype { background: url('../img/header-contact.jpg') no-repeat; background-size: cover; padding-bottom: 10%; }
+	h1 { padding: 10% 0 0 0; }
+	#contact_form { width: $col8; float: left; }
+	aside.opportunities { width: $col3; margin-left: $col1+$colmarg; float: left; }
+	aside.address { width: $col2; margin-right: $col1+$colmarg; float: right; }
 }
 
 /*About*/

@@ -16,32 +16,10 @@
 					<li><a href="">Student Intern</a></li>
 				</ul>
 			</aside>
-			<fieldset id="contact_form">
-				<p>bluestone is always accepting new challenges from our clients and that means we’re always interested in fresh talent to meet those challenges. We believe the company we keep will continue to make us grow and, most importantly, make us better at what we do. If you are a designer, photographer, illustrator, web master, account executive, marketing genius or fresh out of school, feel free to send us your resume and a little something interesting about yourself below.</p>
-				<textarea name="message" id="message" placeholder="Tell us something interesting about yourself..."></textarea>
-				<input type="file" name="file_attach" id="file_attach" />
-			    <button class="submit_btn" id="submit_btn">Submit</button>
-			    <img src="ajax-loader.gif" class="loading-img" style="display:none">
-			</fieldset>
-			<aside class="address">
-				<p>
-					bluestone creative, llc<br />
-					631 main street<br />
-					cincinnati, oh 45202<br />
-					<br />
-					513.421.2763<br />
-					info@thecolorbluestone.com
-				</p>
-			</aside>
-			<div style="clear: both;"></div>
+			
 		</div>
 		
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
+		
 		
 		<fieldset id="contact_form">
 		<legend>My Contact Form</legend>
