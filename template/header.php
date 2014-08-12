@@ -23,6 +23,7 @@
 			<header>
 				<nav class="clearfix">
 					<a id="bluestone-logo" href="/"><img src="img/stone-logo.png" alt="bluestone" title="bluestone" /></a>
+					<!--<span class="address">BLUESTONE &middot; 631 MAIN ST CINCINNATI, OH 45202 &middot; <a href="mailto:info@bluestonecreative.com">INFO@BLUESTONECREATIVE.COM</a></span>-->
 					<a class="menu-button" class="clearfix" href="#">
 						<div class="bars"><span></span><span></span><span></span></div>
 					</a>

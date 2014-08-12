@@ -255,6 +255,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 		#bluestone-logo { width: 108px; height: 34px; float: left; margin: 0 0 0 2.5%; 
 			img { width: 100%; max-width: 100%; }
 		}
+		.address { width: 87.760417%; float: left; text-align: center; margin: 0 auto; display: inline-block; font-size: 0.5625em; letter-spacing: 5px; font-family: $avenirmedium; }
 		a.menu-button { margin: 8px 2.5% 0 0; }
 		a { color: $lightgray; text-decoration: none; font-family: $avenirlight; }
 		& > a { display: block; float: right;
@@ -338,6 +339,9 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 #amalfi { background-image: url('../img/work-amalfi.jpg'); }
 #downtek { background-image: url('../img/work-downtek.jpg'); }
 #cosign { background-image: url('../img/work-cosign.jpg'); }
+#tower { background-image: url('../img/work-tower.jpg'); }
+#fmcc { background-image: url('../img/work-fmcc.jpg'); }
+#grapevine { background-image: url('../img/work-grapevine.jpg'); }
 
 /*Project*/
 .work-detail { 
@@ -381,8 +385,9 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	}
  }
 .project-head { 
-	width: 100%; background: url('../img/header-amalfi.jpg') no-repeat; background-size: cover; padding: 40% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
+	width: 100%; background-repeat:none; background-size: cover; padding: 40% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
 }
+
 .project-head.relative { position: relative; }
 .project-head img { height: 25%; position: absolute; bottom: 60px; left: 8.0729167%; max-width: 100%; max-height: 100%; }
 .project-body { z-index: 100; position: relative; background: #fff; overflow: hidden; margin: 40% 0 0 0;
@@ -393,12 +398,45 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	}
 }
 
+
+/*Amalfi*/
+.amalfi .project-head { background-image: url('../img/header-amalfi.jpg');  }
+
+/*Tower*/
+.tower .project-head { background-image: url('../img/header-tower.jpg');  }
+.tower .project-head img { height:10%; }
+
+/*Cosign*/
+.cosign .project-head { background-image: url('../img/header-cosign.jpg');  }
+
+/*FMCC*/
+.fmcc .project-head { background-image: url('../img/header-fmcc.jpg');  }
+
+/*Road ID*/
+.roadid .project-head { background-image: url('../img/header-roadid.jpg');  }
+
+/*Road ID*/
+.grapevine .project-head { background-image: url('../img/header-grapevine.jpg');  }
+
+/*Road ID*/
+.downtek .project-head { background-image: url('../img/header-downtek.jpg');  }
+
+
+
 /*Project Tower*/
 .web-video.tower { background-image: url('../img/tower-web-video-bg.jpg'); }
 
+/*Project Tower*/
+.web-video.downtek { background-image: url('../img/downtek-web-video-bg.jpg'); }
+
+
 /*Contact*/
 .contact {
-	h1 { color: red; font-weight: normal; }
+	.hometype { background: url('../img/header-contact.jpg') no-repeat; background-size: cover; padding-bottom: 10%; }
+	h1 { padding: 10% 0 0 0; }
+	#contact_form { width: $col8; float: left; }
+	aside.opportunities { width: $col3; margin-left: $col1+$colmarg; float: left; }
+	aside.address { width: $col2; margin-right: $col1+$colmarg; float: right; }
 }
 
 /*About*/
