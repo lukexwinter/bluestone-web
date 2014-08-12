@@ -1,7 +1,34 @@
-		<?php include 'template/header.php' ?>
-        <div id="content" class="contact">
-        		<h1>Hey man, contact me.</h1>
-		</div>
+		<?php include $_SERVER['DOCUMENT_ROOT']."/template/header.php" ?>
+		<fieldset id="contact_form">
+		<legend>My Contact Form</legend>
+		    <div id="result"></div>
+		    <label for="name"><span>Name</span>
+		    <input type="text" name="name" id="name" placeholder="Enter Your Name" />
+		    </label>
+    
+		    <label for="email"><span>Email Address</span>
+		    <input type="email" name="email" id="email" placeholder="Enter Your Email" />
+		    </label>
+    
+		    <label for="phone"><span>Phone</span>
+		    <input type="text" name="phone" id="phone" placeholder="Phone Number" />
+		    </label>
+    
+		    <label for="phone"><span>Attachment</span>
+		    <input type="file" name="file_attach" id="file_attach" />
+		    </label>
+    
+		    <label for="message"><span>Message</span>
+		    <textarea name="message" id="message" placeholder="Enter Your Name"></textarea>
+		    </label>
+    
+		    <label><span>&nbsp;</span>
+		    <button class="submit_btn" id="submit_btn">Submit</button>
+		    <img src="ajax-loader.gif" class="loading-img" style="display:none">
+		    </label>
+		</fieldset>
+		
+
 
 		
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -11,30 +38,91 @@
         <script src="js/main.js"></script>
 		
 		<script>
-		    var bsProject = $('.project');
-			function projectHeight() {
-				var halfHeight = ($(window).height() / 2);
-				console.log(windowHeight);
-				bsProject.css({height: halfHeight});
-			}
-			function projectLoad () {
-				$.each(bsProject, function(i, item) {
-				    setTimeout(function() {
-				        $(item).addClass('in');
-				    }, 250 * i);
-				})
-			}
-			$(window).load(function(){
-				projectHeight();
-				setTimeout(function(){projectLoad()}, 500);
-			});
-			$(window).resize(function(){
-				projectHeight();
-			});
-			
+		$(document).ready(function() {
+		    $("#submit_btn").click(function() { 
+		        //get input field values
+        
+		        var user_name       = $('input[name=name]').val(); 
+		        var user_email      = $('input[name=email]').val();
+		        var user_phone      = $('input[name=phone]').val();
+		        var attach_file     = $('input[name=file_attach]')[0].files[0];
+		        var user_message    = $('textarea[name=message]').val();
+        
+		        //simple validation at client's end
+		        //we simply change border color to red if empty field using .css()
+		        var proceed = true;
+		        if(user_name==""){ 
+		            $('input[name=name]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_email==""){ 
+		            $('input[name=email]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_phone=="") {    
+		            $('input[name=phone]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_message=="") {  
+		            $('textarea[name=message]').css('border-color','red'); 
+		            proceed = false;
+		        }
+
+		        //everything looks good! proceed...
+		        if(proceed) 
+		        {
+		            $(".loading-img").show(); //show loading image
+		            $(".submit_btn").hide(); //hide submit button
+            
+		            //data to be sent to server         
+		            var post_data = new FormData();    
+		            post_data.append( 'userName', user_name );
+		            post_data.append( 'userEmail', user_email );
+		            post_data.append( 'userPhone', user_phone );
+		            post_data.append( 'userMessage',user_message);
+		            post_data.append( 'file_attach', attach_file );
+            
+		            //instead of $.post() we are using $.ajax()
+		            //that's because $.ajax() has more options and can be used more flexibly.
+		            $.ajax({
+		              url: 'contact_me.php',
+		              data: post_data,
+		              processData: false,
+		              contentType: false,
+		              type: 'POST',
+		              dataType:'json',
+		              success: function(data){
+		                    //load json data from server and output message     
+		                    if(data.type == 'error')
+		                    {
+		                        output = '<div class="error">'+data.text+'</div>';
+		                    }else{
+		                        output = '<div class="success">'+data.text+'</div>';
+                        
+		                        //reset values in all input fields
+		                        $('#contact_form input').val(''); 
+		                        $('#contact_form textarea').val(''); 
+		                    }
+                    
+		                    $("#result").hide().html(output).slideDown(); //show results from server
+		                    $(".loading-img").hide(); //hide loading image
+		                    $(".submit_btn").show(); //show submit button
+		              }
+		            });
+
+		        }
+		    });
+    
+		    //reset previously set border colors and hide all message on .keyup()
+		    $("#contact_form input, #contact_form textarea").keyup(function() { 
+		        $("#contact_form input, #contact_form textarea").css('border-color',''); 
+		        $("#result").slideUp();
+		    });
+    
+		});
 		</script>
 		
-
+		
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

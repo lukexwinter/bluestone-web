@@ -68,12 +68,12 @@
 				$.each(bsProject, function(i, item) {
 				    setTimeout(function() {
 				        $(item).addClass('in');
-				    }, 250 * i);
+				    }, 200 * i);
 				})
 			}
 			$(window).load(function(){
 				projectHeight();
-				setTimeout(function(){projectLoad()}, 500);
+				setTimeout(function(){projectLoad()}, 100);
 			});
 			$(window).resize(function(){
 				projectHeight();
