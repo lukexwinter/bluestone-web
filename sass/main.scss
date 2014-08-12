@@ -324,7 +324,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 .work .project * { opacity: 0; @include transition-cubic-bezier; }
 .work .project:hover * { opacity: 1; @include transition-cubic-bezier;  };
 
-.work .project { opacity: 0; width: 46.875%; height: auto; background: url('../img/work-roadid.jpg') no-repeat center; color: #fff; display: block; float: left; text-decoration: none; padding: 0 0 0 3.125%; position: relative; background-size: cover; @include transition-cubic-bezier;
+.work .project { opacity: 0; width: 46.875%; height: auto; background: url('../img/work-roadid.jpg') no-repeat center; color: #fff; display: block; float: left; text-decoration: none; padding: 0 0 0 3.125%; position: relative; background-size: cover; -moz-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); -webkit-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); -o-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 	h2, h3, .grid-marker { z-index: 10; position: relative; }
 	h2, h3 { font-weight: normal; margin: 0; padding: 0; text-decoration: none; }
 	h2 { font-family: $avenirlight; font-size: 3.75em; line-height: 1; margin: 6.25% 0 0 0; text-transform: uppercase; }
