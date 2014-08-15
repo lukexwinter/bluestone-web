@@ -1,11 +1,11 @@
 		<?php include $_SERVER['DOCUMENT_ROOT']."/template/header.php" ?>
 		<link rel="stylesheet" href="css/rs-minimal-white.css">
-        <div id="content" class="work-detail roadid">
-        	<div class="project-head"><img src="img/roadid-logo.png" /></div>
+        <div id="content" class="work-detail sterling">
+        	<div class="project-head"><img src="img/sterling-logo.png" /></div>
 			<div class="project-body">
 				<div class="title clearfix">
-					<h2>Road ID</h2> 
-					<h3>Brand Identity, Print, Advertising, Web Design, Packaging, Strategy</h3>
+					<h2>Sterling Cut Glass</h2> 
+					<h3>Brand Guideline, Web Design, Development, Strategy</h3>
 				</div>
 			
 				<div class="summary clearfix">
@@ -14,60 +14,21 @@
 					<p class="right">Sed non pharetra magna. Nunc accumsan sit amet augue quis placerat. Nam gravida ante ut felis facilisis, id lacinia tortor consequat.</p>
 				</div>
 			
-				<div class="work full">
-					<span class="caption">Brand Exploration<span class="grid-marker"></span></span>
-					<div class="full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
-					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-brand-slide-1.jpg"></a>
-					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-brand-slide-1.jpg"></a>
-					</div>
-				</div>
-				
-				<div class="clearfix">
-					<p class="work type">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat ante. Donec nec massa magna. Praesent ullamcorper quam et ligula elementum, a tristique mauris rutrum. Vestibulum eu ipsum eget ante congue tincidunt a quis turpis. Duis convallis orci nibh. Cras pharetra massa at tellus elementum, a tempus leo volutpat. Morbi mi velit, tincidunt a convallis in, vehicula vel turpis. Sed vulputate magna sed diam facilisis molestie.
-					</p>
-					<div class="work half">
-						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/roadid-brand-half-1.jpg" alt="" width="708" height="447" />
-					</div>
-				</div>
-					
 				<div class="work three-quarters">
-					<span class="caption">Print &amp; Packaging<span class="grid-marker"></span></span>
-					<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/roadid-brand-three-quarters-1.jpg" alt="" />
+					<span class="caption">Website<span class="grid-marker"></span></span>
+					<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/sterling-brand-three-quarters-1.jpg" alt="" />
 				</div>
-				
-				<div class="clearfix">
-					<p class="work type">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat ante. Donec nec massa magna. Praesent ullamcorper quam et ligula elementum, a tristique mauris rutrum. Vestibulum eu ipsum eget ante congue tincidunt a quis turpis. Duis convallis orci nibh. Cras pharetra massa at tellus elementum, a tempus leo volutpat. Morbi mi velit, tincidunt a convallis in, vehicula vel turpis. Sed vulputate magna sed diam facilisis molestie.
-					</p>
-					<div class="work half">
-						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/roadid-print-half-1.jpg" alt="" />
-						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/roadid-print-half-2.jpg" alt="" />
-					</div>
-				</div>	
-				
+
 				<div class="work full">
-					<div class="full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
-					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-print-slide-1.jpg"></a>
-					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-print-slide-2.jpg"></a>
-					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-print-slide-3.jpg"></a>
-					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-print-slide-4.jpg"></a>
-					</div>
-				</div>
-				
-				<div class="work full">
-					<span class="caption">Web Concept<span class="grid-marker"></span></span>
 					<div class="web full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
 					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-web-slide-1.jpg"></a>
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>sterling-web-slide-1.jpg"></a>
 					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-web-slide-1.jpg"></a>
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>sterling-web-slide-2.jpg"></a>
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>sterling-web-slide-3.jpg"></a>
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>sterling-web-slide-4.jpg"></a>
 					</div>
 				</div>
 				
@@ -76,11 +37,12 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat ante. Donec nec massa magna. Praesent ullamcorper quam et ligula elementum, a tristique mauris rutrum. Vestibulum eu ipsum eget ante congue tincidunt a quis turpis. Duis convallis orci nibh. Cras pharetra massa at tellus elementum, a tempus leo volutpat. Morbi mi velit, tincidunt a convallis in, vehicula vel turpis. Sed vulputate magna sed diam facilisis molestie.
 					</p>
 					<div class="work half">
-						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/roadid-web-half-1.jpg" alt="" />
-						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/roadid-web-half-2.jpg" alt="" />
+						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/sterling-web-half-1.jpg" alt="" />
 					</div>
 				</div>
-								
+
+				
+				
 				<br />
 				<br />
 				<br />

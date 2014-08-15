@@ -611,48 +611,96 @@ header nav ul li.in {
   background-image: url("../img/work-grapevine.jpg");
 }
 
+<<<<<<< HEAD
 /*Project*/
 /* line 347, ../sass/main.scss */
 .work-detail {
   background: #fff;
 }
 /* line 349, ../sass/main.scss */
+=======
+/* line 344, ../sass/main.scss */
+#amig {
+  background-image: url("../img/work-amig.jpg");
+}
+
+/* line 345, ../sass/main.scss */
+#cgc {
+  background-image: url("../img/work-cgc.jpg");
+}
+
+/* line 346, ../sass/main.scss */
+#sterling {
+  background-image: url("../img/work-sterling.jpg");
+}
+
+/*Project*/
+/* line 349, ../sass/main.scss */
+.work-detail {
+  background: #fff;
+}
+/* line 351, ../sass/main.scss */
+>>>>>>> andy-dev
 .work-detail .summary {
   width: 74.72222%;
   margin: 8% auto 0 auto;
   color: #747474;
   font-family: "AvenirNextUltraLight", Futura, "Trebuchet MS", Arial, sans-serif;
 }
+<<<<<<< HEAD
 /* line 351, ../sass/main.scss */
+=======
+/* line 353, ../sass/main.scss */
+>>>>>>> andy-dev
 .work-detail .summary h4 {
   font-size: 2.25em;
   font-weight: normal;
   margin: 0 0 4% 0;
 }
+<<<<<<< HEAD
 /* line 354, ../sass/main.scss */
+=======
+/* line 356, ../sass/main.scss */
+>>>>>>> andy-dev
 .work-detail .summary p {
   font-size: 1.3125em;
   width: 49.256505%;
   float: left;
   margin: 0;
 }
+<<<<<<< HEAD
 /* line 356, ../sass/main.scss */
 .work-detail .summary p.left {
   margin: 0 1.48699% 0 0;
 }
 /* line 359, ../sass/main.scss */
+=======
+/* line 358, ../sass/main.scss */
+.work-detail .summary p.left {
+  margin: 0 1.48699% 0 0;
+}
+/* line 361, ../sass/main.scss */
+>>>>>>> andy-dev
 .work-detail .work {
   margin-top: 7%;
   position: relative;
 }
+<<<<<<< HEAD
 /* line 360, ../sass/main.scss */
+=======
+/* line 362, ../sass/main.scss */
+>>>>>>> andy-dev
 .work-detail .work .caption {
   z-index: 500;
   display: block;
   font-size: 1.3125em;
   font-family: "AvenirNextUltraLight", Futura, "Trebuchet MS", Arial, sans-serif;
 }
+<<<<<<< HEAD
 /* line 361, ../sass/main.scss */
+=======
+/* line 363, ../sass/main.scss */
+>>>>>>> andy-dev
 .work-detail .work .caption .grid-marker {
   display: block;
   color: #0075be;
@@ -663,6 +711,7 @@ header nav ul li.in {
   top: 30px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /* line 362, ../sass/main.scss */
 .work-detail .work .lazy {
@@ -670,45 +719,52 @@ header nav ul li.in {
 }
 >>>>>>> andy-dev
 /* line 364, ../sass/main.scss */
+=======
+/* line 365, ../sass/main.scss */
+.work-detail .work .lazy {
+  background: rgba(255, 255, 255, 0);
+}
+/* line 367, ../sass/main.scss */
+>>>>>>> andy-dev
 .work-detail .work.full {
   width: 100%;
 }
-/* line 365, ../sass/main.scss */
+/* line 368, ../sass/main.scss */
 .work-detail .work.full .caption {
   position: absolute;
   left: 12.63889%;
   color: #fff;
   top: 6.1538462%;
 }
-/* line 367, ../sass/main.scss */
+/* line 370, ../sass/main.scss */
 .work-detail .work.type {
   margin: 10% 0 0 12.63889%;
   width: 17.84722%;
   float: left;
 }
-/* line 368, ../sass/main.scss */
+/* line 371, ../sass/main.scss */
 .work-detail .work.half {
   width: 49.44444%;
   margin-right: 12.63889%;
   float: right;
 }
-/* line 371, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 .work-detail .work.three-quarters {
   width: 74.72222%;
   margin-right: auto;
   margin-left: auto;
 }
-/* line 375, ../sass/main.scss */
+/* line 378, ../sass/main.scss */
 .work-detail .work.half img, .work-detail .work.three-quarters img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
-/* line 376, ../sass/main.scss */
+/* line 379, ../sass/main.scss */
 .work-detail .work.half img:not(:first-child), .work-detail .work.three-quarters img:not(:first-child) {
   margin-top: 5.09259%;
 }
-/* line 378, ../sass/main.scss */
+/* line 381, ../sass/main.scss */
 .work-detail .web-video {
   height: auto;
   width: 100%;
@@ -717,7 +773,7 @@ header nav ul li.in {
   padding: 5% 0 0 0;
   background-repeat: no-repeat;
 }
-/* line 380, ../sass/main.scss */
+/* line 383, ../sass/main.scss */
 .work-detail .web-video .laptop-holder {
   background: url("../img/web-video-laptop.png") no-repeat;
   width: 50%;
@@ -727,7 +783,7 @@ header nav ul li.in {
   margin: 0 auto;
   z-index: 1;
 }
-/* line 382, ../sass/main.scss */
+/* line 385, ../sass/main.scss */
 .work-detail .web-video .laptop-holder video, .work-detail .web-video .laptop-holder img {
   position: absolute;
   top: -5.15%;
@@ -735,14 +791,14 @@ header nav ul li.in {
   width: 73.403509%;
   height: 100%;
 }
-/* line 383, ../sass/main.scss */
+/* line 386, ../sass/main.scss */
 .work-detail .web-video .laptop-holder img {
   display: none;
   top: 6.65%;
   height: auto;
 }
 
-/* line 387, ../sass/main.scss */
+/* line 393, ../sass/main.scss */
 .project-head {
   width: 100%;
   background-repeat: none;
@@ -758,12 +814,12 @@ header nav ul li.in {
   z-index: 1;
 }
 
-/* line 391, ../sass/main.scss */
+/* line 397, ../sass/main.scss */
 .project-head.relative {
   position: relative;
 }
 
-/* line 392, ../sass/main.scss */
+/* line 398, ../sass/main.scss */
 .project-head img {
   height: 25%;
   position: absolute;
@@ -773,7 +829,7 @@ header nav ul li.in {
   max-height: 100%;
 }
 
-/* line 393, ../sass/main.scss */
+/* line 399, ../sass/main.scss */
 .project-body {
   z-index: 5000;
   position: relative;
@@ -781,13 +837,13 @@ header nav ul li.in {
   padding: 3.5% 0 0 0;
   margin: 40% 0 0 0;
 }
-/* line 394, ../sass/main.scss */
+/* line 400, ../sass/main.scss */
 .project-body .title {
   width: 87.36111%;
   margin: 0 auto 0 auto;
   position: relative;
 }
-/* line 395, ../sass/main.scss */
+/* line 401, ../sass/main.scss */
 .project-body .title h2, .project-body .title h3 {
   color: #252525;
   font-weight: normal;
@@ -795,7 +851,7 @@ header nav ul li.in {
   padding: 0;
   line-height: 1;
 }
-/* line 396, ../sass/main.scss */
+/* line 402, ../sass/main.scss */
 .project-body .title h2 {
   text-transform: uppercase;
   font-size: 4.5em;
@@ -803,7 +859,7 @@ header nav ul li.in {
   float: left;
   width: 60%;
 }
-/* line 397, ../sass/main.scss */
+/* line 403, ../sass/main.scss */
 .project-body .title h3 {
   font-family: "AvenirMedium", Futura, "Trebuchet MS", Arial, sans-serif;
   float: right;
@@ -814,65 +870,89 @@ header nav ul li.in {
 }
 
 /*Amalfi*/
-/* line 403, ../sass/main.scss */
+/* line 409, ../sass/main.scss */
 .amalfi .project-head {
   background-image: url("../img/header-amalfi.jpg");
 }
 
 /*Tower*/
-/* line 406, ../sass/main.scss */
+/* line 412, ../sass/main.scss */
 .tower .project-head {
   background-image: url("../img/header-tower.jpg");
 }
 
-/* line 407, ../sass/main.scss */
+/* line 413, ../sass/main.scss */
 .tower .project-head img {
   height: 10%;
 }
 
 /*Cosign*/
-/* line 410, ../sass/main.scss */
+/* line 416, ../sass/main.scss */
 .cosign .project-head {
   background-image: url("../img/header-cosign.jpg");
 }
 
 /*FMCC*/
-/* line 413, ../sass/main.scss */
+/* line 419, ../sass/main.scss */
 .fmcc .project-head {
   background-image: url("../img/header-fmcc.jpg");
 }
 
 /*Road ID*/
-/* line 416, ../sass/main.scss */
+/* line 422, ../sass/main.scss */
 .roadid .project-head {
   background-image: url("../img/header-roadid.jpg");
 }
 
 /*Road ID*/
-/* line 419, ../sass/main.scss */
+/* line 425, ../sass/main.scss */
 .grapevine .project-head {
   background-image: url("../img/header-grapevine.jpg");
 }
 
 /*Road ID*/
-/* line 422, ../sass/main.scss */
+/* line 428, ../sass/main.scss */
 .downtek .project-head {
   background-image: url("../img/header-downtek.jpg");
 }
 
+/*AMIG*/
+/* line 431, ../sass/main.scss */
+.amig .project-head {
+  background-image: url("../img/header-amig.jpg");
+}
+
+/*Sterling*/
+/* line 434, ../sass/main.scss */
+.sterling .project-head {
+  background-image: url("../img/header-sterling.jpg");
+}
+
+/* line 435, ../sass/main.scss */
+.sterling .project-head img {
+  height: 15%;
+}
+
 /*Project Tower*/
-/* line 427, ../sass/main.scss */
+/* line 438, ../sass/main.scss */
 .web-video.tower {
   background-image: url("../img/tower-web-video-bg.jpg");
 }
 
 /*Project Tower*/
-/* line 430, ../sass/main.scss */
+/* line 441, ../sass/main.scss */
 .web-video.downtek {
   background-image: url("../img/downtek-web-video-bg.jpg");
 }
 
+/*Cincinnati Growing Cincinnati*/
+/* line 444, ../sass/main.scss */
+.cgc .project-head {
+  background-image: url("../img/header-cgc.jpg");
+}
+
 /*Contact*/
+<<<<<<< HEAD
 /* line 435, ../sass/main.scss */
 <<<<<<< HEAD
 .contact .hometype {
@@ -882,6 +962,9 @@ header nav ul li.in {
 }
 /* line 436, ../sass/main.scss */
 =======
+>>>>>>> andy-dev
+=======
+/* line 449, ../sass/main.scss */
 >>>>>>> andy-dev
 .contact h1 {
   padding: 10% 0 0 0;
@@ -906,9 +989,13 @@ header nav ul li.in {
 
 /*About*/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 444, ../sass/main.scss */
 =======
 /* line 440, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 454, ../sass/main.scss */
 >>>>>>> andy-dev
 .about h1 {
   color: #0075be;
@@ -921,9 +1008,13 @@ header nav ul li.in {
    ========================================================================== */
 @media only screen and (min-width: 2100px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 454, ../sass/main.scss */
 =======
   /* line 450, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 464, ../sass/main.scss */
 >>>>>>> andy-dev
   .web-video {
     background-size: cover !important;
@@ -931,6 +1022,7 @@ header nav ul li.in {
 }
 @media only screen and (max-width: 1280px) {
   /*Home*/
+<<<<<<< HEAD
 <<<<<<< HEAD
   /* line 461, ../sass/main.scss */
   .hometype h1 {
@@ -944,15 +1036,26 @@ header nav ul li.in {
   }
   /* line 458, ../sass/main.scss */
 >>>>>>> andy-dev
+=======
+  /* line 471, ../sass/main.scss */
+  .hometype h1 {
+    font-size: 4.5em;
+  }
+  /* line 472, ../sass/main.scss */
+>>>>>>> andy-dev
   .hometype .grid-marker {
     width: 7.5%;
   }
 
   /*Work*/
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 466, ../sass/main.scss */
 =======
   /* line 462, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 476, ../sass/main.scss */
 >>>>>>> andy-dev
   .work .project h2 {
     font-size: 2.25em;
@@ -960,9 +1063,13 @@ header nav ul li.in {
 
   /*Project*/
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 471, ../sass/main.scss */
 =======
   /* line 467, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 481, ../sass/main.scss */
 >>>>>>> andy-dev
   .work-detail .summary {
     width: 74.72222%;
@@ -970,15 +1077,20 @@ header nav ul li.in {
     font-family: "AvenirLight", Futura, "Trebuchet MS", Arial, sans-serif;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 473, ../sass/main.scss */
 =======
   /* line 469, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 483, ../sass/main.scss */
 >>>>>>> andy-dev
   .work-detail .summary h4 {
     font-size: 1.5em;
     font-weight: normal;
     margin: 0 0 4% 0;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   /* line 476, ../sass/main.scss */
   .work-detail .summary p {
@@ -995,18 +1107,25 @@ header nav ul li.in {
   /* line 484, ../sass/main.scss */
 =======
   /* line 472, ../sass/main.scss */
+=======
+  /* line 486, ../sass/main.scss */
+>>>>>>> andy-dev
   .work-detail .summary p {
     font-size: 1em;
   }
-  /* line 478, ../sass/main.scss */
+  /* line 492, ../sass/main.scss */
   .work-detail .work .caption {
     font-size: 1em;
   }
-  /* line 479, ../sass/main.scss */
+  /* line 493, ../sass/main.scss */
   .work-detail .work.three-quarters .caption {
     position: relative;
   }
+<<<<<<< HEAD
   /* line 480, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 494, ../sass/main.scss */
 >>>>>>> andy-dev
   .work-detail .work.type {
     font-size: .9em;
@@ -1015,9 +1134,13 @@ header nav ul li.in {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 489, ../sass/main.scss */
 =======
   /* line 485, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 499, ../sass/main.scss */
 >>>>>>> andy-dev
   .project-body .title h2 {
     font-size: 3.5em;
@@ -1025,9 +1148,13 @@ header nav ul li.in {
     width: 60%;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 490, ../sass/main.scss */
 =======
   /* line 486, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 500, ../sass/main.scss */
 >>>>>>> andy-dev
   .project-body .title h3 {
     font-size: .75em;
@@ -1036,6 +1163,7 @@ header nav ul li.in {
 }
 @media only screen and (max-width: 1024px) {
   /*Home*/
+<<<<<<< HEAD
 <<<<<<< HEAD
   /* line 497, ../sass/main.scss */
   .hometype {
@@ -1048,20 +1176,28 @@ header nav ul li.in {
   /* line 500, ../sass/main.scss */
 =======
   /* line 493, ../sass/main.scss */
+=======
+  /* line 507, ../sass/main.scss */
+>>>>>>> andy-dev
   .hometype {
     padding-top: 3.5%;
   }
-  /* line 495, ../sass/main.scss */
+  /* line 509, ../sass/main.scss */
   .hometype h1 {
     font-size: 4.5em;
   }
+<<<<<<< HEAD
   /* line 496, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 510, ../sass/main.scss */
 >>>>>>> andy-dev
   .hometype a {
     font-size: 11px;
   }
 
   /*Work*/
+<<<<<<< HEAD
 <<<<<<< HEAD
   /* line 506, ../sass/main.scss */
   .work .project h2 {
@@ -1075,11 +1211,19 @@ header nav ul li.in {
   }
   /* line 503, ../sass/main.scss */
 >>>>>>> andy-dev
+=======
+  /* line 516, ../sass/main.scss */
+  .work .project h2 {
+    font-size: 2em;
+  }
+  /* line 517, ../sass/main.scss */
+>>>>>>> andy-dev
   .work .project h3 {
     font-size: 0.75em;
   }
 
   /*Project*/
+<<<<<<< HEAD
 <<<<<<< HEAD
   /* line 512, ../sass/main.scss */
   .work-detail .project-head {
@@ -1092,14 +1236,21 @@ header nav ul li.in {
   /* line 514, ../sass/main.scss */
 =======
   /* line 508, ../sass/main.scss */
+=======
+  /* line 522, ../sass/main.scss */
+>>>>>>> andy-dev
   .work-detail .project-head {
     position: relative;
   }
-  /* line 509, ../sass/main.scss */
+  /* line 523, ../sass/main.scss */
   .work-detail .project-body {
     margin: 0;
   }
+<<<<<<< HEAD
   /* line 510, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 524, ../sass/main.scss */
 >>>>>>> andy-dev
   .work-detail .summary {
     width: 87.36111%;
@@ -1107,15 +1258,20 @@ header nav ul li.in {
     font-family: "AvenirLight", Futura, "Trebuchet MS", Arial, sans-serif;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 516, ../sass/main.scss */
 =======
   /* line 512, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 526, ../sass/main.scss */
 >>>>>>> andy-dev
   .work-detail .summary h4 {
     font-size: 1.5em;
     font-weight: normal;
     margin: 0 0 4% 0;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   /* line 519, ../sass/main.scss */
   .work-detail .summary p {
@@ -1128,19 +1284,27 @@ header nav ul li.in {
   /* line 525, ../sass/main.scss */
 =======
   /* line 515, ../sass/main.scss */
+=======
+  /* line 529, ../sass/main.scss */
+>>>>>>> andy-dev
   .work-detail .summary p {
     font-size: 1em;
   }
-  /* line 520, ../sass/main.scss */
+  /* line 534, ../sass/main.scss */
   .work-detail .work {
     margin-top: 10%;
   }
+<<<<<<< HEAD
   /* line 521, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 535, ../sass/main.scss */
 >>>>>>> andy-dev
   .work-detail .work.type {
     width: 24.16667%;
     margin-top: 10%;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   /* line 526, ../sass/main.scss */
   .work-detail .work.full .caption {
@@ -1153,23 +1317,34 @@ header nav ul li.in {
   /* line 529, ../sass/main.scss */
 =======
   /* line 522, ../sass/main.scss */
+=======
+  /* line 536, ../sass/main.scss */
+>>>>>>> andy-dev
   .work-detail .work.full .caption {
     left: 6.31944%;
   }
-  /* line 523, ../sass/main.scss */
+  /* line 537, ../sass/main.scss */
   .work-detail .work.half {
     width: 43.125%;
   }
+<<<<<<< HEAD
   /* line 525, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 539, ../sass/main.scss */
 >>>>>>> andy-dev
   .work-detail .work.three-quarters .caption {
     left: -8.21527%;
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 535, ../sass/main.scss */
 =======
   /* line 531, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 545, ../sass/main.scss */
 >>>>>>> andy-dev
   .project-body .title h2 {
     font-size: 3.5em;
@@ -1177,9 +1352,13 @@ header nav ul li.in {
     width: 100%;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 536, ../sass/main.scss */
 =======
   /* line 532, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 546, ../sass/main.scss */
 >>>>>>> andy-dev
   .project-body .title h3 {
     float: none;
@@ -1191,18 +1370,26 @@ header nav ul li.in {
 }
 @media only screen and (max-device-width: 1024px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 542, ../sass/main.scss */
 =======
   /* line 538, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 552, ../sass/main.scss */
 >>>>>>> andy-dev
   #content.home video {
     display: none;
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 543, ../sass/main.scss */
 =======
   /* line 539, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 553, ../sass/main.scss */
 >>>>>>> andy-dev
   #content.home {
     background: url("../img/video-poster.jpg") no-repeat 0 0;
@@ -1213,6 +1400,7 @@ header nav ul li.in {
   }
 
   /*Project*/
+<<<<<<< HEAD
 <<<<<<< HEAD
   /* line 549, ../sass/main.scss */
   .work-detail .web-video .laptop-holder video {
@@ -1226,6 +1414,13 @@ header nav ul li.in {
   }
   /* line 546, ../sass/main.scss */
 >>>>>>> andy-dev
+=======
+  /* line 559, ../sass/main.scss */
+  .work-detail .web-video .laptop-holder video {
+    display: none;
+  }
+  /* line 560, ../sass/main.scss */
+>>>>>>> andy-dev
   .work-detail .web-video .laptop-holder img {
     display: block;
     z-index: 5000;
@@ -1234,9 +1429,13 @@ header nav ul li.in {
 @media only screen and (max-width: 768px) {
   /*Page Load*/
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 558, ../sass/main.scss */
 =======
   /* line 554, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 568, ../sass/main.scss */
 >>>>>>> andy-dev
   .blink {
     width: 20%;
@@ -1245,9 +1444,13 @@ header nav ul li.in {
 
   /*Home*/
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 561, ../sass/main.scss */
 =======
   /* line 557, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 571, ../sass/main.scss */
 >>>>>>> andy-dev
   .hometype {
     padding: 0;
@@ -1259,9 +1462,13 @@ header nav ul li.in {
     transform: translateY(-60%);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 562, ../sass/main.scss */
 =======
   /* line 558, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 572, ../sass/main.scss */
 >>>>>>> andy-dev
   .hometype h1 {
     font-size: 3em;
@@ -1269,18 +1476,26 @@ header nav ul li.in {
     line-height: 1;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 563, ../sass/main.scss */
 =======
   /* line 559, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 573, ../sass/main.scss */
 >>>>>>> andy-dev
   .hometype h1 span, .hometype h1 span.inline {
     display: inline;
     letter-spacing: 0;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 565, ../sass/main.scss */
 =======
   /* line 561, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 575, ../sass/main.scss */
 >>>>>>> andy-dev
   .hometype .grid-marker {
     display: inline-block;
@@ -1288,18 +1503,26 @@ header nav ul li.in {
     margin: 0 0 1% 0;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 566, ../sass/main.scss */
 =======
   /* line 562, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 576, ../sass/main.scss */
 >>>>>>> andy-dev
   .hometype a {
     display: block;
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 569, ../sass/main.scss */
 =======
   /* line 565, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 579, ../sass/main.scss */
 >>>>>>> andy-dev
   header nav ul li {
     font-size: 30px;
@@ -1307,9 +1530,13 @@ header nav ul li.in {
 
   /*Work*/
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 572, ../sass/main.scss */
 =======
   /* line 568, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 582, ../sass/main.scss */
 >>>>>>> andy-dev
   .work .project {
     width: 96.75%;
@@ -1317,9 +1544,13 @@ header nav ul li.in {
 
   /*Project*/
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 576, ../sass/main.scss */
 =======
   /* line 572, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 586, ../sass/main.scss */
 >>>>>>> andy-dev
   .project-head img {
     height: 33%;
@@ -1330,6 +1561,7 @@ header nav ul li.in {
     max-height: 100%;
   }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /* line 578, ../sass/main.scss */
   .work-detail .work {
@@ -1343,6 +1575,13 @@ header nav ul li.in {
   }
   /* line 575, ../sass/main.scss */
 >>>>>>> andy-dev
+=======
+  /* line 588, ../sass/main.scss */
+  .work-detail .work {
+    margin-top: 20%;
+  }
+  /* line 589, ../sass/main.scss */
+>>>>>>> andy-dev
   .work-detail .work.type {
     width: 74.72222%;
     margin-top: 10%;
@@ -1352,15 +1591,20 @@ header nav ul li.in {
     line-height: 1.75;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 580, ../sass/main.scss */
 =======
   /* line 576, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 590, ../sass/main.scss */
 >>>>>>> andy-dev
   .work-detail .work.half, .work-detail .work.three-quarters {
     width: 87.36111%;
     float: none;
     margin: 10% auto 0;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   /* line 581, ../sass/main.scss */
   .work-detail .work .caption {
@@ -1374,6 +1618,13 @@ header nav ul li.in {
   }
   /* line 578, ../sass/main.scss */
 >>>>>>> andy-dev
+=======
+  /* line 591, ../sass/main.scss */
+  .work-detail .work .caption {
+    width: 87.36111%;
+  }
+  /* line 592, ../sass/main.scss */
+>>>>>>> andy-dev
   .work-detail .work.three-quarters .caption {
     left: 0;
   }
@@ -1381,9 +1632,13 @@ header nav ul li.in {
 @media only screen and (max-width: 640px) {
   /*Navigation*/
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 590, ../sass/main.scss */
 =======
   /* line 586, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 600, ../sass/main.scss */
 >>>>>>> andy-dev
   header nav #bluestone-logo {
     height: 25px;
@@ -1392,9 +1647,13 @@ header nav ul li.in {
 
   /*Home*/
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 594, ../sass/main.scss */
 =======
   /* line 590, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 604, ../sass/main.scss */
 >>>>>>> andy-dev
   .hometype h1 {
     font-size: 2em;
@@ -1402,18 +1661,26 @@ header nav ul li.in {
     line-height: 1;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 595, ../sass/main.scss */
 =======
   /* line 591, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 605, ../sass/main.scss */
 >>>>>>> andy-dev
   .hometype h1 span, .hometype h1 span.inline {
     display: inline;
     letter-spacing: 0;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 597, ../sass/main.scss */
 =======
   /* line 593, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 607, ../sass/main.scss */
 >>>>>>> andy-dev
   .hometype .grid-marker {
     display: inline-block;
@@ -1421,18 +1688,26 @@ header nav ul li.in {
     margin: 0 0 1% 0;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 598, ../sass/main.scss */
 =======
   /* line 594, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 608, ../sass/main.scss */
 >>>>>>> andy-dev
   .hometype a {
     display: block;
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 602, ../sass/main.scss */
 =======
   /* line 598, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 612, ../sass/main.scss */
 >>>>>>> andy-dev
   header nav ul li {
     font-size: 30px;
@@ -1441,9 +1716,13 @@ header nav ul li.in {
   /*Work*/
   /*Project*/
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 610, ../sass/main.scss */
 =======
   /* line 606, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 620, ../sass/main.scss */
 >>>>>>> andy-dev
   .work-detail .summary {
     width: 87.36111%;
@@ -1451,9 +1730,13 @@ header nav ul li.in {
     font-family: "AvenirLight", Futura, "Trebuchet MS", Arial, sans-serif;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 612, ../sass/main.scss */
 =======
   /* line 608, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 622, ../sass/main.scss */
 >>>>>>> andy-dev
   .work-detail .summary h4 {
     font-size: 1.25em;
@@ -1461,9 +1744,13 @@ header nav ul li.in {
     margin: 0 0 4% 0;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 615, ../sass/main.scss */
 =======
   /* line 611, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 625, ../sass/main.scss */
 >>>>>>> andy-dev
   .work-detail .summary p {
     font-size: .8725em;
@@ -1472,18 +1759,26 @@ header nav ul li.in {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 624, ../sass/main.scss */
 =======
   /* line 620, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 634, ../sass/main.scss */
 >>>>>>> andy-dev
   .project-body .title h2 {
     font-size: 2em;
     float: none;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 625, ../sass/main.scss */
 =======
   /* line 621, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 635, ../sass/main.scss */
 >>>>>>> andy-dev
   .project-body .title h3 {
     float: none;
@@ -1496,9 +1791,13 @@ header nav ul li.in {
    Helper classes
    ========================================================================== */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 641, ../sass/main.scss */
 =======
 /* line 637, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 651, ../sass/main.scss */
 >>>>>>> andy-dev
 .ir {
   background-color: transparent;
@@ -1508,9 +1807,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 648, ../sass/main.scss */
 =======
 /* line 644, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 658, ../sass/main.scss */
 >>>>>>> andy-dev
 .ir:before {
   content: "";
@@ -1520,9 +1823,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 655, ../sass/main.scss */
 =======
 /* line 651, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 665, ../sass/main.scss */
 >>>>>>> andy-dev
 .hidden {
   display: none !important;
@@ -1530,9 +1837,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 660, ../sass/main.scss */
 =======
 /* line 656, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 670, ../sass/main.scss */
 >>>>>>> andy-dev
 .visuallyhidden {
   border: 0;
@@ -1546,9 +1857,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 672, ../sass/main.scss */
 =======
 /* line 668, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 682, ../sass/main.scss */
 >>>>>>> andy-dev
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
@@ -1561,18 +1876,26 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 681, ../sass/main.scss */
 =======
 /* line 677, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 691, ../sass/main.scss */
 >>>>>>> andy-dev
 .invisible {
   visibility: hidden;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 686, ../sass/main.scss */
 =======
 /* line 682, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 696, ../sass/main.scss */
 >>>>>>> andy-dev
 .clearfix:before,
 .clearfix:after {
@@ -1581,18 +1904,26 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 691, ../sass/main.scss */
 =======
 /* line 687, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 701, ../sass/main.scss */
 >>>>>>> andy-dev
 .clearfix:after {
   clear: both;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 695, ../sass/main.scss */
 =======
 /* line 691, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 705, ../sass/main.scss */
 >>>>>>> andy-dev
 .clearfix {
   *zoom: 1;
@@ -1603,9 +1934,13 @@ header nav ul li.in {
    ========================================================================== */
 @media print {
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 704, ../sass/main.scss */
 =======
   /* line 700, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 714, ../sass/main.scss */
 >>>>>>> andy-dev
   * {
     background: transparent !important;
@@ -1615,9 +1950,13 @@ header nav ul li.in {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 712, ../sass/main.scss */
 =======
   /* line 708, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 722, ../sass/main.scss */
 >>>>>>> andy-dev
   a,
   a:visited {
@@ -1625,27 +1964,39 @@ header nav ul li.in {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 716, ../sass/main.scss */
 =======
   /* line 712, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 726, ../sass/main.scss */
 >>>>>>> andy-dev
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 720, ../sass/main.scss */
 =======
   /* line 716, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 730, ../sass/main.scss */
 >>>>>>> andy-dev
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 726, ../sass/main.scss */
 =======
   /* line 722, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 736, ../sass/main.scss */
 >>>>>>> andy-dev
   .ir a:after,
   a[href^="javascript:"]:after,
@@ -1654,9 +2005,13 @@ header nav ul li.in {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 731, ../sass/main.scss */
 =======
   /* line 727, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 741, ../sass/main.scss */
 >>>>>>> andy-dev
   pre,
   blockquote {
@@ -1665,18 +2020,26 @@ header nav ul li.in {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 736, ../sass/main.scss */
 =======
   /* line 732, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 746, ../sass/main.scss */
 >>>>>>> andy-dev
   thead {
     display: table-header-group;
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 741, ../sass/main.scss */
 =======
   /* line 737, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 751, ../sass/main.scss */
 >>>>>>> andy-dev
   tr,
   img {
@@ -1684,9 +2047,13 @@ header nav ul li.in {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 745, ../sass/main.scss */
 =======
   /* line 741, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 755, ../sass/main.scss */
 >>>>>>> andy-dev
   img {
     max-width: 100% !important;
@@ -1697,9 +2064,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 755, ../sass/main.scss */
 =======
   /* line 751, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 765, ../sass/main.scss */
 >>>>>>> andy-dev
   p,
   h2,
@@ -1709,9 +2080,13 @@ header nav ul li.in {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 761, ../sass/main.scss */
 =======
   /* line 757, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 771, ../sass/main.scss */
 >>>>>>> andy-dev
   h2,
   h3 {
@@ -1724,9 +2099,13 @@ header nav ul li.in {
 /* v1.0.5 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 775, ../sass/main.scss */
 =======
 /* line 771, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 785, ../sass/main.scss */
 >>>>>>> andy-dev
 .royalSlider {
   width: 100%;
@@ -1736,54 +2115,78 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 781, ../sass/main.scss */
 =======
 /* line 777, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 791, ../sass/main.scss */
 >>>>>>> andy-dev
 .web.royalSlider {
   padding: 0 0 18% 0;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 782, ../sass/main.scss */
 =======
 /* line 778, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 792, ../sass/main.scss */
 >>>>>>> andy-dev
 .web.royalSlider .rsOverflow {
   padding: 0 0 18% 0;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 783, ../sass/main.scss */
 =======
 /* line 779, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 793, ../sass/main.scss */
 >>>>>>> andy-dev
 .web.royalSlider .rsOverflow .rsContainer {
   padding: 0 0 18% 0;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 785, ../sass/main.scss */
 =======
 /* line 781, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 795, ../sass/main.scss */
 >>>>>>> andy-dev
 .royalSlider > * {
   float: left;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 789, ../sass/main.scss */
 =======
 /* line 785, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 799, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsWebkit3d .rsSlide {
   -webkit-transform: translateZ(0);
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 803, ../sass/main.scss */
 =======
 /* line 799, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 813, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsWebkit3d .rsSlide,
 .rsWebkit3d .rsContainer,
@@ -1799,9 +2202,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 808, ../sass/main.scss */
 =======
 /* line 804, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 818, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsFade.rsWebkit3d .rsSlide,
 .rsFade.rsWebkit3d img,
@@ -1810,9 +2217,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 811, ../sass/main.scss */
 =======
 /* line 807, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 821, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsOverflow {
   width: 100%;
@@ -1824,9 +2235,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 819, ../sass/main.scss */
 =======
 /* line 815, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 829, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsVisibleNearbyWrap {
   width: 100%;
@@ -1839,9 +2254,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 828, ../sass/main.scss */
 =======
 /* line 824, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 838, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsVisibleNearbyWrap .rsOverflow {
   position: absolute;
@@ -1850,9 +2269,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 834, ../sass/main.scss */
 =======
 /* line 830, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 844, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsContainer {
   position: relative;
@@ -1862,9 +2285,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 842, ../sass/main.scss */
 =======
 /* line 838, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 852, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsArrow,
 .rsThumbsArrow {
@@ -1872,9 +2299,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 846, ../sass/main.scss */
 =======
 /* line 842, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 856, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsThumb {
   float: left;
@@ -1882,9 +2313,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 854, ../sass/main.scss */
 =======
 /* line 850, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 864, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsArrow,
 .rsNav,
@@ -1897,9 +2332,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 861, ../sass/main.scss */
 =======
 /* line 857, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 871, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsHidden {
   opacity: 0;
@@ -1911,9 +2350,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 871, ../sass/main.scss */
 =======
 /* line 867, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 881, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsGCaption {
   width: 100%;
@@ -1923,9 +2366,13 @@ header nav ul li.in {
 
 /* Fullscreen options, very important ^^ */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 878, ../sass/main.scss */
 =======
 /* line 874, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 888, ../sass/main.scss */
 >>>>>>> andy-dev
 .royalSlider.rsFullscreen {
   position: fixed !important;
@@ -1941,9 +2388,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 891, ../sass/main.scss */
 =======
 /* line 887, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 901, ../sass/main.scss */
 >>>>>>> andy-dev
 .royalSlider .rsSlide.rsFakePreloader {
   opacity: 1 !important;
@@ -1955,9 +2406,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 900, ../sass/main.scss */
 =======
 /* line 896, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 910, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsSlide {
   position: absolute;
@@ -1970,9 +2425,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 912, ../sass/main.scss */
 =======
 /* line 908, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 922, ../sass/main.scss */
 >>>>>>> andy-dev
 .royalSlider.rsAutoHeight,
 .rsAutoHeight .rsSlide {
@@ -1980,9 +2439,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 916, ../sass/main.scss */
 =======
 /* line 912, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 926, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsContent {
   width: 100%;
@@ -1991,9 +2454,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 922, ../sass/main.scss */
 =======
 /* line 918, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 932, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsPreloader {
   position: absolute;
@@ -2001,9 +2468,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 927, ../sass/main.scss */
 =======
 /* line 923, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 937, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsNav {
   -moz-user-select: -moz-none;
@@ -2012,18 +2483,26 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 932, ../sass/main.scss */
 =======
 /* line 928, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 942, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsNavItem {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.25);
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 936, ../sass/main.scss */
 =======
 /* line 932, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 946, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsThumbs {
   cursor: pointer;
@@ -2034,9 +2513,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 943, ../sass/main.scss */
 =======
 /* line 939, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 953, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsTabs {
   float: left;
@@ -2044,9 +2527,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 948, ../sass/main.scss */
 =======
 /* line 944, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 958, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsTabs,
 .rsThumbs {
@@ -2055,9 +2542,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 954, ../sass/main.scss */
 =======
 /* line 950, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 964, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsVideoContainer {
   /*left: 0;
@@ -2076,9 +2567,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 969, ../sass/main.scss */
 =======
 /* line 965, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 979, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsVideoFrameHolder {
   position: absolute;
@@ -2090,18 +2585,26 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 977, ../sass/main.scss */
 =======
 /* line 973, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 987, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsVideoFrameHolder.rsVideoActive {
   opacity: 1;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 983, ../sass/main.scss */
 =======
 /* line 979, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 993, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsVideoContainer iframe,
 .rsVideoContainer video,
@@ -2117,9 +2620,13 @@ header nav ul li.in {
 
 /* ios controls over video bug, shifting video */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 994, ../sass/main.scss */
 =======
 /* line 990, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1004, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsVideoContainer.rsIOSVideo iframe,
 .rsVideoContainer.rsIOSVideo video,
@@ -2131,9 +2638,13 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1001, ../sass/main.scss */
 =======
 /* line 997, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1011, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsABlock {
   left: 0;
@@ -2143,54 +2654,78 @@ header nav ul li.in {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1009, ../sass/main.scss */
 =======
 /* line 1005, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1019, ../sass/main.scss */
 >>>>>>> andy-dev
 img.rsImg {
   max-width: none;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1013, ../sass/main.scss */
 =======
 /* line 1009, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1023, ../sass/main.scss */
 >>>>>>> andy-dev
 .web img.rsImg {
   margin-top: 0 !important;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1017, ../sass/main.scss */
 =======
 /* line 1013, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1027, ../sass/main.scss */
 >>>>>>> andy-dev
 .grab-cursor {
   cursor: url(grab.png) 8 8, move;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1021, ../sass/main.scss */
 =======
 /* line 1017, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1031, ../sass/main.scss */
 >>>>>>> andy-dev
 .grabbing-cursor {
   cursor: url(grabbing.png) 8 8, move;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1025, ../sass/main.scss */
 =======
 /* line 1021, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1035, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsNoDrag {
   cursor: auto;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1029, ../sass/main.scss */
 =======
 /* line 1025, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1039, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsLink {
   left: 0;
@@ -2223,9 +2758,13 @@ img.rsImg {
 ******************************/
 /* Background */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1065, ../sass/main.scss */
 =======
 /* line 1061, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1075, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW,
 .rsMinW .rsOverflow,
@@ -2242,9 +2781,13 @@ img.rsImg {
 *
 ****************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1077, ../sass/main.scss */
 =======
 /* line 1073, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1087, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsArrow {
   height: 32px;
@@ -2256,9 +2799,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1086, ../sass/main.scss */
 =======
 /* line 1082, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1096, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsArrowLeft {
   right: 37px;
@@ -2266,9 +2813,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1087, ../sass/main.scss */
 =======
 /* line 1083, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1097, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsArrowRight {
   right: 7px;
@@ -2276,9 +2827,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1089, ../sass/main.scss */
 =======
 /* line 1085, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1099, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsArrowIcn {
   width: 24px;
@@ -2292,45 +2847,65 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1105, ../sass/main.scss */
 =======
 /* line 1101, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1115, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsHor .rsArrowLeft .rsArrowIcn {
   background-position: -68px -36px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1106, ../sass/main.scss */
 =======
 /* line 1102, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1116, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsHor .rsArrowRight .rsArrowIcn {
   background-position: -68px -68px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1108, ../sass/main.scss */
 =======
 /* line 1104, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1118, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsVer .rsArrowLeft .rsArrowIcn {
   background-position: -100px -36px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1109, ../sass/main.scss */
 =======
 /* line 1105, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1119, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsVer .rsArrowRight .rsArrowIcn {
   background-position: -100px -68px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1111, ../sass/main.scss */
 =======
 /* line 1107, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1121, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsArrowDisabled .rsArrowIcn {
   opacity: .3 !important;
@@ -2344,9 +2919,13 @@ img.rsImg {
 *
 ****************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1120, ../sass/main.scss */
 =======
 /* line 1116, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1130, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsBullets {
   position: absolute;
@@ -2361,9 +2940,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1132, ../sass/main.scss */
 =======
 /* line 1128, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1142, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsBullet {
   width: 6px;
@@ -2375,9 +2958,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1140, ../sass/main.scss */
 =======
 /* line 1136, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1150, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsBullet span {
   display: block;
@@ -2388,9 +2975,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1147, ../sass/main.scss */
 =======
 /* line 1143, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1157, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsBullet.rsNavSelected span {
   background: #FFF;
@@ -2402,9 +2993,13 @@ img.rsImg {
 *
 ****************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1161, ../sass/main.scss */
 =======
 /* line 1157, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1171, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsThumbsHor {
   width: 100%;
@@ -2412,9 +3007,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1165, ../sass/main.scss */
 =======
 /* line 1161, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1175, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsThumbsVer {
   width: 96px;
@@ -2425,9 +3024,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1172, ../sass/main.scss */
 =======
 /* line 1168, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1182, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsWithThumbsHor .rsThumbsContainer {
   position: relative;
@@ -2435,9 +3038,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1176, ../sass/main.scss */
 =======
 /* line 1172, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1186, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsWithThumbsVer .rsThumbsContainer {
   position: relative;
@@ -2445,9 +3052,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1180, ../sass/main.scss */
 =======
 /* line 1176, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1190, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsThumb {
   float: left;
@@ -2457,9 +3068,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1186, ../sass/main.scss */
 =======
 /* line 1182, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1196, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsThumb img {
   width: 100%;
@@ -2467,18 +3082,26 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1190, ../sass/main.scss */
 =======
 /* line 1186, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1200, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsThumb.rsNavSelected {
   background: #333;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1193, ../sass/main.scss */
 =======
 /* line 1189, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1203, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsThumb.rsNavSelected img {
   filter: alpha(opacity=40);
@@ -2486,9 +3109,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1197, ../sass/main.scss */
 =======
 /* line 1193, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1207, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsThumb.rsNavSelected span.thumbIco {
   position: absolute;
@@ -2502,9 +3129,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1207, ../sass/main.scss */
 =======
 /* line 1203, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1217, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsTmb {
   display: block;
@@ -2512,9 +3143,13 @@ img.rsImg {
 
 /* Thumbnails arrow icons */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1215, ../sass/main.scss */
 =======
 /* line 1211, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1225, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsThumbsArrow {
   height: 100%;
@@ -2526,9 +3161,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1223, ../sass/main.scss */
 =======
 /* line 1219, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1233, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsWithThumbsVer .rsThumbsArrow {
   width: 100%;
@@ -2536,9 +3175,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1227, ../sass/main.scss */
 =======
 /* line 1223, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1237, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsWithThumbsVer .rsThumbsArrowLeft {
   top: 0;
@@ -2546,9 +3189,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1228, ../sass/main.scss */
 =======
 /* line 1224, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1238, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsWithThumbsVer .rsThumbsArrowRight {
   bottom: 0;
@@ -2556,9 +3203,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1230, ../sass/main.scss */
 =======
 /* line 1226, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1240, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsWithThumbsHor .rsThumbsArrowLeft {
   left: 0;
@@ -2566,9 +3217,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1231, ../sass/main.scss */
 =======
 /* line 1227, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1241, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsWithThumbsHor .rsThumbsArrowRight {
   right: 0;
@@ -2576,9 +3231,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1233, ../sass/main.scss */
 =======
 /* line 1229, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1243, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsThumbsArrowIcn {
   width: 16px;
@@ -2593,45 +3252,65 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1245, ../sass/main.scss */
 =======
 /* line 1241, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1255, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
   background-position: -128px -32px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1246, ../sass/main.scss */
 =======
 /* line 1242, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1256, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn {
   background-position: -128px -48px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1248, ../sass/main.scss */
 =======
 /* line 1244, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1258, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn {
   background-position: -144px -32px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1249, ../sass/main.scss */
 =======
 /* line 1245, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1259, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn {
   background-position: -144px -48px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1251, ../sass/main.scss */
 =======
 /* line 1247, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1261, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsThumbsArrowDisabled {
   display: none !important;
@@ -2640,9 +3319,13 @@ img.rsImg {
 /* Thumbnails resizing on smaller screens */
 @media screen and (min-width: 0px) and (max-width: 800px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 1255, ../sass/main.scss */
 =======
   /* line 1251, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 1265, ../sass/main.scss */
 >>>>>>> andy-dev
   .rsMinW .rsThumb {
     width: 59px;
@@ -2650,18 +3333,26 @@ img.rsImg {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 1259, ../sass/main.scss */
 =======
   /* line 1255, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 1269, ../sass/main.scss */
 >>>>>>> andy-dev
   .rsMinW .rsThumbsHor {
     height: 44px;
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 1262, ../sass/main.scss */
 =======
   /* line 1258, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+  /* line 1272, ../sass/main.scss */
 >>>>>>> andy-dev
   .rsMinW .rsThumbsVer {
     width: 59px;
@@ -2673,9 +3364,13 @@ img.rsImg {
 *
 ****************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1276, ../sass/main.scss */
 =======
 /* line 1272, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1286, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsTabs {
   width: 100%;
@@ -2688,9 +3383,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1283, ../sass/main.scss */
 =======
 /* line 1279, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1293, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsTab {
   display: inline-block;
@@ -2713,9 +3412,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1304, ../sass/main.scss */
 =======
 /* line 1300, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1314, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsTab:first-child {
   -webkit-border-top-left-radius: 4px;
@@ -2725,9 +3428,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1310, ../sass/main.scss */
 =======
 /* line 1306, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1320, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsTab:last-child {
   -webkit-border-top-right-radius: 4px;
@@ -2738,9 +3445,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1318, ../sass/main.scss */
 =======
 /* line 1314, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1328, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsTab:active {
   border: 1px solid #D9D9DD;
@@ -2749,9 +3460,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1323, ../sass/main.scss */
 =======
 /* line 1319, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1333, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsTab.rsNavSelected {
   color: #000;
@@ -2770,9 +3485,13 @@ img.rsImg {
 *
 ****************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1344, ../sass/main.scss */
 =======
 /* line 1340, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1354, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsFullscreenBtn {
   right: 0;
@@ -2786,9 +3505,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1355, ../sass/main.scss */
 =======
 /* line 1351, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1365, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsFullscreenIcn {
   display: block;
@@ -2799,18 +3522,26 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1363, ../sass/main.scss */
 =======
 /* line 1359, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1373, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsFullscreenIcn:hover {
   opacity: 0.8;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1366, ../sass/main.scss */
 =======
 /* line 1362, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1376, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW.rsFullscreen .rsFullscreenIcn {
   background-position: -32px 0;
@@ -2822,9 +3553,13 @@ img.rsImg {
 *
 ****************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1380, ../sass/main.scss */
 =======
 /* line 1376, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1390, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsPlayBtn {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
@@ -2836,9 +3571,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1388, ../sass/main.scss */
 =======
 /* line 1384, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1398, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsPlayBtnIcon {
   width: 64px;
@@ -2856,18 +3595,26 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1404, ../sass/main.scss */
 =======
 /* line 1400, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1414, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsPlayBtn:hover .rsPlayBtnIcon {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1407, ../sass/main.scss */
 =======
 /* line 1403, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1417, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsBtnCenterer {
   position: absolute;
@@ -2878,9 +3625,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1414, ../sass/main.scss */
 =======
 /* line 1410, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1424, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsCloseVideoBtn {
   right: 0;
@@ -2895,9 +3646,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1426, ../sass/main.scss */
 =======
 /* line 1422, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1436, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsCloseVideoBtn.rsiOSBtn {
   top: -38px;
@@ -2905,9 +3660,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1431, ../sass/main.scss */
 =======
 /* line 1427, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1441, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsCloseVideoIcn {
   margin: 6px;
@@ -2920,9 +3679,13 @@ img.rsImg {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1440, ../sass/main.scss */
 =======
 /* line 1436, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1450, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsCloseVideoIcn:hover {
   background-color: rgba(0, 0, 0, 0.9);
@@ -2934,9 +3697,13 @@ img.rsImg {
 *
 ****************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1452, ../sass/main.scss */
 =======
 /* line 1448, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1462, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsPreloader {
   width: 20px;
@@ -2954,9 +3721,13 @@ img.rsImg {
 *
 ****************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 1471, ../sass/main.scss */
 =======
 /* line 1467, ../sass/main.scss */
+>>>>>>> andy-dev
+=======
+/* line 1481, ../sass/main.scss */
 >>>>>>> andy-dev
 .rsMinW .rsGCaption {
   position: absolute;

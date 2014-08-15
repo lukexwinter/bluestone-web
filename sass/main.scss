@@ -342,6 +342,9 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 #tower { background-image: url('../img/work-tower.jpg'); }
 #fmcc { background-image: url('../img/work-fmcc.jpg'); }
 #grapevine { background-image: url('../img/work-grapevine.jpg'); }
+#amig { background-image: url('../img/work-amig.jpg'); }
+#cgc { background-image: url('../img/work-cgc.jpg'); }
+#sterling { background-image: url('../img/work-sterling.jpg'); }
 
 /*Project*/
 .work-detail { 
@@ -385,6 +388,9 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 		}
 	}
  }
+ 
+ 
+ 
 .project-head { 
 	width: 100%; background-repeat:none; background-size: cover; padding: 40% 0 0 0; position: fixed; top: 0; min-width: 100%; width: auto; height: auto; overflow: hidden; display: block; z-index: 1; 
 }
@@ -422,13 +428,21 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 /*Road ID*/
 .downtek .project-head { background-image: url('../img/header-downtek.jpg');  }
 
+/*AMIG*/
+.amig .project-head { background-image: url('../img/header-amig.jpg');  }
 
+/*Sterling*/
+.sterling .project-head { background-image: url('../img/header-sterling.jpg');  }
+.sterling .project-head img { height:15%; }
 
 /*Project Tower*/
 .web-video.tower { background-image: url('../img/tower-web-video-bg.jpg'); }
 
 /*Project Tower*/
 .web-video.downtek { background-image: url('../img/downtek-web-video-bg.jpg'); }
+
+/*Cincinnati Growing Cincinnati*/
+.cgc .project-head { background-image: url('../img/header-cgc.jpg');  }
 
 
 /*Contact*/
