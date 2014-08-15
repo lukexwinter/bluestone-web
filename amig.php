@@ -1,11 +1,11 @@
 		<?php include $_SERVER['DOCUMENT_ROOT']."/template/header.php" ?>
 		<link rel="stylesheet" href="css/rs-minimal-white.css">
-        <div id="content" class="work-detail amalfi">
-        	<div class="project-head"><img src="img/amalfi-logo.png" /></div>
+        <div id="content" class="work-detail amig">
+        	<div class="project-head"><img src="img/amig-logo.png" /></div>
 			<div class="project-body">
 				<div class="title clearfix">
-					<h2>Amalfi Stonebriar</h2> 
-					<h3>Brand Development, Identity, Print, Signage, 3D, Web Design &amp; Development, Strategy</h3>
+					<h2>American Modern<br>Insurance Group</h2> 
+					<h3>Brand Guidelines, Print, Web Advertising, Web Design, Strategy</h3>
 				</div>
 			
 				<div class="summary clearfix">
@@ -18,41 +18,52 @@
 					<span class="caption">Brand Development<span class="grid-marker"></span></span>
 					<div class="full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
 					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-brand-slide-1.jpg"></a>
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-brand-slide-1.jpg"></a>
 					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-brand-slide-1.jpg"></a>
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-brand-slide-2.jpg"></a>
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-brand-slide-3.jpg"></a>
 					</div>
 				</div>
 				
 				<div class="clearfix">
 					<p class="work type">
-						The logo mark took its inspiration from the peaked architectural forms of the Chiostro del Paradiso, whose upward linear flow was used to also represent that of the fountain’s water. There is a subconscious visual of an ‘A’ for ‘Amalfi’ hidden within. Scrapbook-style compositions made up of fabrics, textures and handwritten notes atop carefully selected photos “from the trip” support the theme. The use of Amalfi paper, one of the world’s first handmade stocks dating back to the 12th century, is a minor yet notable detail in achieving a brand of this complexity.</p>
+						The logo mark took its inspiration from the peaked architectural forms of the Chiostro del Paradiso, whose upward linear flow was used to also represent that of the fountain’s water. There is a subconscious visual of an ‘A’ for ‘Amalfi’ hidden within. Scrapbook-style compositions made up of fabrics, textures and handwritten notes atop carefully selected photos “from the trip” support the theme.</p>
 					<div class="work half">
-						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-brand-half-1.jpg" alt="" width="708" height="447" />
-						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-brand-half-2.jpg" alt="" />
+						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amig-brand-half-1.jpg" alt="" />
+					</div>
+				</div>
+
+				<div class="work full">
+					<span class="caption">Print Collateral<span class="grid-marker"></span></span>
+					<div class="full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-print-slide-1.jpg"></a>
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-print-slide-1.jpg"></a>
 					</div>
 				</div>
 					
-				<div class="work three-quarters">
-					<span class="caption">Print &amp; Packaging<span class="grid-marker"></span></span>
-					<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-brand-three-quarters-1.jpg" alt="" />
-				</div>
-				
 				<div class="clearfix">
 					<p class="work type">
 						The concept of the marketing package for Amalfi Stonebriar was to create a solemnly clean facade with initial touch points such as the pocket folder, business cards and signage. But as the viewer peels back the layers of the brand in mediums such as the brochure, they discover an invitingly warm and cozy feeling of being at home. We wanted the audience to hear, feel, smell and taste the visuals begin placed before them.
 					</p>
 					<div class="work half">
-						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-print-half-1.jpg" alt="" />
+						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amig-print-half-1.jpg" alt="" />
 					</div>
 				</div>	
 				
 				<div class="work full">
+					<span class="caption">Infographics<span class="grid-marker"></span></span>
 					<div class="full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
 					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-print-slide-1.jpg"></a>
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-infographic-slide-1.jpg"></a>
 					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-print-slide-1.jpg"></a>
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-infographic-slide-2.jpg"></a>
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-infographic-slide-3.jpg"></a>
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-infographic-slide-4.jpg"></a>
 					</div>
 				</div>
 				
@@ -60,30 +71,14 @@
 					<span class="caption">Website<span class="grid-marker"></span></span>
 					<div class="web full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
 					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-web-slide-1.jpg"></a>
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-web-slide-1.jpg"></a>
 					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-web-slide-1.jpg"></a>
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-web-slide-2.jpg"></a>
+					    <!-- lazy loaded image slide -->
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amig-web-slide-3.jpg"></a>
 					</div>
 				</div>
 				
-				<div class="clearfix">
-					<p class="work type">
-						Apartment shoppers are savvy. They contemplate a variety of living options through the use of a variety of mediums. This said, it is an absolute must for our digital communication to not only serve as a ventricle which effectively delivers the emotion and appeal of the brand but also “works” across all mediums. From the architecture and design to the development of the user experience, Amalfi Stonebriar’s website was built responsively adaptable to any viewing environment and served up a product offering UI influenced by that of an eCommerce website.
-					</p>
-					<div class="work half">
-						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-web-half-1.jpg" alt="" />
-						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-web-half-2.jpg" alt="" />
-					</div>
-				</div>
-				
-<!--				<div class="work full">
-					<div class="web-video tower">
-						<div class="laptop-holder">
-							<img src="<?php echo MAINURL.""; ?>/img/tower-web-video-poster.jpg">
-							<video id="scroll-video" loop="loop" muted="muted" poster="<?php echo MAINURL.""; ?>/img/tower-web-video-poster.jpg"><source src="<?php echo MAINURL."/video/"; ?>thetower-screencast.webm" type="video/webm"><source src="<?php echo MAINURL."/video/"; ?>thetower-screencast.mp4" type="video/mp4"></video>
-						</div>
-					</div>
-				</div>-->
 				
 				<br />
 				<br />
@@ -162,7 +157,6 @@
 					}
 				});
 			</script>
-		
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

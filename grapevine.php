@@ -5,7 +5,7 @@
 			<div class="project-body">
 				<div class="title clearfix">
 					<h2>Grapevine Station</h2> 
-					<h3>Brand Identity, Print, Advertising, Signage, 3D, Web Design, Strategy</h3>
+					<h3>Brand Development, Identity, Print, Signage, 3D, Web Design &amp; Development, Strategy</h3>
 				</div>
 			
 				<div class="summary clearfix">

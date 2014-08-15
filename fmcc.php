@@ -5,7 +5,7 @@
 			<div class="project-body">
 				<div class="title clearfix">
 					<h2>Fort Mitchell Country Club</h2> 
-					<h3>Brand Identity, Print, Advertising, Signage, 3D, Web Design, Strategy</h3>
+					<h3>Web Design, Development, Strategy</h3>
 				</div>
 			
 				<div class="summary clearfix">
