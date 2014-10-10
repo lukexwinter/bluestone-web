@@ -245,7 +245,7 @@ $avenirnextultralight: 'AvenirNextUltraLight', Futura, "Trebuchet MS", Arial, sa
 
 
 h1 { font-weight: normal; }
-body { background: #ffffff; font-family: $avenirlight; color: $mediumgray; }
+body { background: #ffffff; font-family: $avenirnextultralight; color: $mediumgray; }
 .grid-marker { display: block; background: $bsblue; }
 
 /*Navigation*/
@@ -255,11 +255,12 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 		#bluestone-logo { width: 108px; height: 34px; float: left; margin: 0 0 0 2.5%; 
 			img { width: 100%; max-width: 100%; }
 		}
+		.address { width: 87.760417%; float: left; text-align: center; margin: 0 auto; display: inline-block; font-size: 0.5625em; letter-spacing: 5px; font-family: $avenirmedium; }
 		a.menu-button { margin: 8px 2.5% 0 0; }
-		a { color: $lightgray; text-decoration: none; font-family: $avenirlight; }
+		a { color: $lightgray; text-decoration: none; font-family: $avenirnextultralight; }
 		& > a { display: block; float: right;
 			.bars { width: 30px; 
-				span { width: 100%; height: 3px; display: block; background: $almostblack; margin: 0 0 5px 0; @include transition-ease-in }
+				span { width: 100%; height: 2px; display: block; background: $almostblack; margin: 0 0 6px 0; @include transition-ease-in }
 			}
 		}
 		& > a:hover {
@@ -305,7 +306,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 .hometype {
 	text-transform: uppercase; width: $col15; padding: 7.96875% 0 0 $col1+$colmarg; color: #fff; z-index: 100; position: relative;
 	h1 { 
-		font-family: $avenirlight; color: #fff; font-size: 5.625em; line-height: 1; margin: 0;
+		font-family: $avenirnextultralight; color: #fff; font-size: 5.625em; line-height: 1; margin: 0;
 		span { display: block;  @include transition-ease-out; @include translate(-20px,0); }
 		span.inline { display: inline-block; }
 		.once { margin-left: -.45%; }
@@ -313,7 +314,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	.grid-marker { width: 5.5555556%; height: 12px; margin: 1.0833333% 0 2.2499999% 6.6666667%; }
 	p { }
 	a {
-		color: #fff; text-decoration: none; margin-left: -13px; font-size: 14px; letter-spacing: 1px; font-family: $avenirlight; @include transition-ease-out;
+		color: #fff; text-decoration: none; margin-left: -13px; font-size: 14px; letter-spacing: 1px; font-family: $avenirnextultralight; @include transition-ease-out;
 		span {width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #fff; font-size: 0; line-height: 0; display: inline-block; margin: 0 0 0 5px; text-align: left; @include transition-ease-out; }
 	}
 	a:hover{ color: $bsblue; @include transition-ease-out;  }
@@ -324,11 +325,11 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 .work .project * { opacity: 0; @include transition-cubic-bezier; }
 .work .project:hover * { opacity: 1; @include transition-cubic-bezier;  };
 
-.work .project { opacity: 0; width: 46.875%; height: auto; background: url('../img/work-roadid.jpg') no-repeat center; color: #fff; display: block; float: left; text-decoration: none; padding: 0 0 0 3.125%; position: relative; background-size: cover; @include transition-cubic-bezier;
+.work .project { opacity: 0; width: 46.875%; height: auto; background: url('../img/work-roadid.jpg') no-repeat center; color: #fff; display: block; float: left; text-decoration: none; padding: 0 0 0 3.125%; position: relative; background-size: cover; -moz-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); -webkit-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); -o-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 	h2, h3, .grid-marker { z-index: 10; position: relative; }
 	h2, h3 { font-weight: normal; margin: 0; padding: 0; text-decoration: none; }
-	h2 { font-family: $avenirlight; font-size: 3.75em; line-height: 1; margin: 6.25% 0 0 0; text-transform: uppercase; }
-	h3 { font-family: $avenirmedium; font-size: 0.6875em; width: 50%; letter-spacing: .5px; }
+	h2 { font-family: $avenirnextultralight; font-size: 3.75em; line-height: 1; margin: 6.25% 0 0 0; text-transform: none; }
+	h3 { font-family: $avenirnextultralight; font-size: 0.6875em; width: 50%; letter-spacing: .5px; }
 	.grid-marker { width: $col2; margin: 1.5% 0 3% $col1+$colpad; height: 12px; }
 	.overlay{ background: rgba(0,0,0,.6); display: block; position: absolute; height: 100%; width: 100%; top: 0; left: 0; z-index: 1; }
 }
@@ -367,7 +368,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	.work.full { width: 100%; 
 		.caption { position: absolute; left: $col2+$colmarg; color: #fff; top: 6.1538462%; }
 	}
-	.work.type { margin: 10% 0 0 $col2+$colmarg; width: $col3; float: left; }
+	.work.type { margin: 10% 0 0 $col2+$colmarg; width: $col3; float: left; font-family: $avenirnextultralight; line-height: 1.5; }
 	.work.half { 
 		width: $col8; margin-right: $col2+$colmarg; float: right; 
 	}
@@ -399,7 +400,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 .project-body { z-index: 5000; position: relative; background: #fff; padding: 3.5% 0 0 0; margin: 40% 0 0 0;
 	.title { width: $col14; margin: 0 auto 0 auto; position: relative; 
 		h2, h3 { color: #252525; font-weight: normal; margin: 0; padding: 0; line-height: 1; }
-		h2 { text-transform: uppercase; font-size: 4.5em; font-family: $avenirlight; float: left; width: 60%; }
+		h2 { font-size: 4.5em; font-family: $avenirlight; float: left; width: 60%; }
 		h3 { font-family: $avenirmedium; float: right; font-size: .875em; position: absolute; bottom: 15px; right: 0; }
 	}
 }
@@ -446,7 +447,35 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 
 /*Contact*/
 .contact {
-	h1 { color: red; font-weight: normal; }
+	.hometype { background: url('../img/header-contact.jpg') no-repeat; background-size: cover; padding-bottom: 10%; margin: 0 0 7% 0; }
+	h1 { padding: 10% 0 0 0; }
+	#contact_form { 
+		width: $col8; float: left; 
+		textarea { width: 95%; height: 315px; font-weight: normal; font-family: $avenirnextultralight; border: 1px solid #d9d9d9; padding: 2.5%; margin: 3.5% 0 1.75% 0; }
+		textarea::-webkit-input-placeholder { color: #bebebe; }
+		textarea:focus, button:focus, input[type="file"]:focus { outline: none !important; -moz-box-shadow: none; -webkit-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+		button { background: $bsblue; border: none; font-family: $avenirlight; color: #fff; padding: 18px 0; float: right; width: 25%; line-height: 1; }
+		input[type="file"] { font-size: 0.6875em; margin: 2.5% 0 0 0; color: #bebebe; }
+		h2 { letter-spacing: -1px; font-size: 2em; font-family: $avenirnextultralight; font-weight: normal; margin: 0 0 .8em 0; line-height: 1.2; }
+		#result { margin: 3.5% 0 1.75% 0; margin: 0; height: 100%; width: 100%; text-align: center; color: $bsblue; display: none; position: fixed; background: rbga(255,255,255,.9); z-index: 500; top: 0; left: 0;
+			div { top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%) }
+		}
+	}
+	h3,  #contact_form, ul { font-size: 1.3125em; }
+	h3, p { margin: 0; }
+	aside.opportunities { 
+		width: $col3; margin-left: $col1+$colmarg; float: left; 
+		h3 { color: $almostblack; }
+		ul { 
+			margin: 0; padding: 0; 
+			li { 
+				list-style-type: none; margin: 8% 0 0 0;
+				a { text-decoration: none; color: $bsblue; }
+				a:hover { color: #00568c; }
+			}
+		}
+	}
+	aside.address { width: $col2; margin-right: $col1+$colmarg; float: right; line-height: 1.8; }
 }
 
 /*About*/
@@ -479,7 +508,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	/*Project*/
 	.work-detail { 
 		.summary {
-			width: $col12; color: $mediumgray; font-family: $avenirlight;
+			width: $col12; color: $mediumgray;
 			h4 {
 				font-size: 1.5em; font-weight: normal; margin: 0 0 4% 0;
 			}
