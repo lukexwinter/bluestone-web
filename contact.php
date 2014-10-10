@@ -5,7 +5,7 @@
 				<span class="grid-marker"></span>
 			</div>
 			<aside class="opportunities">
-				<h3>CAREER OPPORTUNITIES</h3>
+				<h3>CAREERS</h3>
 				<ul>
 					<li><a href="">Creative Technologist</a></li>
 					<li><a href="">Senior Copywriter</a></li>
@@ -17,15 +17,20 @@
 				</ul>
 			</aside>
 			<fieldset id="contact_form">
+				<h2>Get stoned with us</h2>
 				<p>bluestone is always accepting new challenges from our clients and that means we’re always interested in fresh talent to meet those challenges. We believe the company we keep will continue to make us grow and, most importantly, make us better at what we do. If you are a designer, photographer, illustrator, web master, account executive, marketing genius or fresh out of school, feel free to send us your resume and a little something interesting about yourself below.</p>
-				<textarea name="message" id="message" placeholder="Tell us something interesting about yourself..."></textarea>
-				<input type="file" name="file_attach" id="file_attach" />
-			    <button class="submit_btn" id="submit_btn">Submit</button>
-			    <img src="ajax-loader.gif" class="loading-img" style="display:none">
+				<img src="ajax-loader.gif" class="loading-img" style="display:none">
+				<div id="result"></div>
+				<div class="form">
+					<img src="ajax-loader.gif" class="loading-img" style="display:none">
+					<textarea name="message" id="message" placeholder="Tell us something interesting about yourself..."></textarea>
+					<input type="file" name="file_attach" id="file_attach" />
+				    <button class="submit_btn" id="submit_btn">Submit</button>
+				</div>
 			</fieldset>
 			<aside class="address">
 				<p>
-					bluestone creative, llc<br />
+					bluestone<br />
 					631 main street<br />
 					cincinnati, oh 45202<br />
 					<br />
@@ -42,39 +47,7 @@
 		<br />
 		<br />
 		<br />
-		
-		<fieldset id="contact_form">
-		<legend>My Contact Form</legend>
-		    <div id="result"></div>
-		    <label for="name"><span>Name</span>
-		    <input type="text" name="name" id="name" placeholder="Enter Your Name" />
-		    </label>
-    
-		    <label for="email"><span>Email Address</span>
-		    <input type="email" name="email" id="email" placeholder="Enter Your Email" />
-		    </label>
-    
-		    <label for="phone"><span>Phone</span>
-		    <input type="text" name="phone" id="phone" placeholder="Phone Number" />
-		    </label>
-    
-		    <label for="phone"><span>Attachment</span>
-		    <input type="file" name="file_attach" id="file_attach" />
-		    </label>
-    
-		    <label for="message"><span>Message</span>
-		    <textarea name="message" id="message" placeholder="Enter Your Name"></textarea>
-		    </label>
-    
-		    <label><span>&nbsp;</span>
-		    <button class="submit_btn" id="submit_btn">Submit</button>
-		    <img src="ajax-loader.gif" class="loading-img" style="display:none">
-		    </label>
-		</fieldset>
-		
-
-
-		
+				
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
@@ -85,30 +58,15 @@
 		$(document).ready(function() {
 		    $("#submit_btn").click(function() { 
 		        //get input field values
-        
-		        var user_name       = $('input[name=name]').val(); 
-		        var user_email      = $('input[name=email]').val();
-		        var user_phone      = $('input[name=phone]').val();
 		        var attach_file     = $('input[name=file_attach]')[0].files[0];
 		        var user_message    = $('textarea[name=message]').val();
         
 		        //simple validation at client's end
 		        //we simply change border color to red if empty field using .css()
 		        var proceed = true;
-		        if(user_name==""){ 
-		            $('input[name=name]').css('border-color','red'); 
-		            proceed = false;
-		        }
-		        if(user_email==""){ 
-		            $('input[name=email]').css('border-color','red'); 
-		            proceed = false;
-		        }
-		        if(user_phone=="") {    
-		            $('input[name=phone]').css('border-color','red'); 
-		            proceed = false;
-		        }
+		    
 		        if(user_message=="") {  
-		            $('textarea[name=message]').css('border-color','red'); 
+		            $('textarea[name=message]').css('border-color','#0075be'); 
 		            proceed = false;
 		        }
 
@@ -120,9 +78,6 @@
             
 		            //data to be sent to server         
 		            var post_data = new FormData();    
-		            post_data.append( 'userName', user_name );
-		            post_data.append( 'userEmail', user_email );
-		            post_data.append( 'userPhone', user_phone );
 		            post_data.append( 'userMessage',user_message);
 		            post_data.append( 'file_attach', attach_file );
             
@@ -148,7 +103,7 @@
 		                        $('#contact_form textarea').val(''); 
 		                    }
                     
-		                    $("#result").hide().html(output).slideDown(); //show results from server
+		                    $("#result").hide().html(output).show(); //show results from server
 		                    $(".loading-img").hide(); //hide loading image
 		                    $(".submit_btn").show(); //show submit button
 		              }
@@ -160,7 +115,7 @@
 		    //reset previously set border colors and hide all message on .keyup()
 		    $("#contact_form input, #contact_form textarea").keyup(function() { 
 		        $("#contact_form input, #contact_form textarea").css('border-color',''); 
-		        $("#result").slideUp();
+		        $("#result").hide();
 		    });
     
 		});
