@@ -20,20 +20,41 @@ if($_POST)
     } 
     
     //check $_POST vars are set, exit if any missing
-    if(!isset($_POST["userMessage"]))
+    if(!isset($_POST["userName"]) || !isset($_POST["userEmail"]) || !isset($_POST["userPhone"]) || !isset($_POST["userMessage"]))
     {
         $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
         die($output);
     }
 
     //Sanitize input data using PHP filter_var().
+    $user_Name        = filter_var($_POST["userName"], FILTER_SANITIZE_STRING);
+    $user_Email       = filter_var($_POST["userEmail"], FILTER_SANITIZE_EMAIL);
+    $user_Phone       = filter_var($_POST["userPhone"], FILTER_SANITIZE_STRING);
     $user_Message     = filter_var($_POST["userMessage"], FILTER_SANITIZE_STRING);
 
     $mail_body        = $user_Message;
+    $mail_body       .= "\r\n\r\nSender Name: ".$user_Name; //sender name
+    $mail_body       .="\r\nSender Email: ".$user_Email; //sender email
+    $mail_body       .="\r\nSender Phone: ".$user_Phone; //sender phone
     $mail_body       .="\r\n\r\n";
 
 
     //additional php validation
+    if(strlen($user_Name)<4) // If length is less than 4 it will throw an HTTP error.
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Name is too short or empty!'));
+        die($output);
+    }
+    if(!filter_var($user_Email, FILTER_VALIDATE_EMAIL)) //email validation
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Please enter a valid email!'));
+        die($output);
+    }
+    if(!is_numeric($user_Phone)) //check entered data is numbers
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Only numbers allowed in phone field'));
+        die($output);
+    }
     if(strlen($user_Message)<5) //check emtpy message
     {
         $output = json_encode(array('type'=>'error', 'text' => 'Too short message! Please enter something.'));
@@ -81,9 +102,9 @@ if($_POST)
         # Mail headers should work with most clients (including thunderbird)
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "X-Mailer: PHP/" . phpversion()."\r\n";
-        #$headers .= "From:".$user_Email."\r\n";
+        $headers .= "From:".$user_Email."\r\n";
         $headers .= "Subject:".$subject."\r\n";
-        #$headers .= "Reply-To: ".$user_Email."" . "\r\n";
+        $headers .= "Reply-To: ".$user_Email."" . "\r\n";
         $headers .= "Content-Type: multipart/mixed; boundary=".md5('boundary1')."\r\n\r\n";
     
         $headers .= "--".md5('boundary1')."\r\n";
@@ -105,8 +126,8 @@ if($_POST)
         $headers .= "--".md5('boundary1')."--"; 
     }else{
         # Mail headers for plain text mail
-        #$headers = 'From: '.$user_Email.'' . "\r\n" .
-        #'Reply-To: '.$user_Email.'' . "\r\n" .
+        $headers = 'From: '.$user_Email.'' . "\r\n" .
+        'Reply-To: '.$user_Email.'' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     }
     
@@ -118,7 +139,7 @@ if($_POST)
         $output = json_encode(array('type'=>'error', 'text' => 'Could not send mail! Please check your PHP mail configuration.'));
         die($output);
     }else{
-        $output = json_encode(array('type'=>'message', 'text' => 'We look forward to hearing from you.'));
+        $output = json_encode(array('type'=>'message', 'text' => 'Hi '.$user_Name .' Thank you for your email'));
         die($output);
     }
 }
