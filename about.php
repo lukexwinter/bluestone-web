@@ -1,5 +1,20 @@
 		<?php include $_SERVER['DOCUMENT_ROOT']."/template/header.php" ?>
-		<link rel="stylesheet" href="css/rs-minimal-white.css">
+		<section id="content" class="contact">
+			<div class="hometype">
+        		<h1>Challenges<br /> Welcome</h1>
+				<span class="grid-marker"></span>
+			</div>
+
+		</section>
+        <div id="content" class="work-detail amalfi">
+			<div class="project-body">
+				<div class="summary clearfix">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus.</h4>
+					<p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus. Vestibulum vitae malesuada tellus.</p>
+					<p class="right">Sed non pharetra magna. Nunc accumsan sit amet augue quis placerat. Nam gravida ante ut felis facilisis, id lacinia tortor consequat.</p>
+				</div>
+			</div>
+		</div>
         <div id="content" class="about">
 			<h1>Let me tell you a little bit about me.</h1>
 					<!--<div class="work half">
