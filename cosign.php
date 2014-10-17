@@ -4,7 +4,7 @@
         	<div class="project-head"><img src="img/cosign-logo.png" /></div>
 			<div class="project-body">
 				<div class="title clearfix">
-					<h2>COSIGN</h2> 
+					<h2>CoSIGN</h2> 
 					<h3>Photography, Video Production, Editing, Web Design</h3>
 				</div>
 			
