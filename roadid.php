@@ -20,7 +20,7 @@
 					    <!-- lazy loaded image slide -->
 					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-brand-slide-1.jpg"></a>
 					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-brand-slide-1.jpg"></a>
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-brand-slide-2.jpg"></a>
 					</div>
 				</div>
 				

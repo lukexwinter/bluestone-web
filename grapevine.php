@@ -9,13 +9,13 @@
 				</div>
 			
 				<div class="summary clearfix">
-					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus.</h4>
-					<p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus. Vestibulum vitae malesuada tellus.</p>
-					<p class="right">Sed non pharetra magna. Nunc accumsan sit amet augue quis placerat. Nam gravida ante ut felis facilisis, id lacinia tortor consequat.</p>
+					<h4>Combining a rich western history with modern living</h4>
+					<p class="left">Grapevine, Texas is a suburban area rich in history ranging from its architecture to its Old West folklore. Scattered with wineries and tasting rooms, the tourism industry has become an essential part of Grapevine thanks to the historical-laced train excursions and Western feel. Bluestone was tasked to set Grapevine Station a part from its competitors, and tap into the vastly growing region of young professionals.</p>
+					<p class="right">Through a clearly developed and well-thought out brand, we’ve managed to create a product that fits the surrounding affluent neighborhoods, while staying true to the notable Western culture. Grapevine Station’s distinctively unique floor plan layouts are its marketing advantage, which runs parallel with the uniqueness of the brand. <a href="http://www.grapevinestationapts.com" target="_blank"></p>
 				</div>
 			
 				<div class="work full">
-					<span class="caption">Brand Exploration<span class="grid-marker"></span></span>
+					<span class="caption">Brand Development<span class="grid-marker"></span></span>
 					<div class="full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
 					    <!-- lazy loaded image slide -->
 					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>grapevine-brand-slide-1.jpg"></a>

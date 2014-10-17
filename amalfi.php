@@ -5,7 +5,7 @@
 			<div class="project-body">
 				<div class="title clearfix">
 					<h2>Amalfi Stonebriar</h2> 
-					<h3>Brand Development, Identity, Print, Signage, 3D, Web Design &amp; Development, Strategy</h3>
+					<h3>Brand Development, Strategy, Identity, Print Collateral, Digital Architecture, Web Development, Signage, 3D</h3>
 				</div>
 			
 				<div class="summary clearfix">

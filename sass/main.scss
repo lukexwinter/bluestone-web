@@ -304,7 +304,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 }
 
 .hometype {
-	text-transform: uppercase; width: $col15; padding: 7.96875% 0 0 $col1+$colmarg; color: #fff; z-index: 100; position: relative;
+	text-transform: normal; width: $col15; padding: 7.96875% 0 0 $col1+$colmarg; color: #fff; z-index: 100; position: relative;
 	h1 { 
 		font-family: $avenirnextultralight; color: #fff; font-size: 5.625em; line-height: 1; margin: 0;
 		span { display: block;  @include transition-ease-out; @include translate(-20px,0); }
@@ -355,8 +355,8 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 			font-size: 2.25em; font-weight: normal; margin: 0 0 4% 0;
 		}
 		p {
-			font-size: 1.3125em; width: 49.256505%; float: left; margin: 0;
-			&.left { margin: 0 1.48699% 0 0; }
+			font-size: 1.3125em; width: 48.256505%; float: left; margin: 0;
+			&.left { margin: 0 3.48699% 0 0; }
 		}
 	}
 	.work { margin-top: 7%; position: relative;
@@ -422,10 +422,10 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 /*Road ID*/
 .roadid .project-head { background-image: url('../img/header-roadid.jpg');  }
 
-/*Road ID*/
+/*Grapevine*/
 .grapevine .project-head { background-image: url('../img/header-grapevine.jpg');  }
 
-/*Road ID*/
+/*DownTek*/
 .downtek .project-head { background-image: url('../img/header-downtek.jpg');  }
 
 /*AMIG*/
@@ -435,10 +435,10 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 .sterling .project-head { background-image: url('../img/header-sterling.jpg');  }
 .sterling .project-head img { height:15%; }
 
-/*Project Tower*/
+/*Video Tower*/
 .web-video.tower { background-image: url('../img/tower-web-video-bg.jpg'); }
 
-/*Project Tower*/
+/*Video DownTek*/
 .web-video.downtek { background-image: url('../img/downtek-web-video-bg.jpg'); }
 
 /*Cincinnati Growing Cincinnati*/
@@ -479,10 +479,71 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 }
 
 /*About*/
-.about {
+/*.about {
 	h1 { color: $bsblue; text-style:italic; background:none; }
 }
+*/
+/*About*/
+.about {
+	.hometype { background: url('../img/header-company.jpg') no-repeat; background-size: cover; padding-bottom: 10%; margin: 0 0 7% 0; }
+	h1 { padding: 10% 0 0 0; }
+	h3,  #contact_form, ul { font-size: 1.3125em; }
+	h3, p { margin: 0; }
+}
 
+.about-detail { 
+	background: #fff;
+	.summary {
+		width: $col12; margin: 8% auto 0 auto; color: $mediumgray; font-family: $avenirnextultralight; padding:0 0 50px 0;
+		h4 {
+			font-size: 2.25em; line-height:1.25em; font-weight: normal; margin: 0 0 4% 0; text-align:center;
+		}
+		h5 {
+			font-size:2em; font-weight:normal; color:#0a7ac1; text-align:center; font-family: $avenirnextregular; padding:20px 0 0 0;
+		}
+		p {
+			font-size: 1.3125em; width: 49.256505%; float: left; margin: 0;
+			&.left { margin: 0 1.48699% 0 0; }
+		}
+		.circles { 
+			margin-left:auto;
+			margin-right:auto;
+			padding:0 0 20px 0;
+			width:75px;
+			span {
+				width: 5px;
+				height: 5px;
+				float:left;
+				margin:0 10px;
+				background:#0a7ac1;
+				-webkit-border-radius: 50px;
+				-moz-border-radius: 50px;
+				border-radius: 50px;
+				
+			}			
+		}
+
+		ul {
+			width: 48.256505%; float: left; margin: 0; list-style:none; padding:0;
+			&.left { margin: 0 3.48699% 0 0; }
+			li {
+				padding:0; margin:0;
+				h5 {
+					text-align:left; font-size:2em; }
+				p {
+					font-size: 1em; width: 100%; float: left; margin: 0;
+				}
+			}
+		}
+		
+	}
+
+ }
+
+ .about-full {
+	 background: url('../img/about-1.jpg') no-repeat; background-size: cover; padding-bottom: 10%; margin: 0 0 7% 0; height:600px;
+	 img {width:100%; height:100%;}
+ }
 
 
 
