@@ -1,14 +1,9 @@
 		<?php include $_SERVER['DOCUMENT_ROOT']."/template/header.php" ?>
 		<section id="content" class="home">
 			<div class="hometype">
-        		<h1>
-					Digital. Traditional.<br />Far from Typical.
-					<div class="below">
-						<span class="grid-marker"></span>
-						<a id="discover" href="#">Discover Bluestone<span></a>
-					</div>
-				</h1>
-				
+        		<h1><span class="once">Once</span> <span>you</span> <span class="inline">find</span> <span class="inline">it,</span> <span>you'll</span> <span class="inline">know</span> <span class="inline">it.</span></h1>
+				<span class="grid-marker"></span>
+				<a id="discover" href="#">Discover Bluestone<span></a>
 			</div>
 			
 			<video autoplay="1" loop="loop" muted="muted"><source src="<?php echo MAINURL."/video/"; ?>bluestone.webm" type="video/webm"><source src="<?php echo MAINURL."/video/"; ?>bluestone.mp4" type="video/mp4"></video>

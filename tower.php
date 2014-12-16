@@ -29,17 +29,13 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat ante. Donec nec massa magna. Praesent ullamcorper quam et ligula elementum, a tristique mauris rutrum. Vestibulum eu ipsum eget ante congue tincidunt a quis turpis. Duis convallis orci nibh. Cras pharetra massa at tellus elementum, a tempus leo volutpat. Morbi mi velit, tincidunt a convallis in, vehicula vel turpis. Sed vulputate magna sed diam facilisis molestie.
 					</p>
 					<div class="work half">
-						<div class="image-wrapper loading">
-							<img class="b-lazy" src="<?php echo MAINURL.""; ?>/img/tinytrans.gif" data-src="<?php echo MAINURL.""; ?>/img/tower-brand-half-1.jpg" alt="" width="708" height="447" />
-						</div>
+						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/tower-brand-half-1.jpg" alt="" width="708" height="447" />
 					</div>
 				</div>
 					
 				<div class="work three-quarters">
 					<span class="caption">Print &amp; Packaging<span class="grid-marker"></span></span>
-					<div class="image-wrapper loading">
-						<img class="b-lazy" src="<?php echo MAINURL.""; ?>/img/tinytrans.gif" data-src="<?php echo MAINURL.""; ?>/img/tower-brand-three-quarters-1.jpg" alt="" />
-					</div>
+					<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/tower-brand-three-quarters-1.jpg" alt="" />
 				</div>
 				
 				<div class="work full">
@@ -125,10 +121,12 @@
 				  });
 				});
 				
+				/*Lazy Load*/	
+				$("img.lazy").lazyload({
+				    effect : "fadeIn"
+				});
 				
-				
-				// Trigger the Video Scroll Plugin
-				// REMOVE IF THERE IS NO VIDEO TO PLAY ON SCROLL
+				// Trigger the 
 				$(window).scroll(function() {
 					if ( $('#scroll-video').visible( true ) == true ) {
 						$('#scroll-video').get(0).play()
@@ -136,21 +134,6 @@
 						$('#scroll-video').get(0).pause();
 					}
 				});
-			</script>
-			
-			<script>
-				/*Lazy Load*/	
-				;(function() {
-	            	// Initialize
-					var bLazy = new Blazy({
-						success: function(element){
-							setTimeout(function(){
-								var parent = element.parentNode;
-									parent.className = parent.className.replace(/\bloading\b/,'');
-							}, 200);
-						}
-					});
-				})();
 			</script>
 		
 

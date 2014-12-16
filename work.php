@@ -79,30 +79,6 @@
 				projectHeight();
 			});
 			
-			
-			//Gradient Mouse Follow
-			/*var originalBG = $(".project .overlay").css("background-color");
-
-			$('.project .overlay')
-			.mousemove(function(e) {
-
-			    x  = e.pageX - this.offsetLeft;
-			    y  = e.pageY - this.offsetTop;
-			    xy = x + " " + y;
-				lightColor = "rgba(0,117,191,1)";
-				gradientSize = 1000;
-	   
-			    bgWebKit = "-webkit-gradient(radial, " + xy + ", 0, " + xy + ", "+ gradientSize +", from(" + lightColor + "), to(rgba(1,46,74,1))), " + originalBG;
-			    bgMoz    = "-moz-radial-gradient(" + x + "px " + y + "px 45deg, circle, " + lightColor + " 0%, " + originalBG + " " + gradientSize + "px)";
-				
-			    $(this)
-			      .css({ background: bgWebKit });
-			      //.css({ background: bgMoz });
-		
-			}).mouseleave(function() {
-				$(this).css({ backgroundColor: originalBG });
-			});*/
-			
 		</script>
 		
 
