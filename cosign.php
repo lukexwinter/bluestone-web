@@ -4,8 +4,8 @@
         	<div class="project-head"><img src="img/cosign-logo.png" /></div>
 			<div class="project-body">
 				<div class="title clearfix">
-					<h2>CoSIGN</h2> 
-					<h3>Photography, Video Production, Editing, Web Design</h3>
+					<h2>COSIGN</h2> 
+					<h3>Brand Identity, Print, Advertising, Signage, 3D, Web Design, Strategy</h3>
 				</div>
 			
 				<div class="summary clearfix">

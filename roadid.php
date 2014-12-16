@@ -5,7 +5,7 @@
 			<div class="project-body">
 				<div class="title clearfix">
 					<h2>Road ID</h2> 
-					<h3>Brand Identity, Print, Advertising, Web Design, Packaging, Strategy</h3>
+					<h3>Brand Identity, Print, Advertising, Signage, 3D, Web Design, Strategy</h3>
 				</div>
 			
 				<div class="summary clearfix">
@@ -20,7 +20,7 @@
 					    <!-- lazy loaded image slide -->
 					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-brand-slide-1.jpg"></a>
 					    <!-- lazy loaded image slide -->
-					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-brand-slide-2.jpg"></a>
+					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>roadid-brand-slide-1.jpg"></a>
 					</div>
 				</div>
 				

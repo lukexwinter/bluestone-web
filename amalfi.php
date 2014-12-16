@@ -5,17 +5,17 @@
 			<div class="project-body">
 				<div class="title clearfix">
 					<h2>Amalfi Stonebriar</h2> 
-					<h3>Brand Development, Strategy, Identity, Print Collateral, Digital Architecture, Web Development, Signage, 3D</h3>
+					<h3>Brand Identity, Print, Advertising, Signage, 3D, Web Design, Strategy</h3>
 				</div>
 			
 				<div class="summary clearfix">
-					<h4>Creating a sense of community in Frisco, Texas</h4>
-					<p class="left">When one imagines what it would be like to live in the Lone Star State, your mind naturally drifts to the Amalfi Coast of Italy, right? Okay, fair enough. But that’s exactly what bluestone was tasked with and ultimately created for this luxury apartment community by North American Properties. With a name inspired by the wonderfully scenic and storied coastal town in Italy combined with the community’s locale within the heart of Stonebriar Commons in Frisco, we developed a storyline which allowed the two to coincide famously.</p>
-					<p class="right">There were three notable elements we used to serve as cornerstones in developing this brand visually: the intricate Byzantine-style architecture found in Amalfi’s Chiostro del Paradiso, the fountain which graces the community’s central access point within Stonebriar Commons and the idea of a resident’s recent trip to Amalfi which has since influenced the interior design of their new apartment.</p>
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus.</h4>
+					<p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, ante quis tincidunt suscipit, arcu felis commodo lacus, vel consectetur diam magna non lectus. Vestibulum vitae malesuada tellus.</p>
+					<p class="right">Sed non pharetra magna. Nunc accumsan sit amet augue quis placerat. Nam gravida ante ut felis facilisis, id lacinia tortor consequat.</p>
 				</div>
 			
 				<div class="work full">
-					<span class="caption">Brand Development<span class="grid-marker"></span></span>
+					<span class="caption">Brand Exploration<span class="grid-marker"></span></span>
 					<div class="full-width-slider royalSlider heroSlider rsMinW rsHor rsWithBullets">
 					    <!-- lazy loaded image slide -->
 					    <a class="rsImg" href="<?php echo MAINURL."/img/"; ?>amalfi-brand-slide-1.jpg"></a>
@@ -26,7 +26,8 @@
 				
 				<div class="clearfix">
 					<p class="work type">
-						The logo mark took its inspiration from the peaked architectural forms of the Chiostro del Paradiso, whose upward linear flow was used to also represent that of the fountain’s water. There is a subconscious visual of an ‘A’ for ‘Amalfi’ hidden within. Scrapbook-style compositions made up of fabrics, textures and handwritten notes atop carefully selected photos “from the trip” support the theme. The use of Amalfi paper, one of the world’s first handmade stocks dating back to the 12th century, is a minor yet notable detail in achieving a brand of this complexity.</p>
+						The logo mark is inspired by various aspects pertaining to landmarks in both the surrounding vicinity in Frisco, particularly Stonebriar Commons, and Amalfi, Italy. The geometric shapes pay homage to the Byzantine-style architecture that can be found in Saint Andrew’s Cathedral which overlooks Piazza Duomo (the heart of Amalfi) and its Chiostro del Paradiso. The flowing upward movement of its shapes is meant to bear relation to the fountain located in the center of Stonebriar Commons. Its color is influenced by the calming feel of the fountain’s water and the gentle hum it radiates. The color was also chosen as a complement to the building exterior so that it draws the eye yet feels like it belongs. One a more subconscious note, there is an ‘A’ for “Amalfi” hidden in the logo.
+					</p>
 					<div class="work half">
 						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-brand-half-1.jpg" alt="" width="708" height="447" />
 						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-brand-half-2.jpg" alt="" />
@@ -40,7 +41,7 @@
 				
 				<div class="clearfix">
 					<p class="work type">
-						The concept of the marketing package for Amalfi Stonebriar was to create a solemnly clean facade with initial touch points such as the pocket folder, business cards and signage. But as the viewer peels back the layers of the brand in mediums such as the brochure, they discover an invitingly warm and cozy feeling of being at home. We wanted the audience to hear, feel, smell and taste the visuals begin placed before them.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat ante. Donec nec massa magna. Praesent ullamcorper quam et ligula elementum, a tristique mauris rutrum. Vestibulum eu ipsum eget ante congue tincidunt a quis turpis. Duis convallis orci nibh. Cras pharetra massa at tellus elementum, a tempus leo volutpat. Morbi mi velit, tincidunt a convallis in, vehicula vel turpis. Sed vulputate magna sed diam facilisis molestie.
 					</p>
 					<div class="work half">
 						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-print-half-1.jpg" alt="" />
@@ -68,7 +69,7 @@
 				
 				<div class="clearfix">
 					<p class="work type">
-						Apartment shoppers are savvy. They contemplate a variety of living options through the use of a variety of mediums. This said, it is an absolute must for our digital communication to not only serve as a ventricle which effectively delivers the emotion and appeal of the brand but also “works” across all mediums. From the architecture and design to the development of the user experience, Amalfi Stonebriar’s website was built responsively adaptable to any viewing environment and served up a product offering UI influenced by that of an eCommerce website.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat ante. Donec nec massa magna. Praesent ullamcorper quam et ligula elementum, a tristique mauris rutrum. Vestibulum eu ipsum eget ante congue tincidunt a quis turpis. Duis convallis orci nibh. Cras pharetra massa at tellus elementum, a tempus leo volutpat. Morbi mi velit, tincidunt a convallis in, vehicula vel turpis. Sed vulputate magna sed diam facilisis molestie.
 					</p>
 					<div class="work half">
 						<img class="lazy" data-original="<?php echo MAINURL.""; ?>/img/amalfi-web-half-1.jpg" alt="" />
@@ -76,14 +77,14 @@
 					</div>
 				</div>
 				
-<!--				<div class="work full">
+				<div class="work full">
 					<div class="web-video tower">
 						<div class="laptop-holder">
 							<img src="<?php echo MAINURL.""; ?>/img/tower-web-video-poster.jpg">
 							<video id="scroll-video" loop="loop" muted="muted" poster="<?php echo MAINURL.""; ?>/img/tower-web-video-poster.jpg"><source src="<?php echo MAINURL."/video/"; ?>thetower-screencast.webm" type="video/webm"><source src="<?php echo MAINURL."/video/"; ?>thetower-screencast.mp4" type="video/mp4"></video>
 						</div>
 					</div>
-				</div>-->
+				</div>
 				
 				<br />
 				<br />
