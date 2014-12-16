@@ -29,7 +29,7 @@
 					</a>
 					<ul>
 						<li><a href="work.php">WORK</a></li>
-						<li><a href="">COMPANY</a></li>
+						<li><a href="about.php">COMPANY</a></li>
 						<li><a href="">RECENT</a></li>
 						<li><a href="">CONTACT</a></li>
 					</ul>	
@@ -40,3 +40,4 @@
 			<div class="blink"></div>
 			<div id="overlay"></div>
         </div>
+	
