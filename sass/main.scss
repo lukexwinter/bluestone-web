@@ -87,7 +87,7 @@ $col11: 68.402778%;/*1313.3333297/1920*/
 $col12: 74.722222%;/*1434.666663/1920*/
 $col13: 81.041666%;/*1555.9999963/1920*/
 $col14: 87.361111%;/*1677.3333296/1920*/
-$col15: 93.680555;/*1798.6666629/1920*/
+$col15: 93.680555%;/*1798.6666629/1920*/
 $col16: 100%;/*1920/1920*/
 
 $colmarg: 1.1111111%;/*21.3333333/1920*/
@@ -199,13 +199,13 @@ $avenirnextultralight: 'AvenirNextUltraLight', Futura, "Trebuchet MS", Arial, sa
 
 @mixin two-color-radial-gradient {
 	background: #004b7b; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  #004b7b 0%, #000000 100%); /* FF3.6+ */
+	background: -moz-radial-gradient(center, ellipse cover,  $bsblue 0%, #012e4a 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#004b7b), color-stop(100%,#000000)); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  #004b7b 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  #004b7b 0%,#000000 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  #004b7b 0%,#000000 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  #004b7b 0%,#000000 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004b7b', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: -webkit-radial-gradient(center, ellipse cover,  $bsblue 0%,#012e4a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  $bsblue 0%,#012e4a 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  $bsblue 0%,#012e4a 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  $bsblue 0%,#012e4a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004b7b', endColorstr='#012e4a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 @mixin scale-content {
@@ -244,15 +244,45 @@ $avenirnextultralight: 'AvenirNextUltraLight', Futura, "Trebuchet MS", Arial, sa
 }
 
 
+	@-webkit-keyframes blinkin {
+	  0%   { opacity: 0; }
+	  100% { opacity: 1; }
+	}
+	@-moz-keyframes blinkin {
+  	  0%   { opacity: 0; }
+  	  100% { opacity: 1; }
+	}
+	@-o-keyframes blinkin {
+  	  0%   { opacity: 0; }
+  	  100% { opacity: 1; }
+	}
+	@keyframes blinkin {
+  	  0%   { opacity: 0; }
+  	  100% { opacity: 1; }
+	}
+
+
+@mixin blink-animation {
+  -webkit-animation: blinkin .5s 1; /* Safari 4+ */
+  -moz-animation:    blinkin .5s 1; /* Fx 5+ */
+  -o-animation:      blinkin .5s 1; /* Opera 12+ */
+  animation:         blinkin .5s 1; /* IE 10+, Fx 29+ */
+  -webkit-animation-delay: .25s;
+  	 -moz-animation-delay: .25s;
+  	   -o-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+
 h1 { font-weight: normal; }
 body { background: #ffffff; font-family: $avenirnextultralight; color: $mediumgray; }
 .grid-marker { display: block; background: $bsblue; }
 
 /*Navigation*/
-#contain-head { overflow: hidden; position: fixed; width: 100%; height: 100%; display: block;  z-index: 1000; pointer-events: none; top: 0; }
+#contain-head { overflow: hidden; position: fixed; width: 100%; height: 100%; display: block;  z-index: 9999; pointer-events: none; top: 0; -webkit-transform: translateZ(1px); -moz-transform: translateZ(1px); -o-transform: translateZ(1px); transform: translateZ(1px); }
 header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,255,.97); padding: 15px 0 0 0; position: absolute; left: 0; bottom: -70px; border-top: 1px solid #eee; @include transition-cubic-bezier; pointer-events: all;
 	nav { float: right; color: $lightgray; font-size: 23px; text-align: right; width: 100%;
-		#bluestone-logo { width: 108px; height: 34px; float: left; margin: 0 0 0 2.5%; 
+		#bluestone-logo { width: 75px; height: 34px; float: left; margin: 0 0 0 2.5%; 
 			img { width: 100%; max-width: 100%; }
 		}
 		.address { width: 87.760417%; float: left; text-align: center; margin: 0 auto; display: inline-block; font-size: 0.5625em; letter-spacing: 5px; font-family: $avenirmedium; }
@@ -295,7 +325,15 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	position: relative;
 	z-index: 1;
 }
-#content.home {  }
+#content.home { 
+	.hometype { 
+		position: absolute; width: 100%; height: 100%; padding: 0; top: 0; left: 0;
+		h1 {
+			top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); position: relative; padding: 0 0 0 $col1+$colmarg; z-index: 500;
+		}
+		.gradient { @include two-color-radial-gradient; opacity: .82; position: absolute; -webkit-transition: none; transition: none; height: 100%; width: 100%; top: 0; left: 0; }
+	 }
+}
 #content.home video { position: fixed; bottom: 0; right: 0; min-height: 100%; min-width: 100%; max-width: 1000%; max-height: 4000%; width: auto; height: auto; overflow: hidden; display: block; }
 .open #content { 
 	//@include transformOriginY(5%); @include scale-content; @include transition-ease-out; 
@@ -304,34 +342,43 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 }
 
 .hometype {
-	text-transform: normal; width: $col15; padding: 7.96875% 0 0 $col1+$colmarg; color: #fff; z-index: 100; position: relative;
+	padding: 7.96875% 0 0 $col1+$colmarg; color: #fff; z-index: 100; position: relative; 
 	h1 { 
 		font-family: $avenirnextultralight; color: #fff; font-size: 5.625em; line-height: 1; margin: 0;
-		span { display: block;  @include transition-ease-out; @include translate(-20px,0); }
+		span { display: block;  @include transition-ease-out; }
 		span.inline { display: inline-block; }
-		.once { margin-left: -.45%; }
+		.below { position: absolute; top: 120%; width: 100%; }
 	}
-	.grid-marker { width: 5.5555556%; height: 12px; margin: 1.0833333% 0 2.2499999% 6.6666667%; }
+	.grid-marker { width: 5.5555556%; height: 12px; margin: 0 0 0 6.6666667%; }
 	p { }
 	a {
-		color: #fff; text-decoration: none; margin-left: -13px; font-size: 14px; letter-spacing: 1px; font-family: $avenirnextultralight; @include transition-ease-out;
+		position: absolute; top: 300%; text-transform: uppercase; color: #fff; text-decoration: none; font-size: 14px; letter-spacing: 1px; font-family: $avenirnextultralight; @include transition-ease-out;
 		span {width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #fff; font-size: 0; line-height: 0; display: inline-block; margin: 0 0 0 5px; text-align: left; @include transition-ease-out; }
 	}
-	a:hover{ color: $bsblue; @include transition-ease-out;  }
+	a:hover{ opacity: .75; @include transition-ease-out;  }
 	a:hover span { border-left: 5px solid $bsblue; @include transition-ease-out; opacity: 0; margin: 0 0 0 10px; }
 }
 
-/*Work*/
-.work .project * { opacity: 0; @include transition-cubic-bezier; }
-.work .project:hover * { opacity: 1; @include transition-cubic-bezier;  };
 
-.work .project { opacity: 0; width: 46.875%; height: auto; background: url('../img/work-roadid.jpg') no-repeat center; color: #fff; display: block; float: left; text-decoration: none; padding: 0 0 0 3.125%; position: relative; background-size: cover; -moz-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); -webkit-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); -o-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-	h2, h3, .grid-marker { z-index: 10; position: relative; }
+
+/*Work*/
+#content.work { margin: 0 0 66px 0; }
+.work .project * { opacity: 0; @include transition-cubic-bezier; }
+.work .project:hover * { opacity: 1; @include transition-cubic-bezier; -webkit-transform: translateZ(0px); -moz-transform: translateZ(0px); -o-transform: translateZ(0px); transform: translateZ(0px); }
+.work .project:hover {
+	h2 { -webkit-transform: translateX(0px); -moz-transform: translateX(0px); -o-transform: translateX(0px); transform: translateX(0px); }
+	h3 { -webkit-transition-delay: .1s; -moz-transform: translateX(0px); -o-transform: translateX(0px); transform: translateX(0px); }
+	.grid-marker { @include blink-animation; -webkit-transition-delay: .05s; -moz-transition-delay: .05s; -o-transition-delay: .05s; transition-delay: .05s; -webkit-transform: translateX(0px); -moz-transform: translateX(0px); -o-transform: translateX(0px); transform: translateX(0px);  }
+	.overlay { opacity: .82; }
+}
+
+.work .project { opacity: 0; width: 46.875%; height: auto; background: url('../img/work-roadid.jpg') no-repeat center; color: #fff; display: block; float: left; text-decoration: none; padding: 0 0 0 3.125%; position: relative; background-size: cover; overflow: hidden; -moz-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); -webkit-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); -o-transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	h2, h3, .grid-marker { z-index: 10; position: relative;}
 	h2, h3 { font-weight: normal; margin: 0; padding: 0; text-decoration: none; }
-	h2 { font-family: $avenirnextultralight; font-size: 3.75em; line-height: 1; margin: 6.25% 0 0 0; text-transform: none; }
-	h3 { font-family: $avenirnextultralight; font-size: 0.6875em; width: 50%; letter-spacing: .5px; }
-	.grid-marker { width: $col2; margin: 1.5% 0 3% $col1+$colpad; height: 12px; }
-	.overlay{ background: rgba(0,0,0,.6); display: block; position: absolute; height: 100%; width: 100%; top: 0; left: 0; z-index: 1; }
+	h2 { padding: 2px 0 0 0; font-family: $avenirnextultralight; font-size: 3.75em; line-height: 1; margin: 6.25% 0 0 0; text-transform: none; -webkit-transform: translateX(25px); -moz-transform: translateX(25px); -o-transform: translateX(25px); transform: translateX(25px); }
+	h3 { font-family: $avenirnextultralight; font-size: 0.6875em; width: 50%; letter-spacing: .5px; text-transform: uppercase; -webkit-transform: translateX(40px); -moz-transform: translateX(40px); -o-transform: translateX(40px); transform: translateX(40px);  }
+	.grid-marker { width: $col2; margin: 1.5% 0 3% $col1+$colpad; height: 12px; -webkit-transform: translateX(25px); -moz-transform: translateX(25px); -o-transform: translateX(25px); transform: translateX(25px); }
+	.overlay{ display: block; position: absolute; height: 100%; width: 100%; top: 0; left: 0; z-index: 1; @include two-color-radial-gradient; background-color: #012e4a; }
 }
 .work .project.in { opacity: 1; }
 
@@ -360,6 +407,19 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 		}
 	}
 	.work { margin-top: 7%; position: relative;
+		.image-wrapper { background: #fff; }
+		.image-wrapper.loading { background: #fff url('../img/blink.gif') center center no-repeat; }
+		.b-lazy {
+		        -webkit-transition: opacity 500ms ease-in-out;
+		           -moz-transition: opacity 500ms ease-in-out;
+		             -o-transition: opacity 500ms ease-in-out;
+		                transition: opacity 500ms ease-in-out;
+		                 max-width: 100%;
+		                   opacity: 0;
+		    }
+		    .b-lazy.b-loaded {
+		                   opacity: 1;
+		    }
 		.caption {  z-index: 500;  display: block; font-size: 1.3125em; font-family: $avenirnextultralight;
 			.grid-marker { display: block; color: $bsblue; height: 4px; width: 20px; position: absolute; left: 30px; top: 30px; }
 		 }
@@ -377,7 +437,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	}
 	.work.half, .work.three-quarters {
 		img { width: 100%; max-width: 100%; height: auto; }
-		img:not(:first-child) { margin-top: 5.0925926% /*55/1080*/; };
+		.image-wrapper:not(:first-child) { margin-top: 5.0925926% /*55/1080*/; };
 	}
 	.web-video {
 		height: auto; width: 100%; max-height: 820px; background-size: contain; padding: 5% 0 0 0; background-repeat: no-repeat;
@@ -397,8 +457,8 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 
 .project-head.relative { position: relative; }
 .project-head img { height: 25%; position: absolute; bottom: 60px; left: 8.0729167%; max-width: 100%; max-height: 100%; }
-.project-body { z-index: 5000; position: relative; background: #fff; padding: 3.5% 0 0 0; margin: 40% 0 0 0;
-	.title { width: $col14; margin: 0 auto 0 auto; position: relative; 
+.project-body { z-index: 100; position: relative; background: #fff; overflow: hidden; margin: 40% 0 0 0; -webkit-transform:translateZ(1px); -moz-transform:translateZ(1px); -o-transform:translateZ(1px); transform:translateZ(1px);
+	.title { width: $col14; margin: 3.5% auto 0 auto; position: relative; 
 		h2, h3 { color: #252525; font-weight: normal; margin: 0; padding: 0; line-height: 1; }
 		h2 { font-size: 4.5em; font-family: $avenirlight; float: left; width: 60%; }
 		h3 { font-family: $avenirmedium; float: right; font-size: .875em; position: absolute; bottom: 15px; right: 0; }
@@ -447,8 +507,13 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 
 /*Contact*/
 .contact {
-	.hometype { background: url('../img/header-contact.jpg') no-repeat; background-size: cover; padding-bottom: 10%; margin: 0 0 7% 0; }
-	h1 { padding: 10% 0 0 0; }
+	.hometype { 
+		background: url('../img/header-contact.jpg') no-repeat; background-size: cover; padding-bottom: 10%; margin: 0 0 7% 0;
+		.grid-marker { margin: 1.0833333% 0 2.2499999% 6.6666667%; }
+	}
+	h1 { 
+		padding: 10% 0 0 0;
+	}
 	#contact_form { 
 		width: $col8; float: left; 
 		textarea { width: 95%; height: 315px; font-weight: normal; font-family: $avenirnextultralight; border: 1px solid #d9d9d9; padding: 2.5%; margin: 3.5% 0 1.75% 0; }
@@ -485,8 +550,14 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 */
 /*About*/
 .about {
-	.hometype { background: url('../img/header-company.jpg') no-repeat; background-size: cover; padding-bottom: 10%; margin: 0 0 7% 0; }
-	h1 { padding: 10% 0 0 0; }
+	.hometype {
+		background: url('../img/header-company.jpg') no-repeat; background-size: cover; padding-bottom: 10%; margin: 0 0 7% 0; position: relative;
+		.grid-marker { margin: 1.0833333% 0 2.2499999% 6.6666667%; }
+	}
+	h1 {
+		padding: 10% 0 0 0;
+		.grid-marker { margin: 1.0833333% 0 2.2499999% 6.6666667%; }
+	}
 	h3,  #contact_form, ul { font-size: 1.3125em; }
 	h3, p { margin: 0; }
 }
@@ -563,7 +634,7 @@ header { width: 100%; height: 50px; background: #fff; background: rgba(255,255,2
 	}
 	
 	/*Work*/
-	.work .project h2 { font-size: 2.25em; }
+	.work .project h2 { font-size: 3em; }
 	
 	
 	/*Project*/

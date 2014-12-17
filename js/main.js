@@ -22,7 +22,7 @@ function sizeHeader() {
 	}
 	
 	
-	$('#content.home').css({height: windowHeight});
+	$('#content.home').css({height: $(window).height()});
 	
 	
 	if ( $('body').hasClass('open') ) {
