@@ -8,9 +8,8 @@
 						<a id="discover" href="#">Discover Bluestone<span></a>
 					</div>
 				</h1>
-				
+				<div class="gradient"></div>
 			</div>
-			
 			<video autoplay="1" loop="loop" muted="muted"><source src="<?php echo MAINURL."/video/"; ?>bluestone.webm" type="video/webm"><source src="<?php echo MAINURL."/video/"; ?>bluestone.mp4" type="video/mp4"></video>
         	
 		</div>
